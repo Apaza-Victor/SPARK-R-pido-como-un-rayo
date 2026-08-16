@@ -410,7 +410,7 @@ body.bg3d #bg-3d { display: block; }
 .kb-display-keys .kbd.sym { font-size: 26px; }
 .kb-display-keys .kbd.mouse { font-size: 13px; font-family: var(--sans); font-weight: 600; padding: 0 12px; }
 
-/* ============ TECLADO (Logitech G815 · diseño de Staniel Petrov) ============ */
+/* ============ TECLADO (Logitech G815) ============ */
 
 #kb-board {
   width: 100%;

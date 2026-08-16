@@ -1,14 +1,14 @@
 # SPARK — Rápido como un rayo
 
 Web para aprender los atajos de teclado de tus herramientas de diseño, vídeo y código.
-Elige una herramienta, pasa el ratón por un atajo y mira cómo se iluminan las teclas en un teclado mecánico interactivo (Logitech G815).
+Elige una herramienta, pasa el ratón por un atajo y mira cómo se iluminan las teclas en un teclado mecánico interactivo.
 
 **En producción**: https://apaza-victor.github.io/SPARK-R-pido-como-un-rayo/
 
 ## Características
 
-- **Teclado interactivo**: Logitech G815 (pure CSS) que ilumina las teclas del atajo bajo el ratón, con sonido al pulsar (GL Tactile / Linear / Clicky), ciclo de colores RGB, brillo, modo juego y LEDs.
-- **24 herramientas**: Figma, Photoshop, Illustrator, InDesign, Lightroom, Blender, Affinity, Framer, Webflow, Spline, After Effects, DaVinci, CapCut, Premiere, Cursor, VS Code, Lovable, Xcode, Claude, Copilot, Notion, Slack, Linear y Obsidian.
+- **Teclado interactivo**: teclado mecánico (pure CSS) que ilumina las teclas del atajo bajo el ratón, con sonido al pulsar (GL Tactile / Linear / Clicky), ciclo de colores RGB, brillo, modo juego y LEDs.
+- **72 herramientas**: Figma, Photoshop, Illustrator, InDesign, Lightroom, Blender, Affinity, Framer, Webflow, Spline, After Effects, DaVinci, CapCut, Premiere, Cursor, VS Code, Lovable, Xcode, Claude, Copilot, Notion, Slack, Linear, Obsidian, BluffTitler, AutoCAD, GIMP, Inkscape, Docker, CMD, PowerShell, Windows, macOS, SketchUp, GitHub Desktop y muchas más.
 - **Carrusel de logos**: tira de marcas con scroll infinito que enlaza directo a cada herramienta.
 - **Búsqueda**: filtra herramientas y atajos al instante.
 - **Bilingüe**: español e inglés.
@@ -26,11 +26,12 @@ js/app.js             Lógica de la app (UI, i18n, búsqueda, luz de teclas)
 js/data.js            Carga de los datos de atajos
 js/keys.js            Mapa de teclas (SPARK_KEYS)
 js/logos.js           Logos SVG de las herramientas (SPARK_LOGOS)
-js/twboard.js         Teclado G815 (SPARK_BOARD)
+js/twboard.js         Teclado mecánico (SPARK_BOARD)
 js/bg.js              Fondo 3D (SPARK_BRANDS)
 data/shrtcts-data.json  Base de datos de herramientas y atajos
-snd/key1.mp3          Sonidos antiguos del teclado (sin uso)
-snd/key2.mp3
+pages/cambios.html    Historial de cambios
+assets/img/           Recursos gráficos (logos SVG / webp)
+snd/                  Sonidos locales (sin uso)
 ```
 
 ## Datos de atajos
@@ -83,10 +84,6 @@ Abre `http://localhost:8000`.
 - **Idioma y plataforma** se guardan en `localStorage` como `spark-lang` y `spark-platform`.
 - **Color de las teclas**: la variable `--key-text-highlight` (en `css/styles.css`) define el color de iluminación; cicla con las teclas M1–M3.
 - **Colores de marca**: el azul se define en `:root` de `css/styles.css` (`--blue`, `--ink`).
-
-## Créditos
-
-- Teclado Logitech G815 (diseño de [Staniel Petrov](https://www.linkedin.com/in/staniel-petrov/)) integrado y adaptado a SPARK.
 
 ## Derechos de autor
 

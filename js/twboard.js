@@ -1,5 +1,4 @@
-// Teclado Logitech G815 (diseño de Staniel Petrov) integrado en SPARK.
-// Fuente del diseño: https://www.linkedin.com/in/staniel-petrov/
+// Teclado Logitech G815 integrado en SPARK.
 window.SPARK_BOARD = (() => {
   'use strict';
 

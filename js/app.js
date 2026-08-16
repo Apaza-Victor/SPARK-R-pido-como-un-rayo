@@ -676,8 +676,8 @@
     scSearch.setAttribute('aria-label', t('searchShortcuts'));
     $('.back-text').textContent = t('back');
     $('#kb-hint').textContent = t('kbHint');
-    $('.sidebar-credit').innerHTML = `${t('builtWith')} <span style="opacity:.8">⌘</span> · <a href="#changelog">${t('changelog')}</a> <span class="sep">·</span> <a href="#" target="_blank" rel="noopener">${t('contact')}</a>`;
-    $('.credit').innerHTML = `SPARK · <a href="#changelog">${t('changelog')}</a>`;
+    $('.sidebar-credit').innerHTML = `${t('builtWith')} <span style="opacity:.8">⌘</span> · <a href="pages/cambios.html">${t('changelog')}</a> <span class="sep">·</span> <a href="#" target="_blank" rel="noopener">${t('contact')}</a>`;
+    $('.credit').innerHTML = `SPARK · <a href="pages/cambios.html">${t('changelog')}</a>`;
     updateLangButton();
     updateKbButton();
     renderCats();

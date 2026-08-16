@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cambios · SPARK — Rápido como un rayo</title>
+<meta name="description" content="Historial de cambios y novedades de SPARK, la web de atajos de teclado.">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0a0a0c;
+    --blue: #0a6cff;
+    --sans: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --display: Nunito, system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { height: 100%; }
+
+  body {
+    min-height: 100vh;
+    background: linear-gradient(160deg, #3a86ff, #0a6cff);
+    font-family: var(--sans);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 56px clamp(20px, 5vw, 72px) 72px;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .logo {
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    background: #0a2238;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none;
+  }
+  .logo svg { width: 100%; height: 100%; display: block; }
+
+  .head-titles h1 {
+    font-family: var(--display);
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -.02em;
+    line-height: 1.1;
+  }
+  .head-titles .sub { opacity: .7; font-size: 13px; font-weight: 400; margin-top: 2px; }
+
+  .back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    margin: 26px 0 10px;
+    padding-bottom: 2px;
+    transition: border-color .12s ease;
+  }
+  .back:hover { border-color: #fff; }
+
+  .timeline { margin-top: 26px; position: relative; padding-left: 26px; }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 6px; top: 6px; bottom: 6px;
+    width: 2px;
+    background: rgba(255,255,255,.25);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    padding: 0 0 30px;
+  }
+  .entry:last-child { padding-bottom: 4px; }
+
+  .entry::before {
+    content: "";
+    position: absolute;
+    left: -26px; top: 6px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--blue);
+    box-shadow: 0 0 0 3px rgba(255,255,255,.25);
+  }
+
+  .entry:first-child::before { background: #9ff1ff; border-color: #0a2238; }
+
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 5px;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+  }
+  .entry:first-child .tag { background: #9ff1ff; color: #0a2238; border-color: transparent; }
+
+  .entry h2 {
+    font-family: var(--display);
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin-bottom: 6px;
+  }
+  .entry time { display: block; font-size: 12px; opacity: .6; font-weight: 400; margin-bottom: 8px; }
+
+  .entry ul { list-style: none; }
+  .entry li {
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.55;
+    opacity: .92;
+    padding-left: 18px;
+    margin-bottom: 4px;
+  }
+  .entry li::before {
+    content: "✦";
+    position: absolute;
+    left: 0; top: 0;
+    font-size: 11px;
+    opacity: .7;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    opacity: .6;
+    text-align: center;
+  }
+  footer a { color: inherit; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.4); }
+  footer a:hover { border-color: #fff; }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 32px 18px 56px; }
+    .head-titles h1 { font-size: 25px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="head">
+      <a class="logo" href="../" aria-label="SPARK — Inicio">
+        <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#57b4ff"/>
+              <stop offset="1" stop-color="#0a6cff"/>
+            </linearGradient>
+          </defs>
+          <rect x="6" y="8" width="78" height="76" rx="18" fill="#0a2238"/>
+          <rect x="6" y="4" width="78" height="72" rx="18" fill="url(#brandGrad)"/>
+          <rect x="6" y="4" width="78" height="72" rx="18" fill="none" stroke="#ffffff26" stroke-width="2"/>
+          <text x="45" y="57" text-anchor="middle" font-family="Nunito, system-ui, sans-serif" font-size="50" font-weight="900" fill="#ffffff" letter-spacing="-1">S</text>
+          <path fill="#9ff1ff" d="M68 12 C66 19 61 24 54 26 C61 28 66 33 68 40 C70 33 75 28 82 26 C75 24 70 19 68 12 Z"/>
+          <circle cx="73" cy="54" r="3" fill="#9ff1ff"/>
+        </svg>
+      </a>
+      <div class="head-titles">
+        <h1>Cambios</h1>
+        <div class="sub">Historial de novedades de SPARK</div>
+      </div>
+    </header>
+
+    <a class="back" href="../">← Volver a SPARK</a>
+
+    <section class="timeline">
+
+      <article class="entry">
+        <span class="tag">Última versión</span>
+        <h2>v0.0.1 — Logo real de BluffTitler</h2>
+        <time>2026</time>
+        <ul>
+          <li>Añadido el logo real de BluffTitler (trazado a partir del original) al explorador de herramientas y al carrusel de marcas.</li>
+          <li>Fondo del icono de BluffTitler en blanco para integrarse con el resto de la interfaz.</li>
+          <li>Incluidos los recursos gráficos <code>assets/img/BluffTitler.svg</code> y <code>BuffTitler.webp</code>.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Herramientas</span>
+        <h2>GitHub Desktop</h2>
+        <time>2026</time>
+        <ul>
+          <li>Añadido GitHub Desktop a la categoría CÓDIGO con su logo y 35 atajos.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Correcciones</span>
+        <h2>Atajos de AutoCAD y más</h2>
+        <time>2026</time>
+        <ul>
+          <li>Corregidos los alias de AutoCAD a la versión en español.</li>
+          <li>Ampliados los atajos de 10 herramientas.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Herramientas</span>
+        <h2>SketchUp</h2>
+        <time>2026</time>
+        <ul>
+          <li>Añadido SketchUp a la categoría 3D con su logo y 30 atajos.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Herramientas</span>
+        <h2>9 herramientas más</h2>
+        <time>2026</time>
+        <ul>
+          <li>Añadidos BluffTitler, AutoCAD, GIMP, Inkscape, Docker, CMD, PowerShell, Windows y macOS con sus logos y atajos.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Herramientas</span>
+        <h2>22 programas y 5 categorías</h2>
+        <time>2026</time>
+        <ul>
+          <li>Añadidas las categorías Audio &amp; Música, Comunicación, Navegadores, Sistema y 3D &amp; Modelado.</li>
+          <li>22 programas nuevos con logos y atajos.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Herramientas</span>
+        <h2>15 herramientas nuevas</h2>
+        <time>2026</time>
+        <ul>
+          <li>Añadidas 15 herramientas de diseño, vídeo, código y productividad con logos y atajos.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Teclado</span>
+        <h2>Integración del teclado Logitech G815</h2>
+        <time>2026</time>
+        <ul>
+          <li>Teclado Logitech G815 con adaptación a macOS y nombres de teclas en español.</li>
+          <li>Cambio de idioma de las teclas y disposición Windows/macOS.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Interacción</span>
+        <h2>Clic en teclas y panel de atajos</h2>
+        <time>2026</time>
+        <ul>
+          <li>Interacción con el teclado: clic en las teclas con sonido.</li>
+          <li>Panel de atajos por programa al seleccionar una herramienta.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Visual</span>
+        <h2>Logos reales y teclado más grande</h2>
+        <time>2026</time>
+        <ul>
+          <li>Usados los logos reales de los programas en el fondo animado.</li>
+          <li>Teclado un 30% más grande y corregido el solape con la etiqueta.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <span class="tag">Lanzamiento</span>
+        <h2>Primera versión de SPARK</h2>
+        <time>2026</time>
+        <ul>
+          <li>Web de atajos de teclado: elige una herramienta, pasa el ratón por un atajo y mira cómo se iluminan las teclas.</li>
+          <li>Publicada en GitHub Pages.</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <footer>
+      SPARK · <a href="../">Inicio</a> · <a href="mailto:contacto@example.com">Contacto</a>
+    </footer>
+
+  </div>
+</body>
+</html>
