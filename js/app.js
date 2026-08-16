@@ -95,6 +95,21 @@
     slack:       { c: '#4A154B', l: 'Sl' },
     linear:      { c: '#5E6AD2', l: 'Ln' },
     obsidian:    { c: '#483699', l: 'Ob' },
+    canva:       { c: '#00C4CC', l: 'Cv' },
+    sketch:      { c: '#F7B500', l: 'Sk' },
+    coreldraw:   { c: '#2A6FBA', l: 'Cd' },
+    finalcutpro: { c: '#1A1A1F', l: 'Fc' },
+    filmora:     { c: '#FF4D8C', l: 'Fl' },
+    jetbrains:   { c: '#1E1E24', l: 'Jb' },
+    androidstudio:{ c: '#3DDC84', l: 'As' },
+    sublime:     { c: '#FF9800', l: 'St' },
+    postman:     { c: '#FF6C37', l: 'Po' },
+    excel:       { c: '#217346', l: 'Xl' },
+    word:        { c: '#2B579A', l: 'Wo' },
+    powerpoint:  { c: '#D24726', l: 'Pp' },
+    gmail:       { c: '#EA4335', l: 'Gm' },
+    gdocs:       { c: '#4285F4', l: 'Gd' },
+    gsheets:     { c: '#34A853', l: 'Gs' },
   };
   const brandOf = (id) => BRANDS[id] || { c: '#0a6cff', l: (id || '?').slice(0, 2) };
   window.SPARK_BRANDS = BRANDS;

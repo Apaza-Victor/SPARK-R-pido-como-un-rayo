@@ -52,6 +52,21 @@
           "id": "spline",
           "name": "Spline",
           "hotkey": "cmd+K"
+        },
+        {
+          "id": "canva",
+          "name": "Canva",
+          "hotkey": "cmd+C"
+        },
+        {
+          "id": "sketch",
+          "name": "Sketch",
+          "hotkey": "cmd+Q"
+        },
+        {
+          "id": "coreldraw",
+          "name": "CorelDRAW",
+          "hotkey": "cmd+Z"
         }
       ]
     },
@@ -77,6 +92,16 @@
           "id": "premiere",
           "name": "Premiere Pro",
           "hotkey": "cmd+shift+P"
+        },
+        {
+          "id": "finalcutpro",
+          "name": "Final Cut Pro",
+          "hotkey": "cmd+shift+F"
+        },
+        {
+          "id": "filmora",
+          "name": "Filmora",
+          "hotkey": "cmd+shift+O"
         }
       ]
     },
@@ -112,6 +137,26 @@
           "id": "copilot",
           "name": "GitHub Copilot",
           "hotkey": "cmd+T"
+        },
+        {
+          "id": "jetbrains",
+          "name": "JetBrains",
+          "hotkey": "cmd+shift+A"
+        },
+        {
+          "id": "androidstudio",
+          "name": "Android Studio",
+          "hotkey": "cmd+shift+K"
+        },
+        {
+          "id": "sublime",
+          "name": "Sublime Text",
+          "hotkey": "cmd+shift+Y"
+        },
+        {
+          "id": "postman",
+          "name": "Postman",
+          "hotkey": "cmd+shift+M"
         }
       ]
     },
@@ -137,6 +182,36 @@
           "id": "obsidian",
           "name": "Obsidian",
           "hotkey": "cmd+W"
+        },
+        {
+          "id": "excel",
+          "name": "Excel",
+          "hotkey": "cmd+shift+X"
+        },
+        {
+          "id": "word",
+          "name": "Word",
+          "hotkey": "cmd+shift+W"
+        },
+        {
+          "id": "powerpoint",
+          "name": "PowerPoint",
+          "hotkey": "cmd+shift+S"
+        },
+        {
+          "id": "gmail",
+          "name": "Gmail",
+          "hotkey": "cmd+shift+G"
+        },
+        {
+          "id": "gdocs",
+          "name": "Google Docs",
+          "hotkey": "cmd+shift+D"
+        },
+        {
+          "id": "gsheets",
+          "name": "Google Sheets",
+          "hotkey": "cmd+shift+H"
         }
       ]
     }
@@ -18741,6 +18816,3133 @@
             "keys": [
               "cmd",
               "H"
+            ]
+          }
+        ]
+      }
+    ],
+    "canva": [
+      {
+        "label": "File & Edit",
+        "items": [
+          {
+            "action": "new design",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "download",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ]
+          },
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Clipboard",
+        "items": [
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "paste in place",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "delete",
+            "keys": [
+              "backspace"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Text",
+        "items": [
+          {
+            "action": "bold",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "italic",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "underline",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Layers",
+        "items": [
+          {
+            "action": "group",
+            "keys": [
+              "cmd",
+              "G"
+            ]
+          },
+          {
+            "action": "ungroup",
+            "keys": [
+              "cmd",
+              "shift",
+              "G"
+            ]
+          },
+          {
+            "action": "bring to front",
+            "keys": [
+              "cmd",
+              "shift",
+              "]"
+            ]
+          },
+          {
+            "action": "send to back",
+            "keys": [
+              "cmd",
+              "shift",
+              "["
+            ]
+          },
+          {
+            "action": "lock",
+            "keys": [
+              "cmd",
+              "shift",
+              "L"
+            ]
+          },
+          {
+            "action": "flip horizontal",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ]
+          },
+          {
+            "action": "flip vertical",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "View & Zoom",
+        "items": [
+          {
+            "action": "zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ]
+          },
+          {
+            "action": "zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ]
+          },
+          {
+            "action": "fit to screen",
+            "keys": [
+              "cmd",
+              "0"
+            ]
+          },
+          {
+            "action": "actual size",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          }
+        ]
+      }
+    ],
+    "sketch": [
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "paste in place",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "copy style",
+            "keys": [
+              "cmd",
+              "alt",
+              "C"
+            ]
+          },
+          {
+            "action": "paste style",
+            "keys": [
+              "cmd",
+              "alt",
+              "V"
+            ]
+          },
+          {
+            "action": "find",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "delete",
+            "keys": [
+              "backspace"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Layers",
+        "items": [
+          {
+            "action": "group",
+            "keys": [
+              "cmd",
+              "G"
+            ]
+          },
+          {
+            "action": "ungroup",
+            "keys": [
+              "cmd",
+              "shift",
+              "G"
+            ]
+          },
+          {
+            "action": "lock",
+            "keys": [
+              "cmd",
+              "shift",
+              "L"
+            ]
+          },
+          {
+            "action": "unlock all",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "L"
+            ]
+          },
+          {
+            "action": "rename",
+            "keys": [
+              "cmd",
+              "R"
+            ]
+          },
+          {
+            "action": "hide layer",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Shapes & Tools",
+        "items": [
+          {
+            "action": "insert",
+            "keys": [
+              "I"
+            ]
+          },
+          {
+            "action": "rectangle",
+            "keys": [
+              "R"
+            ]
+          },
+          {
+            "action": "oval",
+            "keys": [
+              "O"
+            ]
+          },
+          {
+            "action": "line",
+            "keys": [
+              "L"
+            ]
+          },
+          {
+            "action": "vector",
+            "keys": [
+              "V"
+            ]
+          },
+          {
+            "action": "pencil",
+            "keys": [
+              "P"
+            ]
+          },
+          {
+            "action": "text",
+            "keys": [
+              "T"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "View & Zoom",
+        "items": [
+          {
+            "action": "zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ]
+          },
+          {
+            "action": "zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ]
+          },
+          {
+            "action": "fit all",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "actual size",
+            "keys": [
+              "cmd",
+              "0"
+            ]
+          }
+        ]
+      }
+    ],
+    "coreldraw": [
+      {
+        "label": "File",
+        "items": [
+          {
+            "action": "new document",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "import",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "export",
+            "keys": [
+              "cmd",
+              "E"
+            ]
+          },
+          {
+            "action": "print",
+            "keys": [
+              "cmd",
+              "P"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "paste in place",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Objects",
+        "items": [
+          {
+            "action": "group",
+            "keys": [
+              "cmd",
+              "G"
+            ]
+          },
+          {
+            "action": "ungroup",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          },
+          {
+            "action": "combine",
+            "keys": [
+              "cmd",
+              "L"
+            ]
+          },
+          {
+            "action": "break apart",
+            "keys": [
+              "cmd",
+              "K"
+            ]
+          },
+          {
+            "action": "convert to curves",
+            "keys": [
+              "cmd",
+              "Q"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "View & Zoom",
+        "items": [
+          {
+            "action": "zoom in",
+            "keys": [
+              "F2"
+            ]
+          },
+          {
+            "action": "zoom out",
+            "keys": [
+              "F3"
+            ]
+          },
+          {
+            "action": "zoom to selected",
+            "keys": [
+              "shift",
+              "F2"
+            ]
+          },
+          {
+            "action": "fit all",
+            "keys": [
+              "F4"
+            ]
+          },
+          {
+            "action": "zoom 100%",
+            "keys": [
+              "shift",
+              "F4"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "items": [
+          {
+            "action": "shape tool",
+            "keys": [
+              "F10"
+            ]
+          },
+          {
+            "action": "text tool",
+            "keys": [
+              "F8"
+            ]
+          },
+          {
+            "action": "rectangle tool",
+            "keys": [
+              "F6"
+            ]
+          },
+          {
+            "action": "ellipse tool",
+            "keys": [
+              "F7"
+            ]
+          },
+          {
+            "action": "freehand tool",
+            "keys": [
+              "F5"
+            ]
+          },
+          {
+            "action": "zoom tool",
+            "keys": [
+              "Z"
+            ]
+          },
+          {
+            "action": "hand tool",
+            "keys": [
+              "H"
+            ]
+          }
+        ]
+      }
+    ],
+    "finalcutpro": [
+      {
+        "label": "Project & Library",
+        "items": [
+          {
+            "action": "import media",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "new project",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "new event",
+            "keys": [
+              "cmd",
+              "alt",
+              "N"
+            ]
+          },
+          {
+            "action": "new library",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "N"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Editing",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "append to end",
+            "keys": [
+              "E"
+            ]
+          },
+          {
+            "action": "insert",
+            "keys": [
+              "W"
+            ]
+          },
+          {
+            "action": "overwrite",
+            "keys": [
+              "D"
+            ]
+          },
+          {
+            "action": "connect",
+            "keys": [
+              "Q"
+            ]
+          },
+          {
+            "action": "blade",
+            "keys": [
+              "B"
+            ]
+          },
+          {
+            "action": "delete",
+            "keys": [
+              "backspace"
+            ]
+          },
+          {
+            "action": "ripple delete",
+            "keys": [
+              "shift",
+              "backspace"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Timeline & Playback",
+        "items": [
+          {
+            "action": "play / pause",
+            "keys": [
+              "space"
+            ]
+          },
+          {
+            "action": "rewind",
+            "keys": [
+              "J"
+            ]
+          },
+          {
+            "action": "stop",
+            "keys": [
+              "K"
+            ]
+          },
+          {
+            "action": "play forward",
+            "keys": [
+              "L"
+            ]
+          },
+          {
+            "action": "go to start",
+            "keys": [
+              "home"
+            ]
+          },
+          {
+            "action": "go to end",
+            "keys": [
+              "end"
+            ]
+          },
+          {
+            "action": "previous edit",
+            "keys": [
+              "up"
+            ]
+          },
+          {
+            "action": "next edit",
+            "keys": [
+              "down"
+            ]
+          },
+          {
+            "action": "zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ]
+          },
+          {
+            "action": "zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ]
+          },
+          {
+            "action": "fit to window",
+            "keys": [
+              "shift",
+              "Z"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "items": [
+          {
+            "action": "select tool",
+            "keys": [
+              "A"
+            ]
+          },
+          {
+            "action": "range tool",
+            "keys": [
+              "R"
+            ]
+          },
+          {
+            "action": "trim tool",
+            "keys": [
+              "T"
+            ]
+          },
+          {
+            "action": "hand tool",
+            "keys": [
+              "H"
+            ]
+          },
+          {
+            "action": "zoom tool",
+            "keys": [
+              "Z"
+            ]
+          }
+        ]
+      }
+    ],
+    "filmora": [
+      {
+        "label": "File & Project",
+        "items": [
+          {
+            "action": "new project",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open project",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "save project",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "import media",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "export",
+            "keys": [
+              "cmd",
+              "E"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "split clip",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "delete",
+            "keys": [
+              "backspace"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Timeline",
+        "items": [
+          {
+            "action": "zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ]
+          },
+          {
+            "action": "zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ]
+          },
+          {
+            "action": "fit timeline",
+            "keys": [
+              "cmd",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Playback",
+        "items": [
+          {
+            "action": "play / pause",
+            "keys": [
+              "space"
+            ]
+          },
+          {
+            "action": "previous frame",
+            "keys": [
+              "left"
+            ]
+          },
+          {
+            "action": "next frame",
+            "keys": [
+              "right"
+            ]
+          },
+          {
+            "action": "play from start",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          }
+        ]
+      }
+    ],
+    "jetbrains": [
+      {
+        "label": "Navigation",
+        "items": [
+          {
+            "action": "find action",
+            "keys": [
+              "cmd",
+              "shift",
+              "A"
+            ]
+          },
+          {
+            "action": "find class",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "find file",
+            "keys": [
+              "cmd",
+              "shift",
+              "O"
+            ]
+          },
+          {
+            "action": "find symbol",
+            "keys": [
+              "cmd",
+              "alt",
+              "O"
+            ]
+          },
+          {
+            "action": "go to line",
+            "keys": [
+              "cmd",
+              "L"
+            ]
+          },
+          {
+            "action": "recent files",
+            "keys": [
+              "cmd",
+              "E"
+            ]
+          },
+          {
+            "action": "back",
+            "keys": [
+              "cmd",
+              "alt",
+              "left"
+            ]
+          },
+          {
+            "action": "forward",
+            "keys": [
+              "cmd",
+              "alt",
+              "right"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Editing",
+        "items": [
+          {
+            "action": "autocomplete",
+            "keys": [
+              "ctrl",
+              "space"
+            ]
+          },
+          {
+            "action": "smart autocomplete",
+            "keys": [
+              "ctrl",
+              "shift",
+              "space"
+            ]
+          },
+          {
+            "action": "comment line",
+            "keys": [
+              "cmd",
+              "/"
+            ]
+          },
+          {
+            "action": "comment block",
+            "keys": [
+              "cmd",
+              "alt",
+              "/"
+            ]
+          },
+          {
+            "action": "duplicate line",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "delete line",
+            "keys": [
+              "cmd",
+              "backspace"
+            ]
+          },
+          {
+            "action": "move line up",
+            "keys": [
+              "cmd",
+              "shift",
+              "up"
+            ]
+          },
+          {
+            "action": "move line down",
+            "keys": [
+              "cmd",
+              "shift",
+              "down"
+            ]
+          },
+          {
+            "action": "format code",
+            "keys": [
+              "cmd",
+              "alt",
+              "L"
+            ]
+          },
+          {
+            "action": "optimize imports",
+            "keys": [
+              "cmd",
+              "alt",
+              "O"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Refactoring",
+        "items": [
+          {
+            "action": "rename",
+            "keys": [
+              "shift",
+              "F6"
+            ]
+          },
+          {
+            "action": "extract variable",
+            "keys": [
+              "cmd",
+              "alt",
+              "V"
+            ]
+          },
+          {
+            "action": "extract method",
+            "keys": [
+              "cmd",
+              "alt",
+              "M"
+            ]
+          },
+          {
+            "action": "extract constant",
+            "keys": [
+              "cmd",
+              "alt",
+              "C"
+            ]
+          },
+          {
+            "action": "generate code",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Run & Debug",
+        "items": [
+          {
+            "action": "run",
+            "keys": [
+              "ctrl",
+              "R"
+            ]
+          },
+          {
+            "action": "debug",
+            "keys": [
+              "ctrl",
+              "D"
+            ]
+          },
+          {
+            "action": "stop",
+            "keys": [
+              "cmd",
+              "F2"
+            ]
+          },
+          {
+            "action": "step over",
+            "keys": [
+              "F8"
+            ]
+          },
+          {
+            "action": "step into",
+            "keys": [
+              "F7"
+            ]
+          },
+          {
+            "action": "step out",
+            "keys": [
+              "shift",
+              "F8"
+            ]
+          },
+          {
+            "action": "toggle breakpoint",
+            "keys": [
+              "cmd",
+              "F8"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Views & VCS",
+        "items": [
+          {
+            "action": "project window",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "terminal",
+            "keys": [
+              "alt",
+              "F12"
+            ]
+          },
+          {
+            "action": "commit",
+            "keys": [
+              "cmd",
+              "K"
+            ]
+          },
+          {
+            "action": "push",
+            "keys": [
+              "cmd",
+              "shift",
+              "K"
+            ]
+          },
+          {
+            "action": "update project",
+            "keys": [
+              "cmd",
+              "T"
+            ]
+          }
+        ]
+      }
+    ],
+    "androidstudio": [
+      {
+        "label": "Navigation",
+        "items": [
+          {
+            "action": "find action",
+            "keys": [
+              "cmd",
+              "shift",
+              "A"
+            ]
+          },
+          {
+            "action": "find class",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "find file",
+            "keys": [
+              "cmd",
+              "shift",
+              "O"
+            ]
+          },
+          {
+            "action": "find symbol",
+            "keys": [
+              "cmd",
+              "alt",
+              "O"
+            ]
+          },
+          {
+            "action": "go to line",
+            "keys": [
+              "cmd",
+              "L"
+            ]
+          },
+          {
+            "action": "recent files",
+            "keys": [
+              "cmd",
+              "E"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Editing",
+        "items": [
+          {
+            "action": "autocomplete",
+            "keys": [
+              "ctrl",
+              "space"
+            ]
+          },
+          {
+            "action": "smart autocomplete",
+            "keys": [
+              "ctrl",
+              "shift",
+              "space"
+            ]
+          },
+          {
+            "action": "comment line",
+            "keys": [
+              "cmd",
+              "/"
+            ]
+          },
+          {
+            "action": "duplicate line",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "delete line",
+            "keys": [
+              "cmd",
+              "backspace"
+            ]
+          },
+          {
+            "action": "move line up",
+            "keys": [
+              "cmd",
+              "shift",
+              "up"
+            ]
+          },
+          {
+            "action": "move line down",
+            "keys": [
+              "cmd",
+              "shift",
+              "down"
+            ]
+          },
+          {
+            "action": "format code",
+            "keys": [
+              "cmd",
+              "alt",
+              "L"
+            ]
+          },
+          {
+            "action": "optimize imports",
+            "keys": [
+              "cmd",
+              "alt",
+              "O"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Refactoring",
+        "items": [
+          {
+            "action": "rename",
+            "keys": [
+              "shift",
+              "F6"
+            ]
+          },
+          {
+            "action": "extract variable",
+            "keys": [
+              "cmd",
+              "alt",
+              "V"
+            ]
+          },
+          {
+            "action": "extract method",
+            "keys": [
+              "cmd",
+              "alt",
+              "M"
+            ]
+          },
+          {
+            "action": "extract constant",
+            "keys": [
+              "cmd",
+              "alt",
+              "C"
+            ]
+          },
+          {
+            "action": "generate code",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Run & Debug",
+        "items": [
+          {
+            "action": "run app",
+            "keys": [
+              "ctrl",
+              "R"
+            ]
+          },
+          {
+            "action": "debug app",
+            "keys": [
+              "ctrl",
+              "D"
+            ]
+          },
+          {
+            "action": "build",
+            "keys": [
+              "cmd",
+              "F9"
+            ]
+          },
+          {
+            "action": "stop",
+            "keys": [
+              "cmd",
+              "F2"
+            ]
+          },
+          {
+            "action": "step over",
+            "keys": [
+              "F8"
+            ]
+          },
+          {
+            "action": "step into",
+            "keys": [
+              "F7"
+            ]
+          },
+          {
+            "action": "toggle breakpoint",
+            "keys": [
+              "cmd",
+              "F8"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Windows",
+        "items": [
+          {
+            "action": "project",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "terminal",
+            "keys": [
+              "alt",
+              "F12"
+            ]
+          },
+          {
+            "action": "run window",
+            "keys": [
+              "alt",
+              "4"
+            ]
+          }
+        ]
+      }
+    ],
+    "sublime": [
+      {
+        "label": "Commands & Search",
+        "items": [
+          {
+            "action": "command palette",
+            "keys": [
+              "cmd",
+              "shift",
+              "P"
+            ]
+          },
+          {
+            "action": "goto anything",
+            "keys": [
+              "cmd",
+              "P"
+            ]
+          },
+          {
+            "action": "goto line",
+            "keys": [
+              "ctrl",
+              "G"
+            ]
+          },
+          {
+            "action": "goto symbol",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ]
+          },
+          {
+            "action": "find",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "find in files",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ]
+          },
+          {
+            "action": "replace",
+            "keys": [
+              "cmd",
+              "alt",
+              "F"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Editing",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "duplicate line",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ]
+          },
+          {
+            "action": "delete line",
+            "keys": [
+              "ctrl",
+              "shift",
+              "K"
+            ]
+          },
+          {
+            "action": "comment line",
+            "keys": [
+              "cmd",
+              "/"
+            ]
+          },
+          {
+            "action": "move line up",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "up"
+            ]
+          },
+          {
+            "action": "move line down",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "down"
+            ]
+          },
+          {
+            "action": "select next occurrence",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "select all occurrences",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "G"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "File",
+        "items": [
+          {
+            "action": "new file",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open file",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "open folder",
+            "keys": [
+              "cmd",
+              "alt",
+              "O"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ]
+          },
+          {
+            "action": "reopen closed tab",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Window & Layout",
+        "items": [
+          {
+            "action": "single layout",
+            "keys": [
+              "cmd",
+              "alt",
+              "1"
+            ]
+          },
+          {
+            "action": "two columns",
+            "keys": [
+              "cmd",
+              "alt",
+              "2"
+            ]
+          },
+          {
+            "action": "three columns",
+            "keys": [
+              "cmd",
+              "alt",
+              "3"
+            ]
+          },
+          {
+            "action": "new window",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ]
+          }
+        ]
+      }
+    ],
+    "postman": [
+      {
+        "label": "Requests",
+        "items": [
+          {
+            "action": "send request",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "new request",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "new request tab",
+            "keys": [
+              "cmd",
+              "T"
+            ]
+          },
+          {
+            "action": "save request",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "find in editor",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Navigation",
+        "items": [
+          {
+            "action": "search",
+            "keys": [
+              "cmd",
+              "K"
+            ]
+          },
+          {
+            "action": "switch between tabs",
+            "keys": [
+              "cmd",
+              "`"
+            ]
+          },
+          {
+            "action": "open console",
+            "keys": [
+              "cmd",
+              "alt",
+              "C"
+            ]
+          }
+        ]
+      }
+    ],
+    "excel": [
+      {
+        "label": "File",
+        "items": [
+          {
+            "action": "new workbook",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "print",
+            "keys": [
+              "cmd",
+              "P"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "Y"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "find",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "replace",
+            "keys": [
+              "cmd",
+              "H"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Format",
+        "items": [
+          {
+            "action": "bold",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "italic",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "underline",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          },
+          {
+            "action": "format cells",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "strikethrough",
+            "keys": [
+              "cmd",
+              "shift",
+              "X"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Data & Navigation",
+        "items": [
+          {
+            "action": "fill down",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "fill right",
+            "keys": [
+              "cmd",
+              "R"
+            ]
+          },
+          {
+            "action": "autosum",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ]
+          },
+          {
+            "action": "toggle filter",
+            "keys": [
+              "cmd",
+              "shift",
+              "L"
+            ]
+          },
+          {
+            "action": "go to",
+            "keys": [
+              "F5"
+            ]
+          }
+        ]
+      }
+    ],
+    "word": [
+      {
+        "label": "File",
+        "items": [
+          {
+            "action": "new document",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "print",
+            "keys": [
+              "cmd",
+              "P"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "Y"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "paste and match style",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "find",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "replace",
+            "keys": [
+              "cmd",
+              "H"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Format",
+        "items": [
+          {
+            "action": "bold",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "italic",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "underline",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          },
+          {
+            "action": "strikethrough",
+            "keys": [
+              "cmd",
+              "shift",
+              "X"
+            ]
+          },
+          {
+            "action": "align left",
+            "keys": [
+              "cmd",
+              "L"
+            ]
+          },
+          {
+            "action": "align center",
+            "keys": [
+              "cmd",
+              "E"
+            ]
+          },
+          {
+            "action": "align right",
+            "keys": [
+              "cmd",
+              "R"
+            ]
+          },
+          {
+            "action": "justify",
+            "keys": [
+              "cmd",
+              "J"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Styles & Paragraph",
+        "items": [
+          {
+            "action": "heading 1",
+            "keys": [
+              "cmd",
+              "alt",
+              "1"
+            ]
+          },
+          {
+            "action": "heading 2",
+            "keys": [
+              "cmd",
+              "alt",
+              "2"
+            ]
+          },
+          {
+            "action": "heading 3",
+            "keys": [
+              "cmd",
+              "alt",
+              "3"
+            ]
+          },
+          {
+            "action": "body text",
+            "keys": [
+              "cmd",
+              "alt",
+              "0"
+            ]
+          },
+          {
+            "action": "bulleted list",
+            "keys": [
+              "cmd",
+              "shift",
+              "L"
+            ]
+          },
+          {
+            "action": "page break",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "insert link",
+            "keys": [
+              "cmd",
+              "K"
+            ]
+          }
+        ]
+      }
+    ],
+    "powerpoint": [
+      {
+        "label": "Presentation",
+        "items": [
+          {
+            "action": "start from beginning",
+            "keys": [
+              "F5"
+            ]
+          },
+          {
+            "action": "start from current slide",
+            "keys": [
+              "shift",
+              "F5"
+            ]
+          },
+          {
+            "action": "next slide",
+            "keys": [
+              "right"
+            ]
+          },
+          {
+            "action": "previous slide",
+            "keys": [
+              "left"
+            ]
+          },
+          {
+            "action": "end show",
+            "keys": [
+              "esc"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "File",
+        "items": [
+          {
+            "action": "new presentation",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "open",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "print",
+            "keys": [
+              "cmd",
+              "P"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "Y"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "new slide",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ]
+          },
+          {
+            "action": "duplicate slide",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Format",
+        "items": [
+          {
+            "action": "bold",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "italic",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "underline",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          }
+        ]
+      }
+    ],
+    "gmail": [
+      {
+        "label": "Compose & Search",
+        "items": [
+          {
+            "action": "compose new message",
+            "keys": [
+              "C"
+            ]
+          },
+          {
+            "action": "compose in new tab",
+            "keys": [
+              "D"
+            ]
+          },
+          {
+            "action": "search",
+            "keys": [
+              "/"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Conversations",
+        "items": [
+          {
+            "action": "reply",
+            "keys": [
+              "R"
+            ]
+          },
+          {
+            "action": "reply all",
+            "keys": [
+              "A"
+            ]
+          },
+          {
+            "action": "forward",
+            "keys": [
+              "F"
+            ]
+          },
+          {
+            "action": "open conversation",
+            "keys": [
+              "O"
+            ]
+          },
+          {
+            "action": "next conversation",
+            "keys": [
+              "J"
+            ]
+          },
+          {
+            "action": "previous conversation",
+            "keys": [
+              "K"
+            ]
+          },
+          {
+            "action": "send",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Folders & Labels",
+        "items": [
+          {
+            "action": "archive",
+            "keys": [
+              "E"
+            ]
+          },
+          {
+            "action": "mark as unread",
+            "keys": [
+              "shift",
+              "U"
+            ]
+          },
+          {
+            "action": "mark as important",
+            "keys": [
+              "+"
+            ]
+          },
+          {
+            "action": "mute conversation",
+            "keys": [
+              "M"
+            ]
+          },
+          {
+            "action": "label",
+            "keys": [
+              "L"
+            ]
+          },
+          {
+            "action": "move to folder",
+            "keys": [
+              "V"
+            ]
+          }
+        ]
+      }
+    ],
+    "gdocs": [
+      {
+        "label": "Text Format",
+        "items": [
+          {
+            "action": "bold",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "italic",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "underline",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          },
+          {
+            "action": "strikethrough",
+            "keys": [
+              "cmd",
+              "shift",
+              "X"
+            ]
+          },
+          {
+            "action": "heading 1",
+            "keys": [
+              "cmd",
+              "alt",
+              "1"
+            ]
+          },
+          {
+            "action": "heading 2",
+            "keys": [
+              "cmd",
+              "alt",
+              "2"
+            ]
+          },
+          {
+            "action": "heading 3",
+            "keys": [
+              "cmd",
+              "alt",
+              "3"
+            ]
+          },
+          {
+            "action": "normal text",
+            "keys": [
+              "cmd",
+              "alt",
+              "0"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "paste without formatting",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "find",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "find and replace",
+            "keys": [
+              "cmd",
+              "H"
+            ]
+          },
+          {
+            "action": "insert comment",
+            "keys": [
+              "cmd",
+              "alt",
+              "M"
+            ]
+          },
+          {
+            "action": "insert link",
+            "keys": [
+              "cmd",
+              "K"
+            ]
+          },
+          {
+            "action": "insert page break",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "word count",
+            "keys": [
+              "cmd",
+              "shift",
+              "C"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Paragraph & Lists",
+        "items": [
+          {
+            "action": "align left",
+            "keys": [
+              "cmd",
+              "shift",
+              "L"
+            ]
+          },
+          {
+            "action": "align center",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ]
+          },
+          {
+            "action": "align right",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ]
+          },
+          {
+            "action": "justify",
+            "keys": [
+              "cmd",
+              "shift",
+              "J"
+            ]
+          },
+          {
+            "action": "bulleted list",
+            "keys": [
+              "cmd",
+              "shift",
+              "8"
+            ]
+          },
+          {
+            "action": "numbered list",
+            "keys": [
+              "cmd",
+              "shift",
+              "7"
+            ]
+          },
+          {
+            "action": "increase indent",
+            "keys": [
+              "cmd",
+              "]"
+            ]
+          },
+          {
+            "action": "decrease indent",
+            "keys": [
+              "cmd",
+              "["
+            ]
+          }
+        ]
+      }
+    ],
+    "gsheets": [
+      {
+        "label": "Format",
+        "items": [
+          {
+            "action": "bold",
+            "keys": [
+              "cmd",
+              "B"
+            ]
+          },
+          {
+            "action": "italic",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "underline",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          },
+          {
+            "action": "strikethrough",
+            "keys": [
+              "cmd",
+              "shift",
+              "5"
+            ]
+          },
+          {
+            "action": "clear formatting",
+            "keys": [
+              "cmd",
+              "\\"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ]
+          },
+          {
+            "action": "cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "paste values only",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "find",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "find and replace",
+            "keys": [
+              "cmd",
+              "H"
+            ]
+          },
+          {
+            "action": "insert comment",
+            "keys": [
+              "cmd",
+              "alt",
+              "M"
+            ]
+          },
+          {
+            "action": "insert link",
+            "keys": [
+              "cmd",
+              "K"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Data & Rows",
+        "items": [
+          {
+            "action": "fill down",
+            "keys": [
+              "cmd",
+              "D"
+            ]
+          },
+          {
+            "action": "fill right",
+            "keys": [
+              "cmd",
+              "R"
+            ]
+          },
+          {
+            "action": "insert row",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "="
+            ]
+          },
+          {
+            "action": "delete row",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "-"
+            ]
+          },
+          {
+            "action": "toggle filter",
+            "keys": [
+              "cmd",
+              "shift",
+              "L"
             ]
           }
         ]
