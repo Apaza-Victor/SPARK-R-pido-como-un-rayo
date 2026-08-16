@@ -85,7 +85,24 @@
     }
   }
 
-  // ---------- logos de los programas ----------
+  // ---------- logos de los programas (SVG originales) ----------
+  const LOGO_CACHE = new Map();
+  function logoImage(id) {
+    if (LOGO_CACHE.has(id)) return LOGO_CACHE.get(id);
+    const L = window.SPARK_LOGOS && window.SPARK_LOGOS[id];
+    if (!L) { LOGO_CACHE.set(id, null); return null; }
+    const g = L.st
+      ? '<g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">' + L.html + '</g>'
+      : '<g fill="#fff">' + L.html + '</g>';
+    const svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="' + L.vb + '">' + g + '</svg>';
+    const img = new Image();
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    const vbp = L.vb.split(/\s+/);
+    img._ar = parseFloat(vbp[3]) / parseFloat(vbp[2]);
+    LOGO_CACHE.set(id, img);
+    return img;
+  }
+
   let LOGOS = [];
   function spawnLogos() {
     const brands = window.SPARK_BRANDS;
@@ -106,6 +123,7 @@
         a: 0.1 + Math.random() * 0.16,
         c: b.c,
         l: b.l,
+        img: logoImage(ids[i]),
       });
     }
   }
@@ -205,7 +223,7 @@
       ctx.restore();
     }
 
-    // logos de los programas
+    // logos de los programas (SVG originales)
     for (const l of LOGOS) {
       ctx.save();
       ctx.translate(l.x, l.y);
@@ -216,11 +234,19 @@
       rr(-s / 2, -s / 2, s, s, s * 0.28);
       ctx.fill();
       ctx.globalAlpha = Math.min(l.a * 2.4, 0.7);
-      ctx.fillStyle = '#ffffff';
-      ctx.font = '800 ' + Math.round(s * 0.5) + 'px Nunito, Inter, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(l.l, 0, Math.round(s * 0.03));
+      if (l.img && l.img.naturalWidth > 0) {
+        const max = s * 0.55;
+        let w = max;
+        let h = w / (l.img._ar || 1);
+        if (h > max) { h = max; w = h * (l.img._ar || 1); }
+        ctx.drawImage(l.img, -w / 2, -h / 2, w, h);
+      } else {
+        ctx.fillStyle = '#ffffff';
+        ctx.font = '800 ' + Math.round(s * 0.5) + 'px Nunito, Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(l.l, 0, Math.round(s * 0.03));
+      }
       ctx.restore();
     }
 
