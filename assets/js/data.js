@@ -30904,6 +30904,159 @@ window.SPARK_DATA = {
             "actionEs": "Ir al final del buffer"
           }
         ]
+      },
+      {
+        "label": "System diagnostics",
+        "labelEs": "Diagnóstico del sistema",
+        "items": [
+          {
+            "action": "Full system information",
+            "keys": [
+              "systeminfo"
+            ],
+            "actionEs": "Información completa del sistema"
+          },
+          {
+            "action": "System Information window",
+            "keys": [
+              "msinfo32"
+            ],
+            "actionEs": "Ventana de información del sistema"
+          },
+          {
+            "action": "DirectX diagnostics",
+            "keys": [
+              "dxdiag"
+            ],
+            "actionEs": "Diagnóstico de DirectX (gráficos y sonido)"
+          },
+          {
+            "action": "Verify and repair system files",
+            "keys": [
+              "sfc /scannow"
+            ],
+            "actionEs": "Verificar y reparar archivos del sistema"
+          },
+          {
+            "action": "Repair Windows image",
+            "keys": [
+              "dism /online /cleanup-image /restorehealth"
+            ],
+            "actionEs": "Reparar la imagen de Windows"
+          },
+          {
+            "action": "Check disk for errors",
+            "keys": [
+              "chkdsk /f"
+            ],
+            "actionEs": "Comprobar el disco en busca de errores"
+          },
+          {
+            "action": "Full network configuration",
+            "keys": [
+              "ipconfig /all"
+            ],
+            "actionEs": "Configuración de red completa"
+          },
+          {
+            "action": "List network connections and ports",
+            "keys": [
+              "netstat -ano"
+            ],
+            "actionEs": "Listar conexiones de red y puertos"
+          },
+          {
+            "action": "List running processes",
+            "keys": [
+              "tasklist"
+            ],
+            "actionEs": "Listar procesos en ejecución"
+          },
+          {
+            "action": "List installed drivers",
+            "keys": [
+              "driverquery"
+            ],
+            "actionEs": "Listar controladores instalados"
+          },
+          {
+            "action": "Battery health report",
+            "keys": [
+              "powercfg /batteryreport"
+            ],
+            "actionEs": "Informe de salud de la batería (portátil)"
+          },
+          {
+            "action": "Energy efficiency diagnostics",
+            "keys": [
+              "powercfg /energy"
+            ],
+            "actionEs": "Diagnóstico de eficiencia energética"
+          },
+          {
+            "action": "System performance assessment",
+            "keys": [
+              "winsat formal"
+            ],
+            "actionEs": "Evaluación del rendimiento del sistema"
+          },
+          {
+            "action": "Disk health status",
+            "keys": [
+              "wmic diskdrive get status"
+            ],
+            "actionEs": "Estado de salud de los discos"
+          },
+          {
+            "action": "Windows version",
+            "keys": [
+              "ver"
+            ],
+            "actionEs": "Versión de Windows"
+          },
+          {
+            "action": "Current user",
+            "keys": [
+              "whoami"
+            ],
+            "actionEs": "Usuario actual de la sesión"
+          },
+          {
+            "action": "Open Microsoft Word",
+            "keys": [
+              "winword"
+            ],
+            "actionEs": "Abrir Microsoft Word"
+          },
+          {
+            "action": "List installed programs",
+            "keys": [
+              "wmic product get name"
+            ],
+            "actionEs": "Ver programas instalados en el equipo"
+          },
+          {
+            "action": "Uninstall programs panel",
+            "keys": [
+              "appwiz.cpl"
+            ],
+            "actionEs": "Panel de programas y características (desinstalar)"
+          },
+          {
+            "action": "Installed apps folder",
+            "keys": [
+              "shell:appsfolder"
+            ],
+            "actionEs": "Carpeta de aplicaciones instaladas"
+          },
+          {
+            "action": "Open temporary files folder",
+            "keys": [
+              "%temp%"
+            ],
+            "actionEs": "Abrir la carpeta de archivos temporales"
+          }
+        ]
       }
     ],
     "powershell": [
