@@ -214,6 +214,141 @@ window.SPARK_DATA = {
           "hotkey": "cmd+shift+H"
         }
       ]
+    },
+    {
+      "name": "AUDIO",
+      "tools": [
+        {
+          "id": "adobeaudition",
+          "name": "Adobe Audition",
+          "hotkey": "cmd+shift+B"
+        },
+        {
+          "id": "audacity",
+          "name": "Audacity",
+          "hotkey": "cmd+shift+U"
+        },
+        {
+          "id": "flstudio",
+          "name": "FL Studio",
+          "hotkey": "cmd+shift+E"
+        },
+        {
+          "id": "ableton",
+          "name": "Ableton Live",
+          "hotkey": "cmd+shift+T"
+        },
+        {
+          "id": "garageband",
+          "name": "GarageBand",
+          "hotkey": "cmd+shift+N"
+        },
+        {
+          "id": "reaper",
+          "name": "REAPER",
+          "hotkey": "cmd+shift+R"
+        }
+      ]
+    },
+    {
+      "name": "COMMUNICATION",
+      "tools": [
+        {
+          "id": "discord",
+          "name": "Discord",
+          "hotkey": "cmd+shift+Q"
+        },
+        {
+          "id": "zoom",
+          "name": "Zoom",
+          "hotkey": "cmd+shift+Z"
+        },
+        {
+          "id": "teams",
+          "name": "Microsoft Teams",
+          "hotkey": "cmd+shift+I"
+        },
+        {
+          "id": "whatsapp",
+          "name": "WhatsApp",
+          "hotkey": "cmd+shift+J"
+        }
+      ]
+    },
+    {
+      "name": "BROWSERS",
+      "tools": [
+        {
+          "id": "chrome",
+          "name": "Google Chrome",
+          "hotkey": "cmd+shift+L"
+        },
+        {
+          "id": "firefox",
+          "name": "Firefox",
+          "hotkey": "cmd+shift+1"
+        },
+        {
+          "id": "edge",
+          "name": "Microsoft Edge",
+          "hotkey": "cmd+shift+2"
+        },
+        {
+          "id": "brave",
+          "name": "Brave",
+          "hotkey": "cmd+shift+3"
+        },
+        {
+          "id": "safari",
+          "name": "Safari",
+          "hotkey": "cmd+shift+4"
+        }
+      ]
+    },
+    {
+      "name": "SYSTEM",
+      "tools": [
+        {
+          "id": "terminal",
+          "name": "Terminal",
+          "hotkey": "cmd+shift+V"
+        },
+        {
+          "id": "finder",
+          "name": "Finder",
+          "hotkey": "cmd+shift+C"
+        },
+        {
+          "id": "calculator",
+          "name": "Calculadora",
+          "hotkey": "cmd+shift+5"
+        },
+        {
+          "id": "screenshot",
+          "name": "Captura de pantalla",
+          "hotkey": "cmd+shift+6"
+        }
+      ]
+    },
+    {
+      "name": "3D",
+      "tools": [
+        {
+          "id": "maya",
+          "name": "Autodesk Maya",
+          "hotkey": "cmd+shift+7"
+        },
+        {
+          "id": "cinema4d",
+          "name": "Cinema 4D",
+          "hotkey": "cmd+shift+8"
+        },
+        {
+          "id": "zbrush",
+          "name": "ZBrush",
+          "hotkey": "cmd+shift+9"
+        }
+      ]
     }
   ],
   "tools": {
@@ -25110,6 +25245,2997 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Datos y filas"
+      }
+    ],
+    "adobeaudition": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          },
+          {
+            "action": "Import",
+            "keys": [
+              "cmd",
+              "I"
+            ],
+            "actionEs": "Importar"
+          },
+          {
+            "action": "Export",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ],
+            "actionEs": "Exportar"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          }
+        ]
+      },
+      {
+        "label": "Playback",
+        "labelEs": "Reproducción",
+        "items": [
+          {
+            "action": "Play / Stop",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Reproducir / Detener"
+          },
+          {
+            "action": "Go to start",
+            "keys": [
+              "home"
+            ],
+            "actionEs": "Ir al inicio"
+          },
+          {
+            "action": "Go to end",
+            "keys": [
+              "end"
+            ],
+            "actionEs": "Ir al final"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      }
+    ],
+    "audacity": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save project",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar proyecto"
+          },
+          {
+            "action": "Export audio",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ],
+            "actionEs": "Exportar audio"
+          },
+          {
+            "action": "Import audio",
+            "keys": [
+              "cmd",
+              "shift",
+              "I"
+            ],
+            "actionEs": "Importar audio"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          }
+        ]
+      },
+      {
+        "label": "Transport",
+        "labelEs": "Reproducción",
+        "items": [
+          {
+            "action": "Play / Stop",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Reproducir / Detener"
+          },
+          {
+            "action": "Record",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Grabar"
+          },
+          {
+            "action": "Skip to start",
+            "keys": [
+              "home"
+            ],
+            "actionEs": "Ir al inicio"
+          },
+          {
+            "action": "Skip to end",
+            "keys": [
+              "end"
+            ],
+            "actionEs": "Ir al final"
+          }
+        ]
+      },
+      {
+        "label": "Tools & Zoom",
+        "labelEs": "Herramientas y zoom",
+        "items": [
+          {
+            "action": "Selection tool",
+            "keys": [
+              "I"
+            ],
+            "actionEs": "Herramienta de selección"
+          },
+          {
+            "action": "Envelope tool",
+            "keys": [
+              "F"
+            ],
+            "actionEs": "Herramienta de envolvente"
+          },
+          {
+            "action": "Draw tool",
+            "keys": [
+              "D"
+            ],
+            "actionEs": "Herramienta de dibujo"
+          },
+          {
+            "action": "Zoom tool",
+            "keys": [
+              "Z"
+            ],
+            "actionEs": "Herramienta de zoom"
+          },
+          {
+            "action": "Time shift tool",
+            "keys": [
+              "T"
+            ],
+            "actionEs": "Herramienta de desplazamiento temporal"
+          },
+          {
+            "action": "Multi-tool",
+            "keys": [
+              "M"
+            ],
+            "actionEs": "Multiherramienta"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "1"
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom to selection",
+            "keys": [
+              "cmd",
+              "2"
+            ],
+            "actionEs": "Zoom a la selección"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "3"
+            ],
+            "actionEs": "Alejar"
+          },
+          {
+            "action": "Fit in window",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ],
+            "actionEs": "Ajustar a la ventana"
+          }
+        ]
+      }
+    ],
+    "flstudio": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          }
+        ]
+      },
+      {
+        "label": "Transport",
+        "labelEs": "Reproducción",
+        "items": [
+          {
+            "action": "Play / Pause",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Reproducir / Pausar"
+          },
+          {
+            "action": "Record",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Grabar"
+          }
+        ]
+      },
+      {
+        "label": "Windows",
+        "labelEs": "Ventanas",
+        "items": [
+          {
+            "action": "Playlist",
+            "keys": [
+              "F5"
+            ],
+            "actionEs": "Lista de reproducción"
+          },
+          {
+            "action": "Piano roll",
+            "keys": [
+              "F6"
+            ],
+            "actionEs": "Rollo de piano"
+          },
+          {
+            "action": "Channel rack",
+            "keys": [
+              "F7"
+            ],
+            "actionEs": "Panel de canales"
+          },
+          {
+            "action": "Browser",
+            "keys": [
+              "F8"
+            ],
+            "actionEs": "Navegador de sonidos"
+          },
+          {
+            "action": "Mixer",
+            "keys": [
+              "F9"
+            ],
+            "actionEs": "Mezclador"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          }
+        ]
+      }
+    ],
+    "ableton": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          },
+          {
+            "action": "Export audio / video",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ],
+            "actionEs": "Exportar audio / vídeo"
+          }
+        ]
+      },
+      {
+        "label": "Transport",
+        "labelEs": "Reproducción",
+        "items": [
+          {
+            "action": "Play",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Reproducir"
+          },
+          {
+            "action": "Stop",
+            "keys": [
+              "shift",
+              "space"
+            ],
+            "actionEs": "Detener"
+          },
+          {
+            "action": "Record",
+            "keys": [
+              "F9"
+            ],
+            "actionEs": "Grabar"
+          },
+          {
+            "action": "Loop toggle",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Alternar bucle"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Duplicar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          },
+          {
+            "action": "Split",
+            "keys": [
+              "cmd",
+              "E"
+            ],
+            "actionEs": "Dividir clip"
+          },
+          {
+            "action": "Quantize",
+            "keys": [
+              "cmd",
+              "U"
+            ],
+            "actionEs": "Cuantizar"
+          }
+        ]
+      }
+    ],
+    "garageband": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          }
+        ]
+      },
+      {
+        "label": "Transport",
+        "labelEs": "Reproducción",
+        "items": [
+          {
+            "action": "Play / Stop",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Reproducir / Detener"
+          },
+          {
+            "action": "Record",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Grabar"
+          },
+          {
+            "action": "Loop toggle",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Alternar bucle"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          },
+          {
+            "action": "Split region",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Dividir región"
+          }
+        ]
+      }
+    ],
+    "reaper": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          },
+          {
+            "action": "Render",
+            "keys": [
+              "cmd",
+              "alt",
+              "R"
+            ],
+            "actionEs": "Renderizar"
+          }
+        ]
+      },
+      {
+        "label": "Transport",
+        "labelEs": "Reproducción",
+        "items": [
+          {
+            "action": "Play",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Reproducir"
+          },
+          {
+            "action": "Record",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Grabar"
+          },
+          {
+            "action": "Go to start",
+            "keys": [
+              "home"
+            ],
+            "actionEs": "Ir al inicio"
+          },
+          {
+            "action": "Go to end",
+            "keys": [
+              "end"
+            ],
+            "actionEs": "Ir al final"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Duplicar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          }
+        ]
+      },
+      {
+        "label": "Zoom",
+        "labelEs": "Zoom",
+        "items": [
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      }
+    ],
+    "discord": [
+      {
+        "label": "Navigation",
+        "labelEs": "Navegación",
+        "items": [
+          {
+            "action": "Next channel",
+            "keys": [
+              "alt",
+              "down"
+            ],
+            "actionEs": "Siguiente canal"
+          },
+          {
+            "action": "Previous channel",
+            "keys": [
+              "alt",
+              "up"
+            ],
+            "actionEs": "Canal anterior"
+          },
+          {
+            "action": "Next unread channel",
+            "keys": [
+              "alt",
+              "shift",
+              "down"
+            ],
+            "actionEs": "Siguiente canal no leído"
+          },
+          {
+            "action": "Previous unread channel",
+            "keys": [
+              "alt",
+              "shift",
+              "up"
+            ],
+            "actionEs": "Canal anterior no leído"
+          },
+          {
+            "action": "Quick switcher",
+            "keys": [
+              "cmd",
+              "K"
+            ],
+            "actionEs": "Cambio rápido"
+          },
+          {
+            "action": "Mark as read",
+            "keys": [
+              "shift",
+              "esc"
+            ],
+            "actionEs": "Marcar como leído"
+          }
+        ]
+      },
+      {
+        "label": "Voice & Video",
+        "labelEs": "Voz y vídeo",
+        "items": [
+          {
+            "action": "Mute toggle",
+            "keys": [
+              "cmd",
+              "shift",
+              "M"
+            ],
+            "actionEs": "Silenciar / Activar micrófono"
+          },
+          {
+            "action": "Deafen toggle",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ],
+            "actionEs": "Ensordecer / Activar sonido"
+          }
+        ]
+      }
+    ],
+    "zoom": [
+      {
+        "label": "Meeting",
+        "labelEs": "Reunión",
+        "items": [
+          {
+            "action": "Mute / Unmute",
+            "keys": [
+              "cmd",
+              "shift",
+              "A"
+            ],
+            "actionEs": "Silenciar / Activar micro"
+          },
+          {
+            "action": "Start / Stop video",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ],
+            "actionEs": "Iniciar / Detener vídeo"
+          },
+          {
+            "action": "Share screen",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Compartir pantalla"
+          },
+          {
+            "action": "Record",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ],
+            "actionEs": "Grabar"
+          },
+          {
+            "action": "Leave meeting",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Salir de la reunión"
+          }
+        ]
+      }
+    ],
+    "teams": [
+      {
+        "label": "Call",
+        "labelEs": "Llamada",
+        "items": [
+          {
+            "action": "Mute / Unmute",
+            "keys": [
+              "cmd",
+              "shift",
+              "M"
+            ],
+            "actionEs": "Silenciar / Activar micro"
+          },
+          {
+            "action": "Video on / off",
+            "keys": [
+              "cmd",
+              "shift",
+              "O"
+            ],
+            "actionEs": "Activar / Desactivar vídeo"
+          }
+        ]
+      },
+      {
+        "label": "Navigation",
+        "labelEs": "Navegación",
+        "items": [
+          {
+            "action": "Search",
+            "keys": [
+              "cmd",
+              "E"
+            ],
+            "actionEs": "Buscar"
+          },
+          {
+            "action": "New chat",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo chat"
+          }
+        ]
+      }
+    ],
+    "whatsapp": [
+      {
+        "label": "Chat",
+        "labelEs": "Chat",
+        "items": [
+          {
+            "action": "New chat",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo chat"
+          },
+          {
+            "action": "Search",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar"
+          },
+          {
+            "action": "Archive chat",
+            "keys": [
+              "cmd",
+              "E"
+            ],
+            "actionEs": "Archivar chat"
+          },
+          {
+            "action": "Mute chat",
+            "keys": [
+              "cmd",
+              "shift",
+              "M"
+            ],
+            "actionEs": "Silenciar chat"
+          }
+        ]
+      }
+    ],
+    "chrome": [
+      {
+        "label": "Tabs",
+        "labelEs": "Pestañas",
+        "items": [
+          {
+            "action": "New tab",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Nueva pestaña"
+          },
+          {
+            "action": "Reopen closed tab",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ],
+            "actionEs": "Reabrir pestaña cerrada"
+          },
+          {
+            "action": "Close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar pestaña"
+          },
+          {
+            "action": "Close window",
+            "keys": [
+              "cmd",
+              "shift",
+              "W"
+            ],
+            "actionEs": "Cerrar ventana"
+          },
+          {
+            "action": "Next tab",
+            "keys": [
+              "ctrl",
+              "tab"
+            ],
+            "actionEs": "Siguiente pestaña"
+          },
+          {
+            "action": "Previous tab",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ],
+            "actionEs": "Pestaña anterior"
+          }
+        ]
+      },
+      {
+        "label": "Windows & Pages",
+        "labelEs": "Ventanas y páginas",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "Incognito window",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Ventana de incógnito"
+          },
+          {
+            "action": "Reload",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Recargar"
+          },
+          {
+            "action": "Hard reload",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ],
+            "actionEs": "Recarga forzada"
+          },
+          {
+            "action": "Go back",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Atrás"
+          },
+          {
+            "action": "Go forward",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Adelante"
+          },
+          {
+            "action": "Home",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ],
+            "actionEs": "Inicio"
+          },
+          {
+            "action": "Full screen",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "F"
+            ],
+            "actionEs": "Pantalla completa"
+          }
+        ]
+      },
+      {
+        "label": "Features",
+        "labelEs": "Funciones",
+        "items": [
+          {
+            "action": "Address bar",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Barra de direcciones"
+          },
+          {
+            "action": "Bookmark this page",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Marcar esta página"
+          },
+          {
+            "action": "Bookmark bar",
+            "keys": [
+              "cmd",
+              "shift",
+              "B"
+            ],
+            "actionEs": "Barra de marcadores"
+          },
+          {
+            "action": "History",
+            "keys": [
+              "cmd",
+              "Y"
+            ],
+            "actionEs": "Historial"
+          },
+          {
+            "action": "Downloads",
+            "keys": [
+              "cmd",
+              "shift",
+              "J"
+            ],
+            "actionEs": "Descargas"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar en la página"
+          },
+          {
+            "action": "DevTools",
+            "keys": [
+              "cmd",
+              "alt",
+              "I"
+            ],
+            "actionEs": "Herramientas de desarrollador"
+          },
+          {
+            "action": "Console",
+            "keys": [
+              "cmd",
+              "alt",
+              "J"
+            ],
+            "actionEs": "Consola"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      }
+    ],
+    "firefox": [
+      {
+        "label": "Tabs",
+        "labelEs": "Pestañas",
+        "items": [
+          {
+            "action": "New tab",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Nueva pestaña"
+          },
+          {
+            "action": "Reopen closed tab",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ],
+            "actionEs": "Reabrir pestaña cerrada"
+          },
+          {
+            "action": "Close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar pestaña"
+          },
+          {
+            "action": "Next tab",
+            "keys": [
+              "ctrl",
+              "tab"
+            ],
+            "actionEs": "Siguiente pestaña"
+          },
+          {
+            "action": "Previous tab",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ],
+            "actionEs": "Pestaña anterior"
+          }
+        ]
+      },
+      {
+        "label": "Windows & Pages",
+        "labelEs": "Ventanas y páginas",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "Private window",
+            "keys": [
+              "cmd",
+              "shift",
+              "P"
+            ],
+            "actionEs": "Ventana privada"
+          },
+          {
+            "action": "Reload",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Recargar"
+          },
+          {
+            "action": "Hard reload",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ],
+            "actionEs": "Recarga forzada"
+          },
+          {
+            "action": "Go back",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Atrás"
+          },
+          {
+            "action": "Go forward",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Adelante"
+          },
+          {
+            "action": "Home",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ],
+            "actionEs": "Inicio"
+          },
+          {
+            "action": "Full screen",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "F"
+            ],
+            "actionEs": "Pantalla completa"
+          }
+        ]
+      },
+      {
+        "label": "Features",
+        "labelEs": "Funciones",
+        "items": [
+          {
+            "action": "Address bar",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Barra de direcciones"
+          },
+          {
+            "action": "Search bar",
+            "keys": [
+              "cmd",
+              "K"
+            ],
+            "actionEs": "Barra de búsqueda"
+          },
+          {
+            "action": "Bookmark this page",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Marcar esta página"
+          },
+          {
+            "action": "History",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ],
+            "actionEs": "Historial"
+          },
+          {
+            "action": "Downloads",
+            "keys": [
+              "cmd",
+              "shift",
+              "Y"
+            ],
+            "actionEs": "Descargas"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar en la página"
+          },
+          {
+            "action": "DevTools",
+            "keys": [
+              "cmd",
+              "alt",
+              "I"
+            ],
+            "actionEs": "Herramientas de desarrollador"
+          },
+          {
+            "action": "Console",
+            "keys": [
+              "cmd",
+              "alt",
+              "K"
+            ],
+            "actionEs": "Consola"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      }
+    ],
+    "edge": [
+      {
+        "label": "Tabs",
+        "labelEs": "Pestañas",
+        "items": [
+          {
+            "action": "New tab",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Nueva pestaña"
+          },
+          {
+            "action": "Reopen closed tab",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ],
+            "actionEs": "Reabrir pestaña cerrada"
+          },
+          {
+            "action": "Close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar pestaña"
+          },
+          {
+            "action": "Next tab",
+            "keys": [
+              "ctrl",
+              "tab"
+            ],
+            "actionEs": "Siguiente pestaña"
+          },
+          {
+            "action": "Previous tab",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ],
+            "actionEs": "Pestaña anterior"
+          }
+        ]
+      },
+      {
+        "label": "Windows & Pages",
+        "labelEs": "Ventanas y páginas",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "InPrivate window",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Ventana InPrivate"
+          },
+          {
+            "action": "Reload",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Recargar"
+          },
+          {
+            "action": "Go back",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Atrás"
+          },
+          {
+            "action": "Go forward",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Adelante"
+          },
+          {
+            "action": "Full screen",
+            "keys": [
+              "F11"
+            ],
+            "actionEs": "Pantalla completa"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      },
+      {
+        "label": "Features",
+        "labelEs": "Funciones",
+        "items": [
+          {
+            "action": "Address bar",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Barra de direcciones"
+          },
+          {
+            "action": "Bookmark this page",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Marcar esta página"
+          },
+          {
+            "action": "Favorites bar",
+            "keys": [
+              "cmd",
+              "shift",
+              "B"
+            ],
+            "actionEs": "Barra de favoritos"
+          },
+          {
+            "action": "History",
+            "keys": [
+              "cmd",
+              "Y"
+            ],
+            "actionEs": "Historial"
+          },
+          {
+            "action": "Downloads",
+            "keys": [
+              "cmd",
+              "shift",
+              "J"
+            ],
+            "actionEs": "Descargas"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar en la página"
+          },
+          {
+            "action": "DevTools",
+            "keys": [
+              "F12"
+            ],
+            "actionEs": "Herramientas de desarrollador"
+          }
+        ]
+      }
+    ],
+    "brave": [
+      {
+        "label": "Tabs",
+        "labelEs": "Pestañas",
+        "items": [
+          {
+            "action": "New tab",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Nueva pestaña"
+          },
+          {
+            "action": "Reopen closed tab",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ],
+            "actionEs": "Reabrir pestaña cerrada"
+          },
+          {
+            "action": "Close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar pestaña"
+          },
+          {
+            "action": "Next tab",
+            "keys": [
+              "ctrl",
+              "tab"
+            ],
+            "actionEs": "Siguiente pestaña"
+          },
+          {
+            "action": "Previous tab",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ],
+            "actionEs": "Pestaña anterior"
+          }
+        ]
+      },
+      {
+        "label": "Windows & Pages",
+        "labelEs": "Ventanas y páginas",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "Private window",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Ventana privada"
+          },
+          {
+            "action": "Reload",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Recargar"
+          },
+          {
+            "action": "Go back",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Atrás"
+          },
+          {
+            "action": "Go forward",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Adelante"
+          },
+          {
+            "action": "Full screen",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "F"
+            ],
+            "actionEs": "Pantalla completa"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      },
+      {
+        "label": "Features",
+        "labelEs": "Funciones",
+        "items": [
+          {
+            "action": "Address bar",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Barra de direcciones"
+          },
+          {
+            "action": "Bookmark this page",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Marcar esta página"
+          },
+          {
+            "action": "Bookmarks bar",
+            "keys": [
+              "cmd",
+              "shift",
+              "B"
+            ],
+            "actionEs": "Barra de marcadores"
+          },
+          {
+            "action": "History",
+            "keys": [
+              "cmd",
+              "Y"
+            ],
+            "actionEs": "Historial"
+          },
+          {
+            "action": "Downloads",
+            "keys": [
+              "cmd",
+              "shift",
+              "J"
+            ],
+            "actionEs": "Descargas"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar en la página"
+          },
+          {
+            "action": "DevTools",
+            "keys": [
+              "cmd",
+              "alt",
+              "I"
+            ],
+            "actionEs": "Herramientas de desarrollador"
+          }
+        ]
+      }
+    ],
+    "safari": [
+      {
+        "label": "Tabs",
+        "labelEs": "Pestañas",
+        "items": [
+          {
+            "action": "New tab",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Nueva pestaña"
+          },
+          {
+            "action": "Reopen closed tab",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ],
+            "actionEs": "Reabrir pestaña cerrada"
+          },
+          {
+            "action": "Close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar pestaña"
+          },
+          {
+            "action": "Close window",
+            "keys": [
+              "cmd",
+              "shift",
+              "W"
+            ],
+            "actionEs": "Cerrar ventana"
+          },
+          {
+            "action": "Next tab",
+            "keys": [
+              "ctrl",
+              "tab"
+            ],
+            "actionEs": "Siguiente pestaña"
+          },
+          {
+            "action": "Previous tab",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ],
+            "actionEs": "Pestaña anterior"
+          }
+        ]
+      },
+      {
+        "label": "Windows & Pages",
+        "labelEs": "Ventanas y páginas",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "Private window",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Ventana privada"
+          },
+          {
+            "action": "Reload",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Recargar"
+          },
+          {
+            "action": "Go back",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Atrás"
+          },
+          {
+            "action": "Go forward",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Adelante"
+          },
+          {
+            "action": "Home",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ],
+            "actionEs": "Inicio"
+          },
+          {
+            "action": "Full screen",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "F"
+            ],
+            "actionEs": "Pantalla completa"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          }
+        ]
+      },
+      {
+        "label": "Features",
+        "labelEs": "Funciones",
+        "items": [
+          {
+            "action": "Address bar",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Barra de direcciones"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar en la página"
+          },
+          {
+            "action": "Bookmark this page",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Marcar esta página"
+          },
+          {
+            "action": "Reader view",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ],
+            "actionEs": "Vista de lectura"
+          }
+        ]
+      }
+    ],
+    "terminal": [
+      {
+        "label": "Window",
+        "labelEs": "Ventana",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "New tab",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Nueva pestaña"
+          },
+          {
+            "action": "Close window",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar ventana"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          },
+          {
+            "action": "Clear scrollback",
+            "keys": [
+              "cmd",
+              "K"
+            ],
+            "actionEs": "Limpiar pantalla"
+          }
+        ]
+      },
+      {
+        "label": "View",
+        "labelEs": "Vista",
+        "items": [
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          },
+          {
+            "action": "Actual size",
+            "keys": [
+              "cmd",
+              "0"
+            ],
+            "actionEs": "Tamaño real"
+          }
+        ]
+      }
+    ],
+    "finder": [
+      {
+        "label": "Window",
+        "labelEs": "Ventana",
+        "items": [
+          {
+            "action": "New window",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nueva ventana"
+          },
+          {
+            "action": "New folder",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Nueva carpeta"
+          },
+          {
+            "action": "New folder with selection",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "N"
+            ],
+            "actionEs": "Nueva carpeta con la selección"
+          },
+          {
+            "action": "Close window",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar ventana"
+          }
+        ]
+      },
+      {
+        "label": "Navigate",
+        "labelEs": "Navegación",
+        "items": [
+          {
+            "action": "Go to folder",
+            "keys": [
+              "cmd",
+              "shift",
+              "G"
+            ],
+            "actionEs": "Ir a la carpeta"
+          },
+          {
+            "action": "Go to home",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ],
+            "actionEs": "Ir a la carpeta de inicio"
+          },
+          {
+            "action": "Go back",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Atrás"
+          },
+          {
+            "action": "Go forward",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Adelante"
+          },
+          {
+            "action": "Go up",
+            "keys": [
+              "cmd",
+              "up"
+            ],
+            "actionEs": "Subir un nivel"
+          },
+          {
+            "action": "Go into folder",
+            "keys": [
+              "cmd",
+              "down"
+            ],
+            "actionEs": "Entrar en la carpeta"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          }
+        ]
+      },
+      {
+        "label": "Actions",
+        "labelEs": "Acciones",
+        "items": [
+          {
+            "action": "Get info",
+            "keys": [
+              "cmd",
+              "I"
+            ],
+            "actionEs": "Obtener información"
+          },
+          {
+            "action": "Duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Duplicar"
+          },
+          {
+            "action": "Move to trash",
+            "keys": [
+              "cmd",
+              "backspace"
+            ],
+            "actionEs": "Mover a la papelera"
+          },
+          {
+            "action": "Quick look",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Vista rápida"
+          },
+          {
+            "action": "Rename",
+            "keys": [
+              "enter"
+            ],
+            "actionEs": "Cambiar nombre"
+          },
+          {
+            "action": "Find",
+            "keys": [
+              "cmd",
+              "F"
+            ],
+            "actionEs": "Buscar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Show hidden files",
+            "keys": [
+              "cmd",
+              "shift",
+              "."
+            ],
+            "actionEs": "Mostrar archivos ocultos"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          }
+        ]
+      }
+    ],
+    "calculator": [
+      {
+        "label": "Basics",
+        "labelEs": "Básico",
+        "items": [
+          {
+            "action": "Clear",
+            "keys": [
+              "C"
+            ],
+            "actionEs": "Borrar"
+          },
+          {
+            "action": "Delete last digit",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Borrar último dígito"
+          },
+          {
+            "action": "Copy result",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar resultado"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          }
+        ]
+      }
+    ],
+    "screenshot": [
+      {
+        "label": "Capture",
+        "labelEs": "Capturar",
+        "items": [
+          {
+            "action": "Full screen",
+            "keys": [
+              "cmd",
+              "shift",
+              "3"
+            ],
+            "actionEs": "Pantalla completa"
+          },
+          {
+            "action": "Selected area",
+            "keys": [
+              "cmd",
+              "shift",
+              "4"
+            ],
+            "actionEs": "Área seleccionada"
+          },
+          {
+            "action": "Window",
+            "keys": [
+              "cmd",
+              "shift",
+              "4",
+              "space"
+            ],
+            "actionEs": "Ventana"
+          }
+        ]
+      },
+      {
+        "label": "Recording",
+        "labelEs": "Grabación",
+        "items": [
+          {
+            "action": "Record full screen",
+            "keys": [
+              "cmd",
+              "shift",
+              "5"
+            ],
+            "actionEs": "Grabar pantalla completa"
+          }
+        ]
+      },
+      {
+        "label": "Clipboard",
+        "labelEs": "Portapapeles",
+        "items": [
+          {
+            "action": "Copy full screen",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "shift",
+              "3"
+            ],
+            "actionEs": "Copiar pantalla completa"
+          },
+          {
+            "action": "Copy selected area",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "shift",
+              "4"
+            ],
+            "actionEs": "Copiar área seleccionada"
+          }
+        ]
+      }
+    ],
+    "maya": [
+      {
+        "label": "Tools",
+        "labelEs": "Herramientas",
+        "items": [
+          {
+            "action": "Select",
+            "keys": [
+              "Q"
+            ],
+            "actionEs": "Seleccionar"
+          },
+          {
+            "action": "Move",
+            "keys": [
+              "W"
+            ],
+            "actionEs": "Mover"
+          },
+          {
+            "action": "Rotate",
+            "keys": [
+              "E"
+            ],
+            "actionEs": "Rotar"
+          },
+          {
+            "action": "Scale",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Escalar"
+          },
+          {
+            "action": "Frame selected",
+            "keys": [
+              "F"
+            ],
+            "actionEs": "Encuadrar la selección"
+          },
+          {
+            "action": "Frame all",
+            "keys": [
+              "A"
+            ],
+            "actionEs": "Encuadrar todo"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Duplicate",
+            "keys": [
+              "cmd",
+              "D"
+            ],
+            "actionEs": "Duplicar"
+          },
+          {
+            "action": "Duplicate special",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ],
+            "actionEs": "Duplicación especial"
+          },
+          {
+            "action": "Group",
+            "keys": [
+              "cmd",
+              "G"
+            ],
+            "actionEs": "Agrupar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          }
+        ]
+      },
+      {
+        "label": "View",
+        "labelEs": "Vista",
+        "items": [
+          {
+            "action": "Wireframe",
+            "keys": [
+              "4"
+            ],
+            "actionEs": "Alámbrico"
+          },
+          {
+            "action": "Smooth shaded",
+            "keys": [
+              "6"
+            ],
+            "actionEs": "Sombreado suave"
+          },
+          {
+            "action": "Textured",
+            "keys": [
+              "7"
+            ],
+            "actionEs": "Texturizado"
+          }
+        ]
+      },
+      {
+        "label": "Animation",
+        "labelEs": "Animación",
+        "items": [
+          {
+            "action": "Set key",
+            "keys": [
+              "S"
+            ],
+            "actionEs": "Establecer fotograma clave"
+          }
+        ]
+      }
+    ],
+    "cinema4d": [
+      {
+        "label": "Tools",
+        "labelEs": "Herramientas",
+        "items": [
+          {
+            "action": "Move",
+            "keys": [
+              "E"
+            ],
+            "actionEs": "Mover"
+          },
+          {
+            "action": "Rotate",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Rotar"
+          },
+          {
+            "action": "Scale",
+            "keys": [
+              "T"
+            ],
+            "actionEs": "Escalar"
+          },
+          {
+            "action": "Frame all",
+            "keys": [
+              "H"
+            ],
+            "actionEs": "Encuadrar todo"
+          },
+          {
+            "action": "Frame selected",
+            "keys": [
+              "shift",
+              "H"
+            ],
+            "actionEs": "Encuadrar la selección"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          },
+          {
+            "action": "Group",
+            "keys": [
+              "alt",
+              "G"
+            ],
+            "actionEs": "Agrupar"
+          }
+        ]
+      },
+      {
+        "label": "Modeling",
+        "labelEs": "Modelado",
+        "items": [
+          {
+            "action": "Make editable",
+            "keys": [
+              "C"
+            ],
+            "actionEs": "Hacer editable"
+          },
+          {
+            "action": "Knife tool",
+            "keys": [
+              "K"
+            ],
+            "actionEs": "Herramienta cuchillo"
+          }
+        ]
+      }
+    ],
+    "zbrush": [
+      {
+        "label": "File",
+        "labelEs": "Archivo",
+        "items": [
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "shift",
+              "Z"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Clear document",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Limpiar documento"
+          }
+        ]
       }
     ]
   }

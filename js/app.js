@@ -40,7 +40,7 @@
       keyUses: 'atajos usan esta tecla',
       more: 'más',
       close: 'Cerrar',
-      cats: { DESIGN: 'DISEÑO', VIDEO: 'VIDEO', CODE: 'CÓDIGO', PRODUCTIVITY: 'PRODUCTIVIDAD' },
+      cats: { DESIGN: 'DISEÑO', VIDEO: 'VIDEO', CODE: 'CÓDIGO', PRODUCTIVITY: 'PRODUCTIVIDAD', AUDIO: 'Audio & Música', COMMUNICATION: 'Comunicación', BROWSERS: 'Navegadores', SYSTEM: 'Sistema', '3D': '3D & Modelado' },
     },
     en: {
       htmlLang: 'en',
@@ -64,7 +64,7 @@
       keyUses: 'shortcuts use this key',
       more: 'more',
       close: 'Close',
-      cats: { DESIGN: 'DESIGN', VIDEO: 'VIDEO', CODE: 'CODE', PRODUCTIVITY: 'PRODUCTIVITY' },
+      cats: { DESIGN: 'DESIGN', VIDEO: 'VIDEO', CODE: 'CODE', PRODUCTIVITY: 'PRODUCTIVITY', AUDIO: 'AUDIO', COMMUNICATION: 'COMMUNICATION', BROWSERS: 'BROWSERS', SYSTEM: 'SYSTEM', '3D': '3D' },
     },
   };
   const t = (k) => (I18N[lang] && I18N[lang][k] !== undefined ? I18N[lang][k] : I18N.en[k]);
@@ -110,6 +110,28 @@
     gmail:       { c: '#EA4335', l: 'Gm' },
     gdocs:       { c: '#4285F4', l: 'Gd' },
     gsheets:     { c: '#34A853', l: 'Gs' },
+    adobeaudition:{ c: '#6C6CF5', l: 'Au' },
+    audacity:    { c: '#F5C40E', l: 'Ad' },
+    flstudio:    { c: '#7C4CEE', l: 'Fs' },
+    ableton:     { c: '#FF3A00', l: 'Ab' },
+    garageband:  { c: '#FF3B30', l: 'Gb' },
+    reaper:      { c: '#C8102E', l: 'Re' },
+    discord:     { c: '#5865F2', l: 'Dc' },
+    zoom:        { c: '#2D8CFF', l: 'Zm' },
+    teams:       { c: '#6264A7', l: 'Tm' },
+    whatsapp:    { c: '#25D366', l: 'Wa' },
+    chrome:      { c: '#DB4437', l: 'Ch' },
+    firefox:     { c: '#FF7139', l: 'Ff' },
+    edge:        { c: '#0078D4', l: 'Eg' },
+    brave:       { c: '#FB542B', l: 'Bv' },
+    safari:      { c: '#0E5FA8', l: 'Sf' },
+    terminal:    { c: '#2F2F33', l: 'Tr' },
+    finder:      { c: '#2E8FEA', l: 'Fn' },
+    calculator:  { c: '#F5A623', l: 'Ca' },
+    screenshot:  { c: '#4A90D9', l: 'Sc' },
+    maya:        { c: '#2E9CA8', l: 'Ma' },
+    cinema4d:    { c: '#0078C8', l: 'C4' },
+    zbrush:      { c: '#E8412C', l: 'Zb' },
   };
   const brandOf = (id) => BRANDS[id] || { c: '#0a6cff', l: (id || '?').slice(0, 2) };
   window.SPARK_BRANDS = BRANDS;
