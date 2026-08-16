@@ -436,6 +436,9 @@ body.bg3d #bg-3d { display: block; }
   display: grid;
   grid-template-columns: 3.2fr 0.7fr 1fr;
   user-select: none;
+  transform: scale(1.3);
+  margin-top: 40px;
+  margin-bottom: 42px;
 }
 
 .main-keys { display: grid; grid-template-rows: 0.25fr 1fr; }
@@ -568,7 +571,7 @@ body.bg3d #bg-3d { display: block; }
   letter-spacing: .02em;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
   .keyboard { transform: scale(.82); margin-bottom: -47px; }
 }
 @media (max-width: 1000px) {
