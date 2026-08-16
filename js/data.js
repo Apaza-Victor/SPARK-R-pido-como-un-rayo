@@ -22791,9 +22791,10 @@ window.SPARK_DATA = {
     "filmora": [
       {
         "label": "File & Project",
+        "labelEs": "Archivo y proyecto",
         "items": [
           {
-            "action": "new project",
+            "action": "New project",
             "keys": [
               "cmd",
               "N"
@@ -22801,7 +22802,7 @@ window.SPARK_DATA = {
             "actionEs": "Nuevo proyecto"
           },
           {
-            "action": "open project",
+            "action": "Open project",
             "keys": [
               "cmd",
               "O"
@@ -22809,7 +22810,7 @@ window.SPARK_DATA = {
             "actionEs": "Abrir proyecto"
           },
           {
-            "action": "save project",
+            "action": "Save project",
             "keys": [
               "cmd",
               "S"
@@ -22817,7 +22818,16 @@ window.SPARK_DATA = {
             "actionEs": "Guardar proyecto"
           },
           {
-            "action": "import media",
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          },
+          {
+            "action": "Import media",
             "keys": [
               "cmd",
               "I"
@@ -22825,21 +22835,21 @@ window.SPARK_DATA = {
             "actionEs": "Importar medios"
           },
           {
-            "action": "export",
+            "action": "Export",
             "keys": [
               "cmd",
               "E"
             ],
             "actionEs": "Exportar"
           }
-        ],
-        "labelEs": "Archivo y proyecto"
+        ]
       },
       {
         "label": "Edit",
+        "labelEs": "Edición",
         "items": [
           {
-            "action": "undo",
+            "action": "Undo",
             "keys": [
               "cmd",
               "Z"
@@ -22847,7 +22857,7 @@ window.SPARK_DATA = {
             "actionEs": "Deshacer"
           },
           {
-            "action": "redo",
+            "action": "Redo",
             "keys": [
               "cmd",
               "shift",
@@ -22856,7 +22866,7 @@ window.SPARK_DATA = {
             "actionEs": "Rehacer"
           },
           {
-            "action": "cut",
+            "action": "Cut",
             "keys": [
               "cmd",
               "X"
@@ -22864,7 +22874,7 @@ window.SPARK_DATA = {
             "actionEs": "Cortar"
           },
           {
-            "action": "copy",
+            "action": "Copy",
             "keys": [
               "cmd",
               "C"
@@ -22872,7 +22882,7 @@ window.SPARK_DATA = {
             "actionEs": "Copiar"
           },
           {
-            "action": "paste",
+            "action": "Paste",
             "keys": [
               "cmd",
               "V"
@@ -22880,7 +22890,7 @@ window.SPARK_DATA = {
             "actionEs": "Pegar"
           },
           {
-            "action": "split clip",
+            "action": "Split clip",
             "keys": [
               "cmd",
               "B"
@@ -22888,7 +22898,7 @@ window.SPARK_DATA = {
             "actionEs": "Dividir clip"
           },
           {
-            "action": "duplicate",
+            "action": "Duplicate",
             "keys": [
               "cmd",
               "D"
@@ -22896,20 +22906,111 @@ window.SPARK_DATA = {
             "actionEs": "Duplicar"
           },
           {
-            "action": "delete",
+            "action": "Delete",
             "keys": [
               "backspace"
             ],
             "actionEs": "Eliminar"
           }
-        ],
-        "labelEs": "Edición"
+        ]
+      },
+      {
+        "label": "Advanced editing",
+        "labelEs": "Edición avanzada",
+        "items": [
+          {
+            "action": "Trim start",
+            "keys": [
+              "alt",
+              "["
+            ],
+            "actionEs": "Recortar inicio"
+          },
+          {
+            "action": "Trim end",
+            "keys": [
+              "alt",
+              "]"
+            ],
+            "actionEs": "Recortar fin"
+          },
+          {
+            "action": "Speed",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Velocidad"
+          },
+          {
+            "action": "Detach audio",
+            "keys": [
+              "cmd",
+              "alt",
+              "D"
+            ],
+            "actionEs": "Desvincular audio"
+          },
+          {
+            "action": "Mute clip",
+            "keys": [
+              "cmd",
+              "shift",
+              "M"
+            ],
+            "actionEs": "Silenciar clip"
+          },
+          {
+            "action": "Mark in",
+            "keys": [
+              "I"
+            ],
+            "actionEs": "Marcar entrada"
+          },
+          {
+            "action": "Mark out",
+            "keys": [
+              "O"
+            ],
+            "actionEs": "Marcar salida"
+          },
+          {
+            "action": "Add marker",
+            "keys": [
+              "M"
+            ],
+            "actionEs": "Añadir marcador"
+          },
+          {
+            "action": "Voice over",
+            "keys": [
+              "alt",
+              "R"
+            ],
+            "actionEs": "Voz en off"
+          },
+          {
+            "action": "Go to start",
+            "keys": [
+              "home"
+            ],
+            "actionEs": "Ir al inicio"
+          },
+          {
+            "action": "Go to end",
+            "keys": [
+              "end"
+            ],
+            "actionEs": "Ir al final"
+          }
+        ]
       },
       {
         "label": "Timeline",
+        "labelEs": "Línea de tiempo",
         "items": [
           {
-            "action": "zoom in",
+            "action": "Zoom in",
             "keys": [
               "cmd",
               "="
@@ -22917,7 +23018,7 @@ window.SPARK_DATA = {
             "actionEs": "Acercar"
           },
           {
-            "action": "zoom out",
+            "action": "Zoom out",
             "keys": [
               "cmd",
               "-"
@@ -22925,50 +23026,49 @@ window.SPARK_DATA = {
             "actionEs": "Alejar"
           },
           {
-            "action": "fit timeline",
+            "action": "Fit timeline",
             "keys": [
               "cmd",
               "0"
             ],
             "actionEs": "Ajustar línea de tiempo"
           }
-        ],
-        "labelEs": "Línea de tiempo"
+        ]
       },
       {
         "label": "Playback",
+        "labelEs": "Reproducción",
         "items": [
           {
-            "action": "play / pause",
+            "action": "Play / Pause",
             "keys": [
               "space"
             ],
             "actionEs": "Reproducir / pausar"
           },
           {
-            "action": "previous frame",
+            "action": "Previous frame",
             "keys": [
               "left"
             ],
             "actionEs": "Fotograma anterior"
           },
           {
-            "action": "next frame",
+            "action": "Next frame",
             "keys": [
               "right"
             ],
             "actionEs": "Fotograma siguiente"
           },
           {
-            "action": "play from start",
+            "action": "Play from start",
             "keys": [
               "cmd",
               "enter"
             ],
             "actionEs": "Reproducir desde el inicio"
           }
-        ],
-        "labelEs": "Reproducción"
+        ]
       }
     ],
     "jetbrains": [
@@ -23871,9 +23971,10 @@ window.SPARK_DATA = {
     "postman": [
       {
         "label": "Requests",
+        "labelEs": "Peticiones",
         "items": [
           {
-            "action": "send request",
+            "action": "Send request",
             "keys": [
               "cmd",
               "enter"
@@ -23881,7 +23982,7 @@ window.SPARK_DATA = {
             "actionEs": "Enviar petición"
           },
           {
-            "action": "new request",
+            "action": "New request",
             "keys": [
               "cmd",
               "N"
@@ -23889,7 +23990,7 @@ window.SPARK_DATA = {
             "actionEs": "Nueva petición"
           },
           {
-            "action": "new request tab",
+            "action": "New request tab",
             "keys": [
               "cmd",
               "T"
@@ -23897,7 +23998,7 @@ window.SPARK_DATA = {
             "actionEs": "Nueva pestaña de petición"
           },
           {
-            "action": "save request",
+            "action": "Save request",
             "keys": [
               "cmd",
               "S"
@@ -23905,7 +24006,7 @@ window.SPARK_DATA = {
             "actionEs": "Guardar petición"
           },
           {
-            "action": "save as",
+            "action": "Save as",
             "keys": [
               "cmd",
               "shift",
@@ -23914,21 +24015,21 @@ window.SPARK_DATA = {
             "actionEs": "Guardar como"
           },
           {
-            "action": "duplicate",
+            "action": "Duplicate",
             "keys": [
               "cmd",
               "D"
             ],
             "actionEs": "Duplicar"
           }
-        ],
-        "labelEs": "Peticiones"
+        ]
       },
       {
         "label": "Edit",
+        "labelEs": "Edición",
         "items": [
           {
-            "action": "undo",
+            "action": "Undo",
             "keys": [
               "cmd",
               "Z"
@@ -23936,7 +24037,7 @@ window.SPARK_DATA = {
             "actionEs": "Deshacer"
           },
           {
-            "action": "redo",
+            "action": "Redo",
             "keys": [
               "cmd",
               "shift",
@@ -23945,7 +24046,7 @@ window.SPARK_DATA = {
             "actionEs": "Rehacer"
           },
           {
-            "action": "cut",
+            "action": "Cut",
             "keys": [
               "cmd",
               "X"
@@ -23953,7 +24054,7 @@ window.SPARK_DATA = {
             "actionEs": "Cortar"
           },
           {
-            "action": "copy",
+            "action": "Copy",
             "keys": [
               "cmd",
               "C"
@@ -23961,7 +24062,7 @@ window.SPARK_DATA = {
             "actionEs": "Copiar"
           },
           {
-            "action": "paste",
+            "action": "Paste",
             "keys": [
               "cmd",
               "V"
@@ -23969,7 +24070,7 @@ window.SPARK_DATA = {
             "actionEs": "Pegar"
           },
           {
-            "action": "select all",
+            "action": "Select all",
             "keys": [
               "cmd",
               "A"
@@ -23977,21 +24078,21 @@ window.SPARK_DATA = {
             "actionEs": "Seleccionar todo"
           },
           {
-            "action": "find in editor",
+            "action": "Find in editor",
             "keys": [
               "cmd",
               "F"
             ],
             "actionEs": "Buscar en el editor"
           }
-        ],
-        "labelEs": "Edición"
+        ]
       },
       {
         "label": "Navigation",
+        "labelEs": "Navegación",
         "items": [
           {
-            "action": "search",
+            "action": "Search",
             "keys": [
               "cmd",
               "K"
@@ -23999,7 +24100,40 @@ window.SPARK_DATA = {
             "actionEs": "Buscar"
           },
           {
-            "action": "switch between tabs",
+            "action": "Jump to URL bar",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Ir a la barra de URL"
+          },
+          {
+            "action": "Close tab",
+            "keys": [
+              "cmd",
+              "W"
+            ],
+            "actionEs": "Cerrar pestaña"
+          },
+          {
+            "action": "Next tab",
+            "keys": [
+              "ctrl",
+              "tab"
+            ],
+            "actionEs": "Siguiente pestaña"
+          },
+          {
+            "action": "Previous tab",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ],
+            "actionEs": "Pestaña anterior"
+          },
+          {
+            "action": "Switch between tabs",
             "keys": [
               "cmd",
               "`"
@@ -24007,7 +24141,7 @@ window.SPARK_DATA = {
             "actionEs": "Cambiar entre pestañas"
           },
           {
-            "action": "open console",
+            "action": "Open console",
             "keys": [
               "cmd",
               "alt",
@@ -24015,8 +24149,7 @@ window.SPARK_DATA = {
             ],
             "actionEs": "Abrir consola"
           }
-        ],
-        "labelEs": "Navegación"
+        ]
       }
     ],
     "excel": [
@@ -26354,6 +26487,22 @@ window.SPARK_DATA = {
             "actionEs": "Canal anterior no leído"
           },
           {
+            "action": "Next server",
+            "keys": [
+              "alt",
+              "right"
+            ],
+            "actionEs": "Siguiente servidor"
+          },
+          {
+            "action": "Previous server",
+            "keys": [
+              "alt",
+              "left"
+            ],
+            "actionEs": "Servidor anterior"
+          },
+          {
             "action": "Quick switcher",
             "keys": [
               "cmd",
@@ -26392,6 +26541,52 @@ window.SPARK_DATA = {
               "D"
             ],
             "actionEs": "Ensordecer / Activar sonido"
+          }
+        ]
+      },
+      {
+        "label": "Messages",
+        "labelEs": "Mensajes",
+        "items": [
+          {
+            "action": "Upload file",
+            "keys": [
+              "cmd",
+              "shift",
+              "U"
+            ],
+            "actionEs": "Subir archivo"
+          },
+          {
+            "action": "Emoji picker",
+            "keys": [
+              "cmd",
+              "E"
+            ],
+            "actionEs": "Selector de emojis"
+          },
+          {
+            "action": "Pinned messages",
+            "keys": [
+              "cmd",
+              "P"
+            ],
+            "actionEs": "Mensajes anclados"
+          },
+          {
+            "action": "Show shortcuts",
+            "keys": [
+              "cmd",
+              "/"
+            ],
+            "actionEs": "Mostrar atajos"
+          },
+          {
+            "action": "Dismiss / Close",
+            "keys": [
+              "esc"
+            ],
+            "actionEs": "Descartar / Cerrar"
           }
         ]
       }
@@ -26446,6 +26641,47 @@ window.SPARK_DATA = {
             "actionEs": "Salir de la reunión"
           }
         ]
+      },
+      {
+        "label": "Extra",
+        "labelEs": "Extra",
+        "items": [
+          {
+            "action": "Toggle participants panel",
+            "keys": [
+              "cmd",
+              "U"
+            ],
+            "actionEs": "Mostrar / Ocultar panel de participantes"
+          },
+          {
+            "action": "Fullscreen",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ],
+            "actionEs": "Pantalla completa"
+          },
+          {
+            "action": "Switch speaker / gallery view",
+            "keys": [
+              "cmd",
+              "shift",
+              "W"
+            ],
+            "actionEs": "Cambiar vista de altavoz / galería"
+          },
+          {
+            "action": "Mute all participants",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "M"
+            ],
+            "actionEs": "Silenciar a todos"
+          }
+        ]
       }
     ],
     "teams": [
@@ -26470,6 +26706,42 @@ window.SPARK_DATA = {
               "O"
             ],
             "actionEs": "Activar / Desactivar vídeo"
+          },
+          {
+            "action": "Accept video call",
+            "keys": [
+              "cmd",
+              "shift",
+              "A"
+            ],
+            "actionEs": "Aceptar llamada de vídeo"
+          },
+          {
+            "action": "Accept audio call",
+            "keys": [
+              "cmd",
+              "shift",
+              "U"
+            ],
+            "actionEs": "Aceptar llamada de audio"
+          },
+          {
+            "action": "Start audio call",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Iniciar llamada de audio"
+          },
+          {
+            "action": "Start video call",
+            "keys": [
+              "cmd",
+              "shift",
+              "C"
+            ],
+            "actionEs": "Iniciar llamada de vídeo"
           }
         ]
       },
@@ -26492,6 +26764,46 @@ window.SPARK_DATA = {
               "N"
             ],
             "actionEs": "Nuevo chat"
+          },
+          {
+            "action": "Keyboard shortcuts",
+            "keys": [
+              "cmd",
+              "."
+            ],
+            "actionEs": "Atajos de teclado"
+          },
+          {
+            "action": "Filter",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ],
+            "actionEs": "Filtrar"
+          },
+          {
+            "action": "Settings",
+            "keys": [
+              "cmd",
+              ","
+            ],
+            "actionEs": "Ajustes"
+          },
+          {
+            "action": "Show commands",
+            "keys": [
+              "cmd",
+              "/"
+            ],
+            "actionEs": "Mostrar comandos"
+          },
+          {
+            "action": "Close / Dismiss",
+            "keys": [
+              "esc"
+            ],
+            "actionEs": "Cerrar / Descartar"
           }
         ]
       }
@@ -26508,6 +26820,15 @@ window.SPARK_DATA = {
               "N"
             ],
             "actionEs": "Nuevo chat"
+          },
+          {
+            "action": "New group",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Nuevo grupo"
           },
           {
             "action": "Search",
@@ -26533,6 +26854,45 @@ window.SPARK_DATA = {
               "M"
             ],
             "actionEs": "Silenciar chat"
+          },
+          {
+            "action": "Next chat",
+            "keys": [
+              "cmd",
+              "]"
+            ],
+            "actionEs": "Siguiente chat"
+          },
+          {
+            "action": "Previous chat",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Chat anterior"
+          },
+          {
+            "action": "Chat info",
+            "keys": [
+              "alt",
+              "I"
+            ],
+            "actionEs": "Información del chat"
+          },
+          {
+            "action": "Close chat",
+            "keys": [
+              "esc"
+            ],
+            "actionEs": "Cerrar chat"
+          },
+          {
+            "action": "Settings",
+            "keys": [
+              "cmd",
+              ","
+            ],
+            "actionEs": "Ajustes"
           }
         ]
       }
@@ -27828,11 +28188,18 @@ window.SPARK_DATA = {
         "labelEs": "Básico",
         "items": [
           {
-            "action": "Clear",
+            "action": "Clear all",
             "keys": [
-              "C"
+              "esc"
             ],
-            "actionEs": "Borrar"
+            "actionEs": "Borrar todo"
+          },
+          {
+            "action": "Clear entry",
+            "keys": [
+              "delete"
+            ],
+            "actionEs": "Borrar entrada"
           },
           {
             "action": "Delete last digit",
@@ -27840,6 +28207,27 @@ window.SPARK_DATA = {
               "backspace"
             ],
             "actionEs": "Borrar último dígito"
+          },
+          {
+            "action": "Calculate",
+            "keys": [
+              "enter"
+            ],
+            "actionEs": "Calcular (=)"
+          },
+          {
+            "action": "Change sign",
+            "keys": [
+              "F9"
+            ],
+            "actionEs": "Cambiar signo (+/-)"
+          },
+          {
+            "action": "Reciprocal",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Inversa (1/x)"
           },
           {
             "action": "Copy result",
@@ -27856,6 +28244,115 @@ window.SPARK_DATA = {
               "V"
             ],
             "actionEs": "Pegar"
+          }
+        ]
+      },
+      {
+        "label": "Memory",
+        "labelEs": "Memoria",
+        "items": [
+          {
+            "action": "Store in memory",
+            "keys": [
+              "cmd",
+              "M"
+            ],
+            "actionEs": "Guardar en memoria (MS)"
+          },
+          {
+            "action": "Recall memory",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Recuperar memoria (MR)"
+          },
+          {
+            "action": "Add to memory",
+            "keys": [
+              "cmd",
+              "P"
+            ],
+            "actionEs": "Sumar a memoria (M+)"
+          },
+          {
+            "action": "Subtract from memory",
+            "keys": [
+              "cmd",
+              "Q"
+            ],
+            "actionEs": "Restar de memoria (M-)"
+          },
+          {
+            "action": "Clear memory",
+            "keys": [
+              "cmd",
+              "L"
+            ],
+            "actionEs": "Borrar memoria (MC)"
+          }
+        ]
+      },
+      {
+        "label": "Modes & Tools",
+        "labelEs": "Modos y herramientas",
+        "items": [
+          {
+            "action": "Standard mode",
+            "keys": [
+              "alt",
+              "1"
+            ],
+            "actionEs": "Modo estándar"
+          },
+          {
+            "action": "Scientific mode",
+            "keys": [
+              "alt",
+              "2"
+            ],
+            "actionEs": "Modo científica"
+          },
+          {
+            "action": "Programmer mode",
+            "keys": [
+              "alt",
+              "3"
+            ],
+            "actionEs": "Modo programador"
+          },
+          {
+            "action": "Date calculation",
+            "keys": [
+              "alt",
+              "4"
+            ],
+            "actionEs": "Cálculo de fechas"
+          },
+          {
+            "action": "History",
+            "keys": [
+              "cmd",
+              "H"
+            ],
+            "actionEs": "Historial"
+          },
+          {
+            "action": "Unit converter",
+            "keys": [
+              "cmd",
+              "U"
+            ],
+            "actionEs": "Conversor de unidades"
+          },
+          {
+            "action": "Clear history",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ],
+            "actionEs": "Borrar historial"
           }
         ]
       }
@@ -27933,6 +28430,77 @@ window.SPARK_DATA = {
               "4"
             ],
             "actionEs": "Copiar área seleccionada"
+          }
+        ]
+      },
+      {
+        "label": "Windows Snipping Tool",
+        "labelEs": "Herramienta de captura (Windows)",
+        "items": [
+          {
+            "action": "New snip",
+            "keys": [
+              "win",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Nuevo recorte"
+          },
+          {
+            "action": "Screen recording",
+            "keys": [
+              "win",
+              "shift",
+              "R"
+            ],
+            "actionEs": "Grabar pantalla"
+          },
+          {
+            "action": "Choose snipping mode",
+            "keys": [
+              "alt",
+              "M"
+            ],
+            "actionEs": "Elegir modo de recorte"
+          },
+          {
+            "action": "New snip same mode",
+            "keys": [
+              "alt",
+              "N"
+            ],
+            "actionEs": "Nuevo recorte (mismo modo)"
+          },
+          {
+            "action": "Capture delay",
+            "keys": [
+              "alt",
+              "D"
+            ],
+            "actionEs": "Retardo de captura"
+          },
+          {
+            "action": "Save snip",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar recorte"
+          },
+          {
+            "action": "Copy snip",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar recorte"
+          },
+          {
+            "action": "Cancel",
+            "keys": [
+              "esc"
+            ],
+            "actionEs": "Cancelar"
           }
         ]
       }
@@ -28253,6 +28821,14 @@ window.SPARK_DATA = {
               "S"
             ],
             "actionEs": "Guardar como"
+          },
+          {
+            "action": "Clear document",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Limpiar documento"
           }
         ]
       },
@@ -28276,14 +28852,128 @@ window.SPARK_DATA = {
               "Z"
             ],
             "actionEs": "Rehacer"
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "labelEs": "Herramientas",
+        "items": [
+          {
+            "action": "Draw",
+            "keys": [
+              "Q"
+            ],
+            "actionEs": "Esculpir (Draw)"
           },
           {
-            "action": "Clear document",
+            "action": "Move",
+            "keys": [
+              "W"
+            ],
+            "actionEs": "Mover"
+          },
+          {
+            "action": "Scale",
+            "keys": [
+              "E"
+            ],
+            "actionEs": "Escalar"
+          },
+          {
+            "action": "Rotate",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Rotar"
+          },
+          {
+            "action": "Draw size",
+            "keys": [
+              "S"
+            ],
+            "actionEs": "Tamaño del pincel"
+          },
+          {
+            "action": "Symmetry",
+            "keys": [
+              "X"
+            ],
+            "actionEs": "Simetría"
+          },
+          {
+            "action": "Edit mode",
+            "keys": [
+              "T"
+            ],
+            "actionEs": "Modo edición"
+          },
+          {
+            "action": "Frame",
+            "keys": [
+              "F"
+            ],
+            "actionEs": "Encajar en vista"
+          },
+          {
+            "action": "Show / Hide palettes",
+            "keys": [
+              "tab"
+            ],
+            "actionEs": "Mostrar / Ocultar paletas"
+          }
+        ]
+      },
+      {
+        "label": "Subdivision & Masks",
+        "labelEs": "Subdivisión y máscaras",
+        "items": [
+          {
+            "action": "Divide",
             "keys": [
               "cmd",
-              "N"
+              "D"
             ],
-            "actionEs": "Limpiar documento"
+            "actionEs": "Dividir (aumentar resolución)"
+          },
+          {
+            "action": "Increase resolution",
+            "keys": [
+              "D"
+            ],
+            "actionEs": "Mayor resolución"
+          },
+          {
+            "action": "Decrease resolution",
+            "keys": [
+              "shift",
+              "D"
+            ],
+            "actionEs": "Menor resolución"
+          },
+          {
+            "action": "Mask all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Enmascarar todo"
+          },
+          {
+            "action": "Invert mask",
+            "keys": [
+              "cmd",
+              "I"
+            ],
+            "actionEs": "Invertir máscara"
+          },
+          {
+            "action": "Hide mask",
+            "keys": [
+              "cmd",
+              "H"
+            ],
+            "actionEs": "Ocultar máscara"
           }
         ]
       }
@@ -28332,7 +29022,15 @@ window.SPARK_DATA = {
               "cmd",
               "P"
             ],
-            "actionEs": "Imprimir"
+            "actionEs": "Imprimir / Trazar"
+          },
+          {
+            "action": "Exit",
+            "keys": [
+              "cmd",
+              "Q"
+            ],
+            "actionEs": "Salir"
           }
         ]
       },
@@ -28390,12 +29088,36 @@ window.SPARK_DATA = {
             "actionEs": "Pegar"
           },
           {
+            "action": "Paste as block",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ],
+            "actionEs": "Pegar como bloque"
+          },
+          {
             "action": "Select all",
             "keys": [
               "cmd",
               "A"
             ],
             "actionEs": "Seleccionar todo"
+          },
+          {
+            "action": "Cancel command",
+            "keys": [
+              "cmd",
+              "["
+            ],
+            "actionEs": "Cancelar el comando actual"
+          },
+          {
+            "action": "Previous selection",
+            "keys": [
+              "P"
+            ],
+            "actionEs": "Selección previa"
           }
         ]
       },
@@ -28425,11 +29147,88 @@ window.SPARK_DATA = {
             "actionEs": "Arco"
           },
           {
+            "action": "Polyline",
+            "keys": [
+              "P",
+              "L"
+            ],
+            "actionEs": "Polilínea"
+          },
+          {
+            "action": "Rectangle",
+            "keys": [
+              "R",
+              "E",
+              "C"
+            ],
+            "actionEs": "Rectángulo"
+          },
+          {
+            "action": "Ellipse",
+            "keys": [
+              "E",
+              "L"
+            ],
+            "actionEs": "Elipse"
+          },
+          {
+            "action": "Polygon",
+            "keys": [
+              "P",
+              "O",
+              "L"
+            ],
+            "actionEs": "Polígono"
+          },
+          {
+            "action": "Spline",
+            "keys": [
+              "S",
+              "P",
+              "L"
+            ],
+            "actionEs": "Spline"
+          },
+          {
             "action": "Hatch",
             "keys": [
-              "H"
+              "S",
+              "B"
             ],
             "actionEs": "Sombreado"
+          },
+          {
+            "action": "Point",
+            "keys": [
+              "P",
+              "O"
+            ],
+            "actionEs": "Punto"
+          },
+          {
+            "action": "Xline",
+            "keys": [
+              "X",
+              "L"
+            ],
+            "actionEs": "Línea auxiliar"
+          },
+          {
+            "action": "Ray",
+            "keys": [
+              "R",
+              "A",
+              "Y"
+            ],
+            "actionEs": "Rayo"
+          },
+          {
+            "action": "Donut",
+            "keys": [
+              "D",
+              "O"
+            ],
+            "actionEs": "Arandela"
           },
           {
             "action": "Text",
@@ -28437,6 +29236,15 @@ window.SPARK_DATA = {
               "T"
             ],
             "actionEs": "Texto"
+          },
+          {
+            "action": "MText",
+            "keys": [
+              "T",
+              "X",
+              "M"
+            ],
+            "actionEs": "Texto múltiple"
           }
         ]
       },
@@ -28447,58 +29255,213 @@ window.SPARK_DATA = {
           {
             "action": "Erase",
             "keys": [
-              "E"
+              "B"
             ],
             "actionEs": "Borrar"
           },
           {
+            "action": "Copy",
+            "keys": [
+              "C",
+              "P"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
             "action": "Move",
             "keys": [
-              "M"
+              "D"
             ],
             "actionEs": "Desplazar"
           },
           {
             "action": "Offset",
             "keys": [
-              "O"
+              "D",
+              "F"
             ],
             "actionEs": "Desfase"
           },
           {
+            "action": "Rotate",
+            "keys": [
+              "G",
+              "I"
+            ],
+            "actionEs": "Girar"
+          },
+          {
+            "action": "Mirror",
+            "keys": [
+              "S",
+              "I"
+            ],
+            "actionEs": "Simetría"
+          },
+          {
+            "action": "Trim",
+            "keys": [
+              "R",
+              "R"
+            ],
+            "actionEs": "Recortar"
+          },
+          {
+            "action": "Extend",
+            "keys": [
+              "A",
+              "L"
+            ],
+            "actionEs": "Alargar"
+          },
+          {
             "action": "Fillet",
             "keys": [
-              "F"
+              "M",
+              "P"
             ],
             "actionEs": "Empalme"
           },
           {
-            "action": "Explode",
+            "action": "Chamfer",
             "keys": [
-              "X"
+              "C",
+              "H"
             ],
-            "actionEs": "Explosionar"
+            "actionEs": "Chaflán"
           },
           {
-            "action": "Group",
+            "action": "Explode",
             "keys": [
-              "G"
+              "D",
+              "P"
             ],
-            "actionEs": "Grupo"
+            "actionEs": "Descomponer"
+          },
+          {
+            "action": "Stretch",
+            "keys": [
+              "E",
+              "I"
+            ],
+            "actionEs": "Estirar"
+          },
+          {
+            "action": "Scale",
+            "keys": [
+              "E",
+              "S"
+            ],
+            "actionEs": "Escalar"
+          },
+          {
+            "action": "Array",
+            "keys": [
+              "M",
+              "A"
+            ],
+            "actionEs": "Matriz"
+          },
+          {
+            "action": "Align",
+            "keys": [
+              "A",
+              "L",
+              "I"
+            ],
+            "actionEs": "Alinear"
+          },
+          {
+            "action": "Join",
+            "keys": [
+              "J"
+            ],
+            "actionEs": "Unir"
+          },
+          {
+            "action": "Break",
+            "keys": [
+              "B",
+              "R"
+            ],
+            "actionEs": "Partir"
+          },
+          {
+            "action": "Match properties",
+            "keys": [
+              "I",
+              "P"
+            ],
+            "actionEs": "Igualar propiedades"
+          },
+          {
+            "action": "Measure distance",
+            "keys": [
+              "D",
+              "I",
+              "S",
+              "T"
+            ],
+            "actionEs": "Medir"
+          }
+        ]
+      },
+      {
+        "label": "Layers & Blocks",
+        "labelEs": "Capas y bloques",
+        "items": [
+          {
+            "action": "Layer",
+            "keys": [
+              "C",
+              "A"
+            ],
+            "actionEs": "Capa"
           },
           {
             "action": "Block",
             "keys": [
-              "B"
+              "B",
+              "Q"
             ],
             "actionEs": "Bloque"
           },
           {
             "action": "Insert",
             "keys": [
-              "I"
+              "I",
+              "N"
             ],
             "actionEs": "Insertar"
+          },
+          {
+            "action": "External references",
+            "keys": [
+              "E",
+              "R"
+            ],
+            "actionEs": "Referencias externas"
+          },
+          {
+            "action": "Properties",
+            "keys": [
+              "P",
+              "R"
+            ],
+            "actionEs": "Propiedades"
+          }
+        ]
+      },
+      {
+        "label": "View",
+        "labelEs": "Vista",
+        "items": [
+          {
+            "action": "Zoom",
+            "keys": [
+              "Z"
+            ],
+            "actionEs": "Zoom"
           },
           {
             "action": "Pan",
@@ -28508,24 +29471,84 @@ window.SPARK_DATA = {
             "actionEs": "Desplazar vista"
           },
           {
-            "action": "Zoom",
+            "action": "Zoom extents",
             "keys": [
-              "Z"
+              "Z",
+              "E"
             ],
-            "actionEs": "Zoom"
+            "actionEs": "Zoom extensión"
+          },
+          {
+            "action": "Zoom all",
+            "keys": [
+              "Z",
+              "A"
+            ],
+            "actionEs": "Zoom todo"
+          },
+          {
+            "action": "Zoom window",
+            "keys": [
+              "Z",
+              "W"
+            ],
+            "actionEs": "Zoom ventana"
+          },
+          {
+            "action": "Regen",
+            "keys": [
+              "R",
+              "E"
+            ],
+            "actionEs": "Regenerar"
           }
         ]
       },
       {
-        "label": "Snap & Grid",
-        "labelEs": "Referencia y rejilla",
+        "label": "Function keys",
+        "labelEs": "Teclas de función",
         "items": [
+          {
+            "action": "Help",
+            "keys": [
+              "F1"
+            ],
+            "actionEs": "Ayuda"
+          },
+          {
+            "action": "Command line history",
+            "keys": [
+              "F2"
+            ],
+            "actionEs": "Historial de la línea de comandos"
+          },
           {
             "action": "Object snap",
             "keys": [
               "F3"
             ],
             "actionEs": "Referencia a objetos"
+          },
+          {
+            "action": "3D object snap",
+            "keys": [
+              "F4"
+            ],
+            "actionEs": "Referencia a objetos 3D"
+          },
+          {
+            "action": "Isoplane",
+            "keys": [
+              "F5"
+            ],
+            "actionEs": "Isoplano"
+          },
+          {
+            "action": "Dynamic UCS",
+            "keys": [
+              "F6"
+            ],
+            "actionEs": "Sistema de coordenadas dinámico"
           },
           {
             "action": "Grid",
@@ -28549,11 +29572,18 @@ window.SPARK_DATA = {
             "actionEs": "Forzar cursor"
           },
           {
-            "action": "Polar",
+            "action": "Polar tracking",
             "keys": [
               "F10"
             ],
-            "actionEs": "Polar"
+            "actionEs": "Rastreo polar"
+          },
+          {
+            "action": "Object snap tracking",
+            "keys": [
+              "F11"
+            ],
+            "actionEs": "Rastreo de referencia a objetos"
           },
           {
             "action": "Dynamic input",
@@ -28561,6 +29591,60 @@ window.SPARK_DATA = {
               "F12"
             ],
             "actionEs": "Entrada dinámica"
+          }
+        ]
+      },
+      {
+        "label": "Interface",
+        "labelEs": "Interfaz",
+        "items": [
+          {
+            "action": "Properties palette",
+            "keys": [
+              "cmd",
+              "1"
+            ],
+            "actionEs": "Paleta de propiedades"
+          },
+          {
+            "action": "DesignCenter",
+            "keys": [
+              "cmd",
+              "2"
+            ],
+            "actionEs": "DesignCenter"
+          },
+          {
+            "action": "Tool palettes",
+            "keys": [
+              "cmd",
+              "3"
+            ],
+            "actionEs": "Paletas de herramientas"
+          },
+          {
+            "action": "QuickCalc",
+            "keys": [
+              "cmd",
+              "8"
+            ],
+            "actionEs": "Calculadora rápida"
+          },
+          {
+            "action": "Command line",
+            "keys": [
+              "cmd",
+              "9"
+            ],
+            "actionEs": "Mostrar / ocultar línea de comandos"
+          },
+          {
+            "action": "Clean screen",
+            "keys": [
+              "cmd",
+              "0"
+            ],
+            "actionEs": "Pantalla limpia"
           }
         ]
       }
@@ -29233,11 +30317,32 @@ window.SPARK_DATA = {
         "labelEs": "Reproducción",
         "items": [
           {
+            "action": "Play / Stop",
+            "keys": [
+              "F4"
+            ],
+            "actionEs": "Reproducir / Detener"
+          },
+          {
             "action": "Play / Pause",
             "keys": [
               "space"
             ],
             "actionEs": "Reproducir / Pausar"
+          },
+          {
+            "action": "Go to start",
+            "keys": [
+              "home"
+            ],
+            "actionEs": "Ir al inicio"
+          },
+          {
+            "action": "Go to end",
+            "keys": [
+              "end"
+            ],
+            "actionEs": "Ir al final"
           }
         ]
       }
