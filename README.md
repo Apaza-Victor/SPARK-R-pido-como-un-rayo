@@ -86,3 +86,9 @@ Abre `http://localhost:8000`.
 ## Créditos
 
 - Teclado "Pure CSS" de [ManzDev/twitch-keyboard](https://github.com/ManzDev/twitch-keyboard) integrado y adaptado a SPARK.
+
+## Derechos de autor
+
+Copyright © 2026 Apaza-Victor. Todos los derechos reservados.
+
+Los logos y marcas de las herramientas referenciadas son propiedad de sus respectivos titulares.
