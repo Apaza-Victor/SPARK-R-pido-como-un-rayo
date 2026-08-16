@@ -135,7 +135,7 @@
     autocad:     { c: '#E2231A', l: 'Ac' },
     gimp:        { c: '#464B54', l: 'Gp' },
     inkscape:    { c: '#1D6B54', l: 'Ik' },
-    blufftitler: { c: '#2E6BE6', l: 'Bt' },
+    blufftitler: { c: '#FFFFFF', l: 'Bt' },
     docker:      { c: '#2496ED', l: 'Dk' },
     cmd:         { c: '#353B45', l: 'Cm' },
     powershell:  { c: '#5391FE', l: 'Pw' },
