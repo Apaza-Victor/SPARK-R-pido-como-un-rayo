@@ -248,7 +248,7 @@ body.bg3d #bg-3d { display: block; }
 .icon svg.bl-st { fill: none; stroke: var(--lc, #fff); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 .name { flex: 1; font-size: 14px; font-weight: 500; color: #fff; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.hotkey { flex: none; font-size: 12px; font-weight: 300; color: #fff6; }
+.hotkey { flex: none; font-size: 12px; font-weight: 300; color: #fff6; display: inline-flex; align-items: center; gap: 1px; }
 .chev { flex: none; font-size: 18px; color: #ffffff59; }
 
 .brand-strip {
@@ -409,6 +409,9 @@ body.bg3d #bg-3d { display: block; }
 }
 .kb-display-keys .kbd.sym { font-size: 26px; }
 .kb-display-keys .kbd.mouse { font-size: 13px; font-family: var(--sans); font-weight: 600; padding: 0 12px; }
+.win-ico { display: inline-block; width: 1em; height: 1em; vertical-align: -0.12em; }
+.kbd.win-sym, .kr-kbd.win-sym { font-size: 24px; }
+.kr-keys .kbd.win-sym, .sc-keys .kbd.win-sym { font-size: 14px; }
 
 /* ============ TECLADO (Logitech G815) ============ */
 

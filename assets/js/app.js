@@ -146,7 +146,7 @@
   const brandOf = (id) => BRANDS[id] || { c: '#0a6cff', l: (id || '?').slice(0, 2) };
   window.SPARK_BRANDS = BRANDS;
 
-  // ---------- logos reales (js/logos.js) ----------
+  // ---------- logos reales (assets/js/logos.js) ----------
   function isLight(hex) {
     const h = String(hex).replace('#', '');
     if (h.length < 6) return false;
@@ -160,15 +160,17 @@
     return `<svg class="bl${lg.st ? ' bl-st' : ''}" viewBox="${lg.vb}" aria-hidden="true">${lg.html}</svg>`;
   }
 
-  // ---------- teclas compartidas (js/keys.js) ----------
+  // ---------- teclas compartidas (assets/js/keys.js) ----------
   const K = window.SPARK_KEYS;
   const labelFor = (tok) => K.labelFor(platform, tok);
   const isGlyph = K.isGlyph;
   const normTok = (tok) => K.normTok(platform, tok);
   const normArr = (arr) => arr.map(normTok);
 
+  const WIN_SVG = '<svg class="win-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h11.4v11.4H0zM12.6 0H24v11.4H12.6zM0 12.6h11.4V24H0zm12.6 0H24V24H12.6z" fill="currentColor"/></svg>';
+
   function hotkeyLabel(tokens) {
-    const parts = tokens.map(labelFor);
+    const parts = tokens.map((tok) => (labelFor(tok) === '⊞' ? WIN_SVG : esc(labelFor(tok))));
     return platform === 'win' ? parts.join('+') : parts.join('');
   }
 
@@ -192,6 +194,7 @@
     const cls = kbdClass || '';
     return expandTokens(tokens).map((p) => {
       if (p.kind === 'mouse') return `<kbd class="${cls} mouse">${p.label}</kbd>`;
+      if (p.label === '⊞') return `<kbd class="${cls} win-sym">${WIN_SVG}</kbd>`;
       return `<kbd class="${cls}${isGlyph(p.label) ? ' sym' : ''}">${p.label}</kbd>`;
     }).join('');
   }
@@ -259,7 +262,7 @@
         toolIndex.set(tool.id, tool);
         const li = document.createElement('li');
         li.innerHTML = `<button class="tool" data-tool="${tool.id}" type="button">${iconHtml(tool.id)}<span class="name">${esc(tool.name)}</span><span class="hotkey"></span><span class="chev">›</span></button>`;
-        li.querySelector('.hotkey').textContent = hotkeyLabel(tool.hotkey.split('+'));
+        li.querySelector('.hotkey').innerHTML = hotkeyLabel(tool.hotkey.split('+'));
         ul.appendChild(li);
       }
       section.appendChild(ul);
@@ -279,7 +282,7 @@
   });
 
   // ---------- teclado ----------
-  // Teclado "Pure CSS" de ManzDev/twitch-keyboard (js/twboard.js)
+  // Teclado "Pure CSS" de ManzDev/twitch-keyboard (assets/js/twboard.js)
 
   function buildBoard() {
     if (window.SPARK_BOARD) {
@@ -339,7 +342,7 @@
     const total = matches.length;
     const MAX_TOTAL = 60, MAX_PER = 4;
     let shown = 0;
-    let html = `<header class="kr-head"><span class="kr-title"><kbd class="kr-kbd${isGlyph(labelFor(tok)) ? ' sym' : ''}">${esc(labelFor(tok))}</kbd><span>${total} ${t('keyUses')}</span></span><button class="kr-close" type="button" aria-label="${esc(t('close'))}">×</button></header><div class="kr-scroll">`;
+    let html = `<header class="kr-head"><span class="kr-title"><kbd class="kr-kbd${labelFor(tok) === '⊞' ? ' win-sym' : isGlyph(labelFor(tok)) ? ' sym' : ''}">${labelFor(tok) === '⊞' ? WIN_SVG : esc(labelFor(tok))}</kbd><span>${total} ${t('keyUses')}</span></span><button class="kr-close" type="button" aria-label="${esc(t('close'))}">×</button></header><div class="kr-scroll">`;
 
     for (const [tid, list] of groups) {
       if (shown >= MAX_TOTAL) break;
@@ -629,7 +632,7 @@
   function updateKbButton() {
     const target = platform === 'mac' ? 'win' : 'mac';
     const btn = $('#kb-btn');
-    btn.innerHTML = `<span class="kbd-ico">${target === 'win' ? '⊞' : '⌘'}</span>`;
+    btn.innerHTML = `<span class="kbd-ico">${target === 'win' ? WIN_SVG : '⌘'}</span>`;
     const label = target === 'win' ? t('switchKbWin') : t('switchKbMac');
     btn.setAttribute('aria-label', label);
     btn.title = label;
@@ -694,7 +697,7 @@
     hideResults();
     for (const btn of toolButtons) {
       const tool = toolIndex.get(btn.dataset.tool);
-      if (tool) btn.querySelector('.hotkey').textContent = hotkeyLabel(tool.hotkey.split('+'));
+      if (tool) btn.querySelector('.hotkey').innerHTML = hotkeyLabel(tool.hotkey.split('+'));
     }
     for (const d of toolCache.values()) {
       for (const row of $$('.sc', d)) {

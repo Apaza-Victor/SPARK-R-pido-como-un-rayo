@@ -21,16 +21,16 @@ Elige una herramienta, pasa el ratón por un atajo y mira cómo se iluminan las 
 ```
 index.html            Aplicación (sidebar + teclado + logos)
 favicon.svg           Favicon de la marca
-css/styles.css        Todos los estilos
-js/app.js             Lógica de la app (UI, i18n, búsqueda, luz de teclas)
-js/data.js            Carga de los datos de atajos
-js/keys.js            Mapa de teclas (SPARK_KEYS)
-js/logos.js           Logos SVG de las herramientas (SPARK_LOGOS)
-js/twboard.js         Teclado mecánico (SPARK_BOARD)
-js/bg.js              Fondo 3D (SPARK_BRANDS)
+assets/css/styles.css Todos los estilos
+assets/js/app.js      Lógica de la app (UI, i18n, búsqueda, luz de teclas)
+assets/js/data.js     Carga de los datos de atajos
+assets/js/keys.js     Mapa de teclas (SPARK_KEYS)
+assets/js/logos.js    Logos SVG de las herramientas (SPARK_LOGOS)
+assets/js/twboard.js  Teclado mecánico (SPARK_BOARD)
+assets/js/bg.js       Fondo 3D (SPARK_BRANDS)
+assets/img/           Recursos gráficos (logos SVG / webp)
 data/shrtcts-data.json  Base de datos de herramientas y atajos
 pages/cambios.html    Historial de cambios
-assets/img/           Recursos gráficos (logos SVG / webp)
 snd/                  Sonidos locales (sin uso)
 ```
 
@@ -60,7 +60,7 @@ Los atajos viven en `data/shrtcts-data.json`:
 ```
 
 Para añadir una herramienta nueva:
-1. Añade su logo a `js/logos.js` (`window.SPARK_LOGOS`).
+1. Añade su logo a `assets/js/logos.js` (`window.SPARK_LOGOS`).
 2. Añade su color y abreviatura en `js/app.js` (objeto `BRANDS`).
 3. Añade sus atajos en `data/shrtcts-data.json`.
 4. Inclúyela en la categoría correspondiente de `cats`.
