@@ -1,323 +1,290 @@
-// Teclado "Pure CSS" de ManzDev/twitch-keyboard integrado en SPARK.
-// Fuente: https://github.com/ManzDev/twitch-keyboard
+// Teclado Logitech G815 (diseño de Staniel Petrov) integrado en SPARK.
+// Fuente del diseño: https://www.linkedin.com/in/staniel-petrov/
 window.SPARK_BOARD = (() => {
   'use strict';
 
   const K = window.SPARK_KEYS;
-  const CONTAINER = document.getElementById('kb-board');
+  const BOARD = document.getElementById('kb-board');
   const $ = (sel, ctx) => (ctx || document).querySelector(sel);
+  const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
 
-  const SOUNDS = (() => {
-    try {
-      return ['snd/key1.mp3', 'snd/key2.mp3'].map((s) => new Audio(s));
-    } catch (e) {
-      return [];
-    }
-  })();
+  const COLOR_VARIANTS = ['#0a6cff', '#34edff', '#00ff98', '#98ff00', '#ffe500', '#ff8100', '#ff0000', '#ff0079', '#c900ff', '#7700ff'];
+  const KEY_SOUNDS = ['tactile', 'linear', 'clicky'];
 
-  let curPlatform = 'mac';
-  const keyEls = new Map();  // token(lower) -> [element]
-  const keyById = new Map(); // id (ev.code en minúsculas) -> element
+  const AUDIO = {};
+  for (const name of KEY_SOUNDS) {
+    const el = document.getElementById(name + 'KeySound');
+    if (el) AUDIO[name] = el;
+  }
 
-  const MOD_LABEL = {
-    mac: { meta: '⌘', alt: '⌥', ctrl: '⌃', shift: '⇧', fn: 'FN' },
-    win: { meta: '⊞', alt: 'alt', ctrl: 'ctrl', shift: 'shift', fn: 'fn' },
+  const state = {
+    curPlatform: 'mac',
+    colorIndex: 0,
+    currentKeySound: 'tactile',
+    brightness: 3,
+    discoTimer: null,
+    savedColor: '#0a6cff',
+    keyHandler: null,
+    flashTimers: new Map(),
   };
 
-  function mkKey(cls, id, tok, main) {
-    const d = document.createElement('div');
-    d.className = 'key' + (cls ? ' ' + cls : '');
-    if (id) {
-      d.id = id;
-      keyById.set(id, d);
-    }
-    if (tok) d.dataset.tok = tok;
-    if (main !== undefined) d.dataset.key = main;
-    return d;
-  }
+  const keyEls = new Map();   // token -> [li]
+  const keyById = new Map();  // data-key (lowercase event.code) -> li
 
-  function mkHole(cls, children) {
-    const h = document.createElement('div');
-    h.className = 'hole' + (cls ? ' ' + cls : '');
-    for (const c of children) h.appendChild(c);
-    return h;
-  }
-
-  function spanSpecial(ch) {
-    const s = document.createElement('span');
-    s.className = 'special';
-    s.textContent = ch;
-    return s;
-  }
-
-  // tecla normal con símbolo desplazado (span.special, arriba-izquierda)
-  function norm(id, tok, main, shifted) {
-    const d = mkKey('normal-key', id, tok, main);
-    if (shifted) d.appendChild(spanSpecial(shifted));
-    return d;
-  }
-
-  // ---------------- construcción ----------------
-
-  function build(platform) {
-    curPlatform = platform;
-    if (!CONTAINER) return;
-    CONTAINER.innerHTML = '';
+  function indexKeys() {
     keyEls.clear();
     keyById.clear();
-
-    const kb = document.createElement('div');
-    kb.className = 'keyboard';
-
-    // ---- main-keys: fila F + bloque alfanumérico ----
-    const main = document.createElement('div');
-    main.className = 'main-keys';
-
-    const fnRow = document.createElement('div');
-    fnRow.className = 'function-keys';
-    fnRow.appendChild(mkHole('', [mkKey('function-key', 'escape', 'esc', 'esc')]));
-    fnRow.appendChild(mkHole('', [mkKey('function-key', 'f1', 'f1', 'f1'), mkKey('function-key', 'f2', 'f2', 'f2'), mkKey('function-key', 'f3', 'f3', 'f3')]));
-    fnRow.appendChild(mkHole('', [mkKey('function-key', 'f4', 'f4', 'f4'), mkKey('function-key', 'f5', 'f5', 'f5'), mkKey('function-key', 'f6', 'f6', 'f6')]));
-    fnRow.appendChild(mkHole('', [mkKey('function-key', 'f7', 'f7', 'f7'), mkKey('function-key', 'f8', 'f8', 'f8'), mkKey('function-key', 'f9', 'f9', 'f9')]));
-    fnRow.appendChild(mkHole('', [mkKey('function-key', 'f10', 'f10', 'f10'), mkKey('function-key', 'f11', 'f11', 'f11'), mkKey('function-key', 'f12', 'f12', 'f12')]));
-    main.appendChild(fnRow);
-
-    const alpha = document.createElement('div');
-    alpha.className = 'alpha-keys';
-    alpha.appendChild(mkHole('wrap', [
-      norm('backquote', '`', '`', '~'),
-      norm('digit1', '1', '1', '!'),
-      norm('digit2', '2', '2', '@'),
-      norm('digit3', '3', '3', '#'),
-      norm('digit4', '4', '4', '$'),
-      norm('digit5', '5', '5', '%'),
-      norm('digit6', '6', '6', '^'),
-      norm('digit7', '7', '7', '&'),
-      norm('digit8', '8', '8', '*'),
-      norm('digit9', '9', '9', '('),
-      norm('digit0', '0', '0', ')'),
-      norm('minus', '-', '-', '_'),
-      norm('equal', '=', '=', '+'),
-      mkKey('backspace-key', 'backspace', 'backspace', 'backspace'),
-      mkKey('ctrl-key', 'tab', 'tab', 'tab'),
-      norm('keyq', 'q', 'q'),
-      norm('keyw', 'w', 'w'),
-      norm('keye', 'e', 'e'),
-      norm('keyr', 'r', 'r'),
-      norm('keyt', 't', 't'),
-      norm('keyy', 'y', 'y'),
-      norm('keyu', 'u', 'u'),
-      norm('keyi', 'i', 'i'),
-      norm('keyo', 'o', 'o'),
-      norm('keyp', 'p', 'p'),
-      norm('bracketleft', '[', '[', '{'),
-      norm('bracketright', ']', ']', '}'),
-      norm('backslash', '\\', '\\', '|'),
-      mkKey('enter-key', 'capslock', 'capslock', 'caps lock'),
-      norm('keya', 'a', 'a'),
-      norm('keys', 's', 's'),
-      norm('keyd', 'd', 'd'),
-      norm('keyf', 'f', 'f'),
-      norm('keyg', 'g', 'g'),
-      norm('keyh', 'h', 'h'),
-      norm('keyj', 'j', 'j'),
-      norm('keyk', 'k', 'k'),
-      norm('keyl', 'l', 'l'),
-      norm('semicolon', ';', ';', ':'),
-      norm('quote', "'", "'", '"'),
-      mkKey('enter-key', 'enter', 'enter', 'enter'),
-      mkKey('shift-key', 'shiftleft', 'shift', 'shift'),
-      norm('keyz', 'z', 'z'),
-      norm('keyx', 'x', 'x'),
-      norm('keyc', 'c', 'c'),
-      norm('keyv', 'v', 'v'),
-      norm('keyb', 'b', 'b'),
-      norm('keyn', 'n', 'n'),
-      norm('keym', 'm', 'm'),
-      norm('comma', ',', ',', '<'),
-      norm('period', '.', '.', '>'),
-      norm('slash', '/', '/', '?'),
-      mkKey('shift-key', 'shiftright', 'shift', 'shift'),
-      mkKey('ctrl-key', 'controlleft', 'ctrl', 'ctrl'),
-      mkKey('ctrl-key', 'metaleft', curPlatform === 'mac' ? 'cmd' : 'win', curPlatform === 'mac' ? '⌘' : '⊞'),
-      mkKey('ctrl-key', 'altleft', 'alt', 'alt'),
-      mkKey('space-key', 'space', 'space', 'space'),
-      mkKey('ctrl-key', 'altright', 'alt', 'alt'),
-      mkKey('ctrl-key', '', 'fn', 'fn'),
-      mkKey('ctrl-key', 'contextmenu', 'menu', 'menu'),
-      mkKey('ctrl-key', 'controlright', 'ctrl', 'ctrl'),
-    ]));
-    main.appendChild(alpha);
-    kb.appendChild(main);
-
-    // ---- control-keys: PrtSc/ScrLck/Pause + nav + cursores ----
-    const control = document.createElement('div');
-    control.className = 'control-keys';
-
-    const extra = document.createElement('div');
-    extra.className = 'extra-keys';
-    extra.appendChild(mkHole('', [
-      mkKey('function-key', 'printscreen', 'prtsc', 'PrtScr'),
-      mkKey('function-key', 'scrolllock', 'scrlk', 'ScrLck'),
-      mkKey('function-key', 'pause', 'pause', 'Pause'),
-    ]));
-    control.appendChild(extra);
-
-    const page = document.createElement('div');
-    page.className = 'page-keys';
-    page.appendChild(mkHole('wrap', [
-      mkKey('normal-key', 'insert', 'insert', 'insert'),
-      mkKey('normal-key', 'home', 'home', 'home'),
-      mkKey('normal-key', 'pageup', 'pageup', 'page up'),
-      mkKey('normal-key', 'delete', 'delete', 'delete'),
-      mkKey('normal-key', 'end', 'end', 'end'),
-      mkKey('normal-key', 'pagedown', 'pagedown', 'page down'),
-    ]));
-    control.appendChild(page);
-
-    const cursor = document.createElement('div');
-    cursor.className = 'cursor-keys';
-    cursor.appendChild(mkHole('', [mkKey('normal-key', 'arrowup', 'up', '↑')]));
-    cursor.appendChild(mkHole('wrap', [
-      mkKey('normal-key', 'arrowleft', 'left', '←'),
-      mkKey('normal-key', 'arrowdown', 'down', '↓'),
-      mkKey('normal-key', 'arrowright', 'right', '→'),
-    ]));
-    control.appendChild(cursor);
-    kb.appendChild(control);
-
-    // ---- end-keys: LEDs + numpad ----
-    const end = document.createElement('div');
-    end.className = 'end-keys';
-
-    const leds = document.createElement('div');
-    leds.className = 'led-buttons';
-    for (const l of ['numlock', 'capslock', 'scrolllock']) {
-      const led = document.createElement('div');
-      led.className = 'led ' + l;
-      leds.appendChild(led);
+    if (!BOARD) return;
+    for (const li of $$('li[data-tok]', BOARD)) {
+      const tok = li.dataset.tok;
+      if (!keyEls.has(tok)) keyEls.set(tok, []);
+      keyEls.get(tok).push(li);
     }
-    end.appendChild(leds);
-
-    const num = document.createElement('div');
-    num.className = 'alphanum-keys';
-    num.appendChild(mkHole('wrap', [
-      mkKey('normal-key', 'numlock', '', 'num lock'),
-      mkKey('normal-key', 'numpaddivide', '', '/'),
-      mkKey('normal-key', 'numpadmultiply', '', '*'),
-      mkKey('normal-key', 'numpadsubtract', '', '-'),
-      mkKey('normal-key', 'numpad7', '', '7'),
-      mkKey('normal-key', 'numpad8', '', '8'),
-      mkKey('normal-key', 'numpad9', '', '9'),
-      mkKey('vertical-key', 'numpadadd', '', '+'),
-      mkKey('normal-key', 'numpad4', '', '4'),
-      mkKey('normal-key', 'numpad5', '', '5'),
-      mkKey('normal-key', 'numpad6', '', '6'),
-      mkKey('normal-key', 'numpad1', '', '1'),
-      mkKey('normal-key', 'numpad2', '', '2'),
-      mkKey('normal-key', 'numpad3', '', '3'),
-      mkKey('vertical-key', 'numpadenter', '', 'enter'),
-      mkKey('zero-key', 'numpad0', '', '0'),
-      mkKey('normal-key', 'numpaddecimal', '', '.'),
-    ]));
-    end.appendChild(num);
-    kb.appendChild(end);
-
-    CONTAINER.appendChild(kb);
-
-    const mw = document.createElement('div');
-    mw.className = 'kb-mouse-wrap';
-    const m = document.createElement('div');
-    m.className = 'kb-mouse';
-    m.dataset.tok = 'mouse';
-    mw.appendChild(m);
-    CONTAINER.appendChild(mw);
-
-    indexTokens();
-  }
-
-  function indexTokens() {
-    keyEls.clear();
-    for (const el of keyById.values()) {
-      if (!el.dataset.tok) continue;
-      for (const t of el.dataset.tok.trim().split(/\s+/)) {
-        if (!keyEls.has(t)) keyEls.set(t, []);
-        keyEls.get(t).push(el);
-      }
+    for (const li of $$('li[data-key]', BOARD)) {
+      keyById.set(li.dataset.key.toLowerCase(), li);
     }
   }
 
-  // ---------------- iluminación y pulsación ----------------
+  // resuelve tokens a teclas físicas del G815 (data-tok)
+  function resolveTokens(tokens) {
+    const out = [];
+    for (const raw of tokens || []) {
+      const norm = String(raw).toLowerCase();
+      if (norm === 'home') { out.push('home'); continue; }
+      if (norm === 'end') { out.push('end'); continue; }
+      const res = K.tokenToKeys(state.curPlatform, norm);
+      if (res === 'mouse') continue; // el G815 no tiene ratón
+      for (const tk of res) out.push(tk);
+    }
+    return out;
+  }
+
+  // ---------------- API SPARK ----------------
+
+  function build(platform) {
+    state.curPlatform = platform || 'mac';
+    indexKeys();
+    applyPlatformLabels(state.curPlatform);
+  }
+
+  // adapta el G815 (teclado Windows) a la plataforma elegida:
+  // en macOS las modificadoras pasan a ⌃ ⌥ ⌘ y el logo Windows a ⌘
+  const META_BOX = '<div class="windows-key_box"><span></span><span></span><span></span><span></span></div>';
+
+  function applyPlatformLabels(platform) {
+    const mac = platform === 'mac';
+    const text = (code, win, macLabel) => {
+      const li = keyById.get(code.toLowerCase());
+      if (li) li.textContent = mac ? macLabel : win;
+    };
+    text('ControlLeft', 'CTRL', '⌃');
+    text('ControlRight', 'CTRL', '⌃');
+    text('AltLeft', 'ALT', '⌥');
+    text('AltRight', 'ALT GR', '⌥');
+    for (const code of ['MetaLeft', 'MetaRight']) {
+      const li = keyById.get(code.toLowerCase());
+      if (!li) continue;
+      li.classList.toggle('mac', mac);
+      li.innerHTML = mac ? '<span class="cmd-glyph">⌘</span>' : META_BOX;
+    }
+  }
 
   function light(tokens) {
-    for (const els of keyEls.values()) for (const e of els) e.classList.remove('lit');
-    const mouse = $('.kb-mouse', CONTAINER);
-    if (mouse) mouse.classList.remove('lit');
+    for (const els of keyEls.values()) for (const el of els) el.classList.remove('lit');
     if (!tokens) return;
-    for (const raw of tokens) {
-      const res = K.tokenToKeys(curPlatform, raw);
-      if (res === 'mouse') {
-        if (mouse) mouse.classList.add('lit');
-        continue;
-      }
-      for (const tk of res) for (const e of keyEls.get(tk) || []) e.classList.add('lit');
+    for (const tk of resolveTokens(tokens)) {
+      for (const el of keyEls.get(tk) || []) el.classList.add('lit');
     }
-  }
-
-  function flash(el) {
-    el.classList.add('pressed');
-    setTimeout(() => el.classList.remove('pressed'), 220);
   }
 
   function press(tokens) {
     if (!tokens) return;
-    for (const raw of tokens) {
-      const res = K.tokenToKeys(curPlatform, raw);
-      if (res === 'mouse') {
-        const m = $('.kb-mouse', CONTAINER);
-        if (m) flash(m);
-        continue;
-      }
-      for (const tk of res) for (const e of keyEls.get(tk) || []) flash(e);
+    for (const tk of resolveTokens(tokens)) {
+      for (const el of keyEls.get(tk) || []) flash(el);
     }
   }
 
-  // ---------------- sonido, LEDs y easter egg (F4) ----------------
+  function setKeyHandler(fn) {
+    state.keyHandler = fn;
+  }
+
+  // ---------------- flash ----------------
+
+  function flash(el) {
+    el.classList.add('click');
+    if (state.flashTimers.has(el)) clearTimeout(state.flashTimers.get(el));
+    state.flashTimers.set(el, setTimeout(() => {
+      el.classList.remove('click');
+      state.flashTimers.delete(el);
+    }, 130));
+  }
+
+  // ---------------- sonido ----------------
 
   function playSound() {
-    if (!SOUNDS.length) return;
+    const a = AUDIO[state.currentKeySound];
+    if (!a) return;
     try {
-      const a = SOUNDS[Math.floor(Math.random() * SOUNDS.length)];
-      if (a) {
-        a.currentTime = 0;
-        a.play().catch(() => {});
-      }
+      a.currentTime = 0;
+      a.play().catch(() => {});
     } catch (e) { /* sin sonido */ }
   }
 
-  addEventListener('keydown', (ev) => {
-    const kb = $('.keyboard', CONTAINER);
-    if (ev.code === 'F4' && kb) kb.classList.toggle('led');
-    const keyDiv = keyById.get(ev.code.toLowerCase());
-    if (!keyDiv) return;
-    flash(keyDiv);
+  function setKeySound(name) {
+    if (!KEY_SOUNDS.includes(name)) return;
+    state.currentKeySound = name;
+    for (const el of $$('.key-sound', BOARD)) {
+      el.classList.toggle('active', el.dataset.keySound === name);
+    }
     playSound();
-    if (ev.code === 'NumLock' || ev.code === 'CapsLock' || ev.code === 'ScrollLock') {
-      const led = $('.led.' + ev.code.toLowerCase(), CONTAINER);
-      if (led) led.classList.toggle('on');
+  }
+
+  // ---------------- color, modo juego, disco, luces ----------------
+
+  function cycleColor() {
+    state.colorIndex = (state.colorIndex + 1) % COLOR_VARIANTS.length;
+    state.savedColor = COLOR_VARIANTS[state.colorIndex];
+    document.documentElement.style.setProperty('--key-text-highlight', state.savedColor);
+    try { localStorage.setItem('spark-key-color', state.savedColor); } catch (e) { /* sin almacenamiento */ }
+  }
+
+  function toggleWhiteMode() {
+    const wrapper = $('.keyboard-wrapper', BOARD);
+    if (!wrapper) return;
+    wrapper.classList.toggle('white-mode');
+  }
+
+  function toggleGameMode() {
+    const logo = $('.logitech-logo', BOARD);
+    const btn = $('.round-key.game', BOARD);
+    const on = logo && logo.classList.toggle('active');
+    if (btn) btn.classList.toggle('active', !!on);
+  }
+
+  function setBrightness(level) {
+    state.brightness = ((level % 4) + 4) % 4;
+    const wrapper = $('.keyboard-wrapper', BOARD);
+    if (wrapper) {
+      wrapper.style.filter = state.brightness === 3 ? '' : `brightness(${0.25 + state.brightness * 0.25})`;
+    }
+    const btn = $('.round-key.brightness', BOARD);
+    if (btn) btn.classList.toggle('active', state.brightness > 0);
+  }
+
+  function toggleDisco() {
+    const logo = $('.logitech-logo', BOARD);
+    if (state.discoTimer) {
+      clearInterval(state.discoTimer);
+      state.discoTimer = null;
+      if (logo) logo.classList.remove('active');
+      document.documentElement.style.setProperty('--key-text-highlight', state.savedColor);
+      return;
+    }
+    if (logo) logo.classList.add('active');
+    state.discoTimer = setInterval(() => {
+      state.colorIndex = (state.colorIndex + 1) % COLOR_VARIANTS.length;
+      document.documentElement.style.setProperty('--key-text-highlight', COLOR_VARIANTS[state.colorIndex]);
+    }, 150);
+  }
+
+  function toggleInfoLight(name) {
+    const light = $('.' + name + '-light', BOARD);
+    if (light) light.classList.toggle('active');
+  }
+
+  // ---------------- volumen ----------------
+
+  function setVolume(v) {
+    v = Math.max(0, Math.min(1, v));
+    for (const name of KEY_SOUNDS) {
+      const a = AUDIO[name];
+      if (a) a.volume = v;
+    }
+  }
+
+  function initVolumeWheel() {
+    const box = $('.volume-wheel_box', BOARD);
+    if (!box) return;
+    let dragging = false, lastY = 0, lastV = 0.5;
+    box.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      const r = box.getBoundingClientRect();
+      dragging = true;
+      lastY = e.clientY;
+      lastV = 1 - (e.clientY - r.top) / r.height;
+      setVolume(lastV);
+    });
+    window.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      lastV = Math.max(0, Math.min(1, lastV + (lastY - e.clientY) * 2));
+      lastY = e.clientY;
+      setVolume(lastV);
+    });
+    window.addEventListener('mouseup', () => { dragging = false; });
+    box.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const cur = AUDIO[state.currentKeySound] ? AUDIO[state.currentKeySound].volume : 0.5;
+      setVolume(cur + (e.deltaY < 0 ? 0.05 : -0.05));
+    });
+  }
+
+  // ---------------- tipeo físico ----------------
+
+  window.addEventListener('keydown', (ev) => {
+    if (ev.code === 'F4') toggleDisco();
+    const li = keyById.get(ev.code.toLowerCase());
+    if (!li) return;
+    flash(li);
+    playSound();
+    if (ev.code === 'NumLock') toggleInfoLight('numlock');
+    if (ev.code === 'CapsLock') toggleInfoLight('capslock');
+  });
+
+  // ---------------- clic ----------------
+
+  BOARD.addEventListener('click', (ev) => {
+    const sound = ev.target.closest('.key-sound');
+    if (sound) { setKeySound(sound.dataset.keySound); return; }
+
+    const li = ev.target.closest('.keyboard-wrapper li');
+    if (!li || li.classList.contains('info-light')) return;
+
+    flash(li);
+
+    if (li.closest('.media-keys')) { playSound(); return; }
+
+    if (li.classList.contains('round-key')) {
+      playSound();
+      if (li.classList.contains('game')) toggleGameMode();
+      else if (li.classList.contains('brightness')) setBrightness(state.brightness - 1);
+      else if (li.classList.contains('memory')) toggleWhiteMode();
+      else cycleColor();
+      return;
+    }
+
+    if (li.classList.contains('numlock')) { playSound(); toggleInfoLight('numlock'); return; }
+
+    if (li.dataset.tok) {
+      playSound();
+      if (li.classList.contains('caps-key')) toggleInfoLight('capslock');
+      if (state.keyHandler) state.keyHandler(li.dataset.tok, li);
     }
   });
 
-  // ---------------- clic en teclas ----------------
+  // ---------------- init ----------------
 
-  let keyHandler = null;
-  CONTAINER.addEventListener('click', (ev) => {
-    const el = ev.target.closest('.key');
-    if (!el || !el.dataset.tok) return;
-    flash(el);
-    playSound();
-    if (keyHandler) keyHandler(el.dataset.tok.trim().split(/\s+/)[0], el);
-  });
+  indexKeys();
+  initVolumeWheel();
 
-  return { build, light, press, setKeyHandler: (fn) => (keyHandler = fn) };
+  // restaura el color elegido con M1-M3 entre recargas
+  try {
+    const c = localStorage.getItem('spark-key-color');
+    if (c && /^#[0-9a-f]{6}$/i.test(c)) {
+      state.savedColor = c;
+      state.colorIndex = Math.max(0, COLOR_VARIANTS.indexOf(c));
+      document.documentElement.style.setProperty('--key-text-highlight', c);
+    }
+  } catch (e) { /* sin almacenamiento */ }
+
+  return { build, light, press, setKeyHandler };
 })();

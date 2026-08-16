@@ -1,19 +1,19 @@
 # SPARK — Rápido como un rayo
 
 Web para aprender los atajos de teclado de tus herramientas de diseño, vídeo y código.
-Elige una herramienta, pasa el ratón por un atajo y mira cómo se iluminan las teclas en un teclado interactivo estilo Twitch.
+Elige una herramienta, pasa el ratón por un atajo y mira cómo se iluminan las teclas en un teclado mecánico interactivo (Logitech G815).
 
 **En producción**: https://apaza-victor.github.io/SPARK-R-pido-como-un-rayo/
 
 ## Características
 
-- **Teclado interactivo**: teclado estilo Twitch (pure CSS) que ilumina las teclas del atajo bajo el ratón, con sonido al pulsar.
+- **Teclado interactivo**: Logitech G815 (pure CSS) que ilumina las teclas del atajo bajo el ratón, con sonido al pulsar (GL Tactile / Linear / Clicky), ciclo de colores RGB, brillo, modo juego y LEDs.
 - **24 herramientas**: Figma, Photoshop, Illustrator, InDesign, Lightroom, Blender, Affinity, Framer, Webflow, Spline, After Effects, DaVinci, CapCut, Premiere, Cursor, VS Code, Lovable, Xcode, Claude, Copilot, Notion, Slack, Linear y Obsidian.
 - **Carrusel de logos**: tira de marcas con scroll infinito que enlaza directo a cada herramienta.
 - **Búsqueda**: filtra herramientas y atajos al instante.
 - **Bilingüe**: español e inglés.
 - **macOS / Windows**: el teclado y los símbolos (Cmd / Ctrl) se adaptan a la plataforma.
-- **LEDs**: indicadores de Bloqueo Mayús, Bloq Num y Scroll Lock.
+- **LEDs**: indicadores de Bloq Mayús y Bloq Num en el propio teclado.
 - **Easter egg**: pulsa F4.
 
 ## Estructura
@@ -26,11 +26,11 @@ js/app.js             Lógica de la app (UI, i18n, búsqueda, luz de teclas)
 js/data.js            Carga de los datos de atajos
 js/keys.js            Mapa de teclas (SPARK_KEYS)
 js/logos.js           Logos SVG de las herramientas (SPARK_LOGOS)
-js/twboard.js         Teclado estilo Twitch (SPARK_BOARD)
+js/twboard.js         Teclado G815 (SPARK_BOARD)
 js/bg.js              Fondo 3D (SPARK_BRANDS)
 data/shrtcts-data.json  Base de datos de herramientas y atajos
-snd/key1.mp3          Sonido de tecla 1
-snd/key2.mp3          Sonido de tecla 2
+snd/key1.mp3          Sonidos antiguos del teclado (sin uso)
+snd/key2.mp3
 ```
 
 ## Datos de atajos
@@ -81,11 +81,12 @@ Abre `http://localhost:8000`.
 ## Personalización
 
 - **Idioma y plataforma** se guardan en `localStorage` como `spark-lang` y `spark-platform`.
+- **Color de las teclas**: la variable `--key-text-highlight` (en `css/styles.css`) define el color de iluminación; cicla con las teclas M1–M3.
 - **Colores de marca**: el azul se define en `:root` de `css/styles.css` (`--blue`, `--ink`).
 
 ## Créditos
 
-- Teclado "Pure CSS" de [ManzDev/twitch-keyboard](https://github.com/ManzDev/twitch-keyboard) integrado y adaptado a SPARK.
+- Teclado Logitech G815 (diseño de [Staniel Petrov](https://www.linkedin.com/in/staniel-petrov/)) integrado y adaptado a SPARK.
 
 ## Derechos de autor
 
