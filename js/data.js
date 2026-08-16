@@ -182,6 +182,11 @@ window.SPARK_DATA = {
           "id": "docker",
           "name": "Docker",
           "hotkey": "cmd+4"
+        },
+        {
+          "id": "github",
+          "name": "GitHub Desktop",
+          "hotkey": "cmd+shift+0"
         }
       ]
     },
@@ -29953,6 +29958,318 @@ window.SPARK_DATA = {
               "F11"
             ],
             "actionEs": "Pantalla completa"
+          }
+        ]
+      }
+    ],
+    "github": [
+      {
+        "label": "Application",
+        "labelEs": "Aplicación",
+        "items": [
+          {
+            "action": "Options",
+            "keys": [
+              "cmd",
+              ","
+            ],
+            "actionEs": "Opciones"
+          },
+          {
+            "action": "Reset zoom",
+            "keys": [
+              "cmd",
+              "0"
+            ],
+            "actionEs": "Restablecer zoom"
+          },
+          {
+            "action": "Zoom in",
+            "keys": [
+              "cmd",
+              "="
+            ],
+            "actionEs": "Acercar"
+          },
+          {
+            "action": "Zoom out",
+            "keys": [
+              "cmd",
+              "-"
+            ],
+            "actionEs": "Alejar"
+          },
+          {
+            "action": "Decrease active pane width",
+            "keys": [
+              "cmd",
+              "8"
+            ],
+            "actionEs": "Reducir ancho del panel activo"
+          },
+          {
+            "action": "Increase active pane width",
+            "keys": [
+              "cmd",
+              "9"
+            ],
+            "actionEs": "Aumentar ancho del panel activo"
+          },
+          {
+            "action": "Quit GitHub Desktop",
+            "keys": [
+              "cmd",
+              "Q"
+            ],
+            "actionEs": "Salir de GitHub Desktop"
+          }
+        ]
+      },
+      {
+        "label": "Repositories",
+        "labelEs": "Repositorios",
+        "items": [
+          {
+            "action": "Add a new repository",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Añadir un repositorio nuevo"
+          },
+          {
+            "action": "Add a local repository",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Añadir un repositorio local"
+          },
+          {
+            "action": "Clone a repository from GitHub",
+            "keys": [
+              "cmd",
+              "shift",
+              "O"
+            ],
+            "actionEs": "Clonar un repositorio de GitHub"
+          },
+          {
+            "action": "Show a list of your repositories",
+            "keys": [
+              "cmd",
+              "T"
+            ],
+            "actionEs": "Mostrar la lista de repositorios"
+          },
+          {
+            "action": "Push the latest commits to GitHub",
+            "keys": [
+              "cmd",
+              "P"
+            ],
+            "actionEs": "Subir los últimos commits a GitHub"
+          },
+          {
+            "action": "Pull down the latest changes from GitHub",
+            "keys": [
+              "cmd",
+              "shift",
+              "P"
+            ],
+            "actionEs": "Descargar los últimos cambios de GitHub"
+          },
+          {
+            "action": "Remove an existing repository",
+            "keys": [
+              "cmd",
+              "delete"
+            ],
+            "actionEs": "Eliminar un repositorio existente"
+          },
+          {
+            "action": "View the repository on GitHub",
+            "keys": [
+              "cmd",
+              "shift",
+              "G"
+            ],
+            "actionEs": "Ver el repositorio en GitHub"
+          },
+          {
+            "action": "Open repository in your preferred terminal",
+            "keys": [
+              "ctrl",
+              "`"
+            ],
+            "actionEs": "Abrir el repositorio en tu terminal"
+          },
+          {
+            "action": "Show the repository in Finder",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ],
+            "actionEs": "Mostrar el repositorio en el Finder"
+          },
+          {
+            "action": "Open the repository in your preferred editor",
+            "keys": [
+              "cmd",
+              "shift",
+              "A"
+            ],
+            "actionEs": "Abrir el repositorio en tu editor"
+          },
+          {
+            "action": "Create an issue on GitHub",
+            "keys": [
+              "cmd",
+              "I"
+            ],
+            "actionEs": "Crear un issue en GitHub"
+          }
+        ]
+      },
+      {
+        "label": "Branches",
+        "labelEs": "Ramas",
+        "items": [
+          {
+            "action": "Show all your changes before committing",
+            "keys": [
+              "cmd",
+              "1"
+            ],
+            "actionEs": "Mostrar los cambios antes de confirmar"
+          },
+          {
+            "action": "Show your commit history",
+            "keys": [
+              "cmd",
+              "2"
+            ],
+            "actionEs": "Mostrar el historial de confirmaciones"
+          },
+          {
+            "action": "Show all your branches",
+            "keys": [
+              "cmd",
+              "B"
+            ],
+            "actionEs": "Mostrar todas las ramas"
+          },
+          {
+            "action": "Go to the commit summary field",
+            "keys": [
+              "cmd",
+              "G"
+            ],
+            "actionEs": "Ir al campo de resumen de confirmación"
+          },
+          {
+            "action": "Commit changes when summary or description field is active",
+            "keys": [
+              "cmd",
+              "enter"
+            ],
+            "actionEs": "Confirmar los cambios"
+          },
+          {
+            "action": "Select or deselect all highlighted files",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Seleccionar o deseleccionar los archivos resaltados"
+          },
+          {
+            "action": "Create a new branch",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ],
+            "actionEs": "Crear una rama nueva"
+          },
+          {
+            "action": "Rename the current branch",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ],
+            "actionEs": "Renombrar la rama actual"
+          },
+          {
+            "action": "Delete the current branch",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ],
+            "actionEs": "Eliminar la rama actual"
+          },
+          {
+            "action": "Update from default branch",
+            "keys": [
+              "cmd",
+              "shift",
+              "U"
+            ],
+            "actionEs": "Actualizar desde la rama predeterminada"
+          },
+          {
+            "action": "Compare to an existing branch",
+            "keys": [
+              "cmd",
+              "shift",
+              "B"
+            ],
+            "actionEs": "Comparar con una rama existente"
+          },
+          {
+            "action": "Merge into current branch",
+            "keys": [
+              "cmd",
+              "shift",
+              "M"
+            ],
+            "actionEs": "Combinar en la rama actual"
+          },
+          {
+            "action": "Stash current changes",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar los cambios actuales"
+          },
+          {
+            "action": "Show or hide stashed changes",
+            "keys": [
+              "cmd",
+              "H"
+            ],
+            "actionEs": "Mostrar u ocultar los cambios guardados"
+          },
+          {
+            "action": "Compare branches on GitHub",
+            "keys": [
+              "cmd",
+              "shift",
+              "C"
+            ],
+            "actionEs": "Comparar ramas en GitHub"
+          },
+          {
+            "action": "Show the current pull request on GitHub",
+            "keys": [
+              "cmd",
+              "R"
+            ],
+            "actionEs": "Ver el pull request actual en GitHub"
           }
         ]
       }
