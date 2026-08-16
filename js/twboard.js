@@ -308,5 +308,16 @@ window.SPARK_BOARD = (() => {
     }
   });
 
-  return { build, light, press };
+  // ---------------- clic en teclas ----------------
+
+  let keyHandler = null;
+  CONTAINER.addEventListener('click', (ev) => {
+    const el = ev.target.closest('.key');
+    if (!el || !el.dataset.tok) return;
+    flash(el);
+    playSound();
+    if (keyHandler) keyHandler(el.dataset.tok.trim().split(/\s+/)[0], el);
+  });
+
+  return { build, light, press, setKeyHandler: (fn) => (keyHandler = fn) };
 })();

@@ -37,6 +37,9 @@
       switchLangFrom: 'Cambiar a español',
       switchKbWin: 'Cambiar a teclado Windows',
       switchKbMac: 'Cambiar a teclado macOS',
+      keyUses: 'atajos usan esta tecla',
+      more: 'más',
+      close: 'Cerrar',
       cats: { DESIGN: 'DISEÑO', VIDEO: 'VIDEO', CODE: 'CÓDIGO', PRODUCTIVITY: 'PRODUCTIVIDAD' },
     },
     en: {
@@ -58,6 +61,9 @@
       switchLangFrom: 'Switch to English',
       switchKbWin: 'Switch to Windows keyboard',
       switchKbMac: 'Switch to macOS keyboard',
+      keyUses: 'shortcuts use this key',
+      more: 'more',
+      close: 'Close',
       cats: { DESIGN: 'DESIGN', VIDEO: 'VIDEO', CODE: 'CODE', PRODUCTIVITY: 'PRODUCTIVITY' },
     },
   };
@@ -229,11 +235,94 @@
   // Teclado "Pure CSS" de ManzDev/twitch-keyboard (js/twboard.js)
 
   function buildBoard() {
-    if (window.SPARK_BOARD) window.SPARK_BOARD.build(platform);
+    if (window.SPARK_BOARD) {
+      window.SPARK_BOARD.build(platform);
+      window.SPARK_BOARD.setKeyHandler(showKeyShortcuts);
+    }
   }
 
   function lightTokens(tokens) {
     if (window.SPARK_BOARD) window.SPARK_BOARD.light(tokens);
+  }
+
+  // ---------- clic en una tecla: atajos que la usan ----------
+  const kbResults = $('#kb-results');
+  let allShortcuts = null;
+
+  function buildShortcutIndex() {
+    allShortcuts = [];
+    for (const cat of DATA.cats) {
+      for (const tool of cat.tools) {
+        const groups = DATA.tools[tool.id] || [];
+        for (const g of groups) {
+          for (const it of g.items || []) {
+            allShortcuts.push({
+              toolId: tool.id,
+              action: it.action || '',
+              actionEs: it.actionEs || '',
+              keys: it.keys || [],
+              norm: new Set((it.keys || []).map(normTok)),
+            });
+          }
+        }
+      }
+    }
+  }
+
+  function hideResults() {
+    if (kbResults && !kbResults.hidden) kbResults.hidden = true;
+  }
+
+  function showKeyShortcuts(tok) {
+    if (!allShortcuts) buildShortcutIndex();
+    const search = new Set([normTok(tok)]);
+    if (platform === 'win' && (tok === 'win' || tok === 'cmd')) search.add('ctrl');
+    const matches = allShortcuts.filter((s) => [...search].some((x) => s.norm.has(x)));
+    if (!matches.length) { hideResults(); return; }
+
+    const order = new Map();
+    for (const cat of DATA.cats) for (const tool of cat.tools) order.set(tool.id, order.size);
+    const byTool = new Map();
+    for (const s of matches) {
+      if (!byTool.has(s.toolId)) byTool.set(s.toolId, []);
+      byTool.get(s.toolId).push(s);
+    }
+    const groups = [...byTool.entries()].sort((a, b) => (order.get(a[0]) ?? 1e9) - (order.get(b[0]) ?? 1e9));
+
+    const total = matches.length;
+    const MAX_TOTAL = 60, MAX_PER = 4;
+    let shown = 0;
+    let html = `<header class="kr-head"><span class="kr-title"><kbd class="kr-kbd${isGlyph(labelFor(tok)) ? ' sym' : ''}">${esc(labelFor(tok))}</kbd><span>${total} ${t('keyUses')}</span></span><button class="kr-close" type="button" aria-label="${esc(t('close'))}">×</button></header><div class="kr-scroll">`;
+
+    for (const [tid, list] of groups) {
+      if (shown >= MAX_TOTAL) break;
+      const tool = toolIndex.get(tid);
+      const name = tool ? tool.name : tid;
+      html += `<div class="kr-group"><div class="kr-tool"><button class="kr-tool-btn" type="button" data-tool="${esc(tid)}">${iconHtml(tid)}<span>${esc(name)}</span><span class="kr-count">${list.length}</span></button></div><ul class="kr-list">`;
+      const capped = list.slice(0, MAX_PER);
+      for (const s of capped) {
+        if (shown >= MAX_TOTAL) break;
+        shown++;
+        const act = lang === 'es' && s.actionEs ? s.actionEs : s.action;
+        html += `<li><span class="kr-keys">${keysHtml(s.keys)}</span><span class="kr-act">${esc(act)}</span></li>`;
+      }
+      const rest = list.length - capped.length;
+      if (rest > 0) html += `<li class="kr-more">+${rest} ${t('more')}</li>`;
+      html += '</ul></div>';
+    }
+    if (total > shown) html += `<div class="kr-more-total">… y ${total - shown} ${t('more')}</div>`;
+    html += '</div>';
+
+    kbResults.innerHTML = html;
+    kbResults.hidden = false;
+
+    const close = $('.kr-close', kbResults);
+    if (close) close.addEventListener('click', hideResults);
+    $$('.kr-tool-btn', kbResults).forEach((b) => b.addEventListener('click', () => {
+      const btn = $('.tool[data-tool="' + b.dataset.tool + '"]');
+      hideResults();
+      if (btn) openTool(btn);
+    }));
   }
 
   // ---------- pantalla de atajo ----------
@@ -241,6 +330,7 @@
   const dispKeys = $('#kb-display-keys');
 
   function showDisplay(label, tokens) {
+    hideResults();
     dispLabel.textContent = label || (curTool ? t('displayHint') : '');
     dispKeys.innerHTML = tokens && tokens.length ? keysHtml(tokens, 'kbd') : '';
     if (label && tokens) lightTokens(tokens);
@@ -287,6 +377,7 @@
   function openTool(btn) {
     const id = btn.dataset.tool;
     if (!id) return;
+    hideResults();
     toolButtons.forEach((b) => b.classList.toggle('active', b === btn));
     const tool = toolIndex.get(id);
     scTitle.textContent = tool ? tool.name : id;
@@ -314,6 +405,7 @@
   function backToTools() {
     sidebar.dataset.view = 'tools';
     document.body.dataset.bg = 'tools';
+    hideResults();
     toolButtons.forEach((b) => b.classList.remove('active'));
     curTool = null; curRows = []; curGroups = [];
     showDisplay('', null);
@@ -415,10 +507,13 @@
   }
 
   window.addEventListener('keydown', (e) => {
-    if (e.code === 'Escape' && sidebar.dataset.view === 'shortcuts') {
-      e.preventDefault();
-      backToTools();
-      return;
+    if (e.code === 'Escape') {
+      if (!kbResults.hidden) { hideResults(); return; }
+      if (sidebar.dataset.view === 'shortcuts') {
+        e.preventDefault();
+        backToTools();
+        return;
+      }
     }
     if (sidebar.dataset.view !== 'shortcuts') return;
     if (document.activeElement === scSearch) return;
@@ -441,7 +536,15 @@
 
   window.addEventListener('blur', () => {
     typingTokens.clear();
+    hideResults();
     if (sidebar.dataset.view === 'shortcuts') updateTyping();
+  });
+
+  document.addEventListener('click', (e) => {
+    if (kbResults.hidden) return;
+    if (e.target.closest('.kb-board')) return;
+    if (kbResults.contains(e.target)) return;
+    hideResults();
   });
 
   // ---------- confetti ----------
@@ -540,6 +643,8 @@
   // ---------- aplicar plataforma ----------
   function applyPlatform() {
     buildBoard();
+    allShortcuts = null;
+    hideResults();
     for (const btn of toolButtons) {
       const tool = toolIndex.get(btn.dataset.tool);
       if (tool) btn.querySelector('.hotkey').textContent = hotkeyLabel(tool.hotkey.split('+'));
