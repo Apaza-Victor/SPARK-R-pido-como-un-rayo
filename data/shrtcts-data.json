@@ -392,6 +392,11 @@
           "id": "zbrush",
           "name": "ZBrush",
           "hotkey": "cmd+shift+9"
+        },
+        {
+          "id": "sketchup",
+          "name": "SketchUp",
+          "hotkey": "cmd+9"
         }
       ]
     }
@@ -26265,6 +26270,225 @@
             "keys": [
               "cmd",
               ","
+            ]
+          }
+        ]
+      }
+    ],
+    "sketchup": [
+      {
+        "label": "Files",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ]
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ]
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ]
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "Y"
+            ]
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ]
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ]
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ]
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ]
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Draw",
+        "items": [
+          {
+            "action": "Line",
+            "keys": [
+              "L"
+            ]
+          },
+          {
+            "action": "Rectangle",
+            "keys": [
+              "R"
+            ]
+          },
+          {
+            "action": "Circle",
+            "keys": [
+              "C"
+            ]
+          },
+          {
+            "action": "Arc",
+            "keys": [
+              "A"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "items": [
+          {
+            "action": "Select",
+            "keys": [
+              "space"
+            ]
+          },
+          {
+            "action": "Eraser",
+            "keys": [
+              "E"
+            ]
+          },
+          {
+            "action": "Move",
+            "keys": [
+              "M"
+            ]
+          },
+          {
+            "action": "Rotate",
+            "keys": [
+              "Q"
+            ]
+          },
+          {
+            "action": "Scale",
+            "keys": [
+              "S"
+            ]
+          },
+          {
+            "action": "Push / Pull",
+            "keys": [
+              "P"
+            ]
+          },
+          {
+            "action": "Offset",
+            "keys": [
+              "F"
+            ]
+          },
+          {
+            "action": "Follow Me",
+            "keys": [
+              "D"
+            ]
+          },
+          {
+            "action": "Paint bucket",
+            "keys": [
+              "B"
+            ]
+          },
+          {
+            "action": "Text",
+            "keys": [
+              "T"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "View",
+        "items": [
+          {
+            "action": "Orbit",
+            "keys": [
+              "O"
+            ]
+          },
+          {
+            "action": "Pan",
+            "keys": [
+              "H"
+            ]
+          },
+          {
+            "action": "Zoom",
+            "keys": [
+              "Z"
+            ]
+          },
+          {
+            "action": "Zoom extents",
+            "keys": [
+              "shift",
+              "E"
+            ]
+          },
+          {
+            "action": "Walk",
+            "keys": [
+              "W"
             ]
           }
         ]

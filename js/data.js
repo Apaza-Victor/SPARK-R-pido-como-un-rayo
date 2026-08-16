@@ -392,6 +392,11 @@ window.SPARK_DATA = {
           "id": "zbrush",
           "name": "ZBrush",
           "hotkey": "cmd+shift+9"
+        },
+        {
+          "id": "sketchup",
+          "name": "SketchUp",
+          "hotkey": "cmd+9"
         }
       ]
     }
@@ -30045,6 +30050,260 @@ window.SPARK_DATA = {
               ","
             ],
             "actionEs": "Ajustes del sistema"
+          }
+        ]
+      }
+    ],
+    "sketchup": [
+      {
+        "label": "Files",
+        "labelEs": "Archivos",
+        "items": [
+          {
+            "action": "New",
+            "keys": [
+              "cmd",
+              "N"
+            ],
+            "actionEs": "Nuevo"
+          },
+          {
+            "action": "Open",
+            "keys": [
+              "cmd",
+              "O"
+            ],
+            "actionEs": "Abrir"
+          },
+          {
+            "action": "Save",
+            "keys": [
+              "cmd",
+              "S"
+            ],
+            "actionEs": "Guardar"
+          },
+          {
+            "action": "Save as",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ],
+            "actionEs": "Guardar como"
+          }
+        ]
+      },
+      {
+        "label": "Edit",
+        "labelEs": "Edición",
+        "items": [
+          {
+            "action": "Undo",
+            "keys": [
+              "cmd",
+              "Z"
+            ],
+            "actionEs": "Deshacer"
+          },
+          {
+            "action": "Redo",
+            "keys": [
+              "cmd",
+              "Y"
+            ],
+            "actionEs": "Rehacer"
+          },
+          {
+            "action": "Cut",
+            "keys": [
+              "cmd",
+              "X"
+            ],
+            "actionEs": "Cortar"
+          },
+          {
+            "action": "Copy",
+            "keys": [
+              "cmd",
+              "C"
+            ],
+            "actionEs": "Copiar"
+          },
+          {
+            "action": "Paste",
+            "keys": [
+              "cmd",
+              "V"
+            ],
+            "actionEs": "Pegar"
+          },
+          {
+            "action": "Select all",
+            "keys": [
+              "cmd",
+              "A"
+            ],
+            "actionEs": "Seleccionar todo"
+          },
+          {
+            "action": "Delete",
+            "keys": [
+              "backspace"
+            ],
+            "actionEs": "Eliminar"
+          }
+        ]
+      },
+      {
+        "label": "Draw",
+        "labelEs": "Dibujo",
+        "items": [
+          {
+            "action": "Line",
+            "keys": [
+              "L"
+            ],
+            "actionEs": "Línea"
+          },
+          {
+            "action": "Rectangle",
+            "keys": [
+              "R"
+            ],
+            "actionEs": "Rectángulo"
+          },
+          {
+            "action": "Circle",
+            "keys": [
+              "C"
+            ],
+            "actionEs": "Círculo"
+          },
+          {
+            "action": "Arc",
+            "keys": [
+              "A"
+            ],
+            "actionEs": "Arco"
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "labelEs": "Herramientas",
+        "items": [
+          {
+            "action": "Select",
+            "keys": [
+              "space"
+            ],
+            "actionEs": "Selección"
+          },
+          {
+            "action": "Eraser",
+            "keys": [
+              "E"
+            ],
+            "actionEs": "Borrador"
+          },
+          {
+            "action": "Move",
+            "keys": [
+              "M"
+            ],
+            "actionEs": "Mover"
+          },
+          {
+            "action": "Rotate",
+            "keys": [
+              "Q"
+            ],
+            "actionEs": "Rotar"
+          },
+          {
+            "action": "Scale",
+            "keys": [
+              "S"
+            ],
+            "actionEs": "Escalar"
+          },
+          {
+            "action": "Push / Pull",
+            "keys": [
+              "P"
+            ],
+            "actionEs": "Empujar / Tirar"
+          },
+          {
+            "action": "Offset",
+            "keys": [
+              "F"
+            ],
+            "actionEs": "Desfase"
+          },
+          {
+            "action": "Follow Me",
+            "keys": [
+              "D"
+            ],
+            "actionEs": "Sígueme"
+          },
+          {
+            "action": "Paint bucket",
+            "keys": [
+              "B"
+            ],
+            "actionEs": "Bote de pintura"
+          },
+          {
+            "action": "Text",
+            "keys": [
+              "T"
+            ],
+            "actionEs": "Texto"
+          }
+        ]
+      },
+      {
+        "label": "View",
+        "labelEs": "Vista",
+        "items": [
+          {
+            "action": "Orbit",
+            "keys": [
+              "O"
+            ],
+            "actionEs": "Órbita"
+          },
+          {
+            "action": "Pan",
+            "keys": [
+              "H"
+            ],
+            "actionEs": "Panorámica"
+          },
+          {
+            "action": "Zoom",
+            "keys": [
+              "Z"
+            ],
+            "actionEs": "Zoom"
+          },
+          {
+            "action": "Zoom extents",
+            "keys": [
+              "shift",
+              "E"
+            ],
+            "actionEs": "Zoom a los límites"
+          },
+          {
+            "action": "Walk",
+            "keys": [
+              "W"
+            ],
+            "actionEs": "Caminar"
           }
         ]
       }

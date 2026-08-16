@@ -141,6 +141,7 @@
     powershell:  { c: '#5391FE', l: 'Pw' },
     windows:     { c: '#00A4EF', l: 'Wd' },
     macos:       { c: '#A2AAAD', l: 'Mc' },
+    sketchup:    { c: '#F04922', l: 'Su' },
   };
   const brandOf = (id) => BRANDS[id] || { c: '#0a6cff', l: (id || '?').slice(0, 2) };
   window.SPARK_BRANDS = BRANDS;
