@@ -132,6 +132,15 @@
     maya:        { c: '#2E9CA8', l: 'Ma' },
     cinema4d:    { c: '#0078C8', l: 'C4' },
     zbrush:      { c: '#E8412C', l: 'Zb' },
+    autocad:     { c: '#E2231A', l: 'Ac' },
+    gimp:        { c: '#464B54', l: 'Gp' },
+    inkscape:    { c: '#1D6B54', l: 'Ik' },
+    blufftitler: { c: '#2E6BE6', l: 'Bt' },
+    docker:      { c: '#2496ED', l: 'Dk' },
+    cmd:         { c: '#353B45', l: 'Cm' },
+    powershell:  { c: '#5391FE', l: 'Pw' },
+    windows:     { c: '#00A4EF', l: 'Wd' },
+    macos:       { c: '#A2AAAD', l: 'Mc' },
   };
   const brandOf = (id) => BRANDS[id] || { c: '#0a6cff', l: (id || '?').slice(0, 2) };
   window.SPARK_BRANDS = BRANDS;
