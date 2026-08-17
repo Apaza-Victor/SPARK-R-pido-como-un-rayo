@@ -25,6 +25,7 @@ window.SPARK_BOARD = (() => {
     savedColor: '#0a6cff',
     keyHandler: null,
     flashTimers: new Map(),
+    gameMode: false,
   };
 
   const keyEls = new Map();   // token -> [li]
@@ -88,12 +89,33 @@ window.SPARK_BOARD = (() => {
     }
   }
 
+  // ilumina las teclas de un atajo en cascada (onda) para ver la secuencia
+  let lightTimer = null;
+  let lightSeq = 0;
+
   function light(tokens) {
+    lightSeq += 1;
+    const mySeq = lightSeq;
     for (const els of keyEls.values()) for (const el of els) el.classList.remove('lit');
+    if (lightTimer) { clearTimeout(lightTimer); lightTimer = null; }
     if (!tokens) return;
-    for (const tk of resolveTokens(tokens)) {
-      for (const el of keyEls.get(tk) || []) el.classList.add('lit');
+    const resolved = resolveTokens(tokens);
+    const grouped = [];
+    for (const tk of resolved) {
+      const els = keyEls.get(tk) || [];
+      if (els.length) grouped.push(els);
     }
+    if (!grouped.length) return;
+    grouped.forEach((els, i) => {
+      lightTimer = setTimeout(() => {
+        if (mySeq !== lightSeq) return;
+        for (const el of els) {
+          el.classList.remove('ripple');
+          void el.offsetWidth;
+          el.classList.add('lit', 'ripple');
+        }
+      }, i * 45);
+    });
   }
 
   function press(tokens) {
@@ -101,6 +123,13 @@ window.SPARK_BOARD = (() => {
     for (const tk of resolveTokens(tokens)) {
       for (const el of keyEls.get(tk) || []) flash(el);
     }
+    haptic();
+  }
+
+  function haptic() {
+    try {
+      if (navigator.vibrate) navigator.vibrate(8);
+    } catch (e) { /* sin vibración */ }
   }
 
   function setKeyHandler(fn) {
@@ -129,36 +158,83 @@ window.SPARK_BOARD = (() => {
     } catch (e) { /* sin sonido */ }
   }
 
-  function setKeySound(name) {
+  function setKeySound(name, silent) {
     if (!KEY_SOUNDS.includes(name)) return;
     state.currentKeySound = name;
     for (const el of $$('.key-sound', BOARD)) {
       el.classList.toggle('active', el.dataset.keySound === name);
     }
-    playSound();
+    try { localStorage.setItem('spark-key-sound', name); } catch (e) { /* sin almacenamiento */ }
+    if (!silent) playSound();
   }
 
   // ---------------- color, modo juego, disco, luces ----------------
 
   function cycleColor() {
+    if (state.gameMode) return;
     state.colorIndex = (state.colorIndex + 1) % COLOR_VARIANTS.length;
     state.savedColor = COLOR_VARIANTS[state.colorIndex];
     document.documentElement.style.setProperty('--key-text-highlight', state.savedColor);
     try { localStorage.setItem('spark-key-color', state.savedColor); } catch (e) { /* sin almacenamiento */ }
   }
 
+  function setColor(variantIndex) {
+    if (state.gameMode) return;
+    const i = ((variantIndex % COLOR_VARIANTS.length) + COLOR_VARIANTS.length) % COLOR_VARIANTS.length;
+    state.colorIndex = i;
+    state.savedColor = COLOR_VARIANTS[i];
+    document.documentElement.style.setProperty('--key-text-highlight', state.savedColor);
+    try { localStorage.setItem('spark-key-color', state.savedColor); } catch (e) { /* sin almacenamiento */ }
+    if (state.discoTimer) toggleDisco();
+  }
+
+  // teclas G1–G5: atajos a los primeros presets de color
+  function applyGKeyPresets() {
+    for (let i = 1; i <= 5; i++) {
+      const li = BOARD.querySelector(`.g-keys li:nth-child(${i})`);
+      if (li) li.dataset.preset = String(i - 1);
+    }
+  }
+
   function toggleWhiteMode() {
     const wrapper = $('.keyboard-wrapper', BOARD);
     if (!wrapper) return;
     wrapper.classList.toggle('white-mode');
+    try { localStorage.setItem('spark-white-mode', wrapper.classList.contains('white-mode') ? '1' : '0'); } catch (e) { /* sin almacenamiento */ }
   }
+
+  function toggleBreathing() {
+    const logo = $('.logitech-logo', BOARD);
+    if (!logo) return;
+    const on = logo.classList.toggle('breathe');
+    if (on && state.discoTimer) toggleDisco();
+    if (on) logo.classList.remove('active');
+    try { localStorage.setItem('spark-breathing', on ? '1' : '0'); } catch (e) { /* sin almacenamiento */ }
+  }
+
+  // ---------------- medios (teclas multimedia) ----------------
+
+  function playMedia(action) {
+    try {
+      const ms = navigator.mediaSession;
+      if (ms && typeof ms[action] === 'function') { ms[action](); return; }
+    } catch (e) { /* sin soporte */ }
+    playSound();
+  }
+
+  // ---------------- modo juego ----------------
 
   function toggleGameMode() {
     const logo = $('.logitech-logo', BOARD);
     const btn = $('.round-key.game', BOARD);
     const on = logo && logo.classList.toggle('active');
     if (btn) btn.classList.toggle('active', !!on);
+    state.gameMode = !!on;
+    if (on && state.discoTimer) toggleDisco();
+    try { localStorage.setItem('spark-game-mode', on ? '1' : '0'); } catch (e) { /* sin almacenamiento */ }
   }
+
+  function isGameMode() { return !!state.gameMode; }
 
   function setBrightness(level) {
     state.brightness = ((level % 4) + 4) % 4;
@@ -168,6 +244,7 @@ window.SPARK_BOARD = (() => {
     }
     const btn = $('.round-key.brightness', BOARD);
     if (btn) btn.classList.toggle('active', state.brightness > 0);
+    try { localStorage.setItem('spark-brightness', String(state.brightness)); } catch (e) { /* sin almacenamiento */ }
   }
 
   function toggleDisco() {
@@ -180,6 +257,7 @@ window.SPARK_BOARD = (() => {
       return;
     }
     if (logo) logo.classList.add('active');
+    if (logo) logo.classList.remove('breathe');
     state.discoTimer = setInterval(() => {
       state.colorIndex = (state.colorIndex + 1) % COLOR_VARIANTS.length;
       document.documentElement.style.setProperty('--key-text-highlight', COLOR_VARIANTS[state.colorIndex]);
@@ -199,6 +277,9 @@ window.SPARK_BOARD = (() => {
       const a = AUDIO[name];
       if (a) a.volume = v;
     }
+    const box = $('.volume-wheel_box', BOARD);
+    if (box) box.setAttribute('aria-valuenow', Math.round(v * 100));
+    try { localStorage.setItem('spark-volume', String(v)); } catch (e) { /* sin almacenamiento */ }
   }
 
   function initVolumeWheel() {
@@ -234,6 +315,7 @@ window.SPARK_BOARD = (() => {
     const li = keyById.get(ev.code.toLowerCase());
     if (!li) return;
     flash(li);
+    haptic();
     playSound();
     if (ev.code === 'NumLock') toggleInfoLight('numlock');
     if (ev.code === 'CapsLock') toggleInfoLight('capslock');
@@ -245,12 +327,26 @@ window.SPARK_BOARD = (() => {
     const sound = ev.target.closest('.key-sound');
     if (sound) { setKeySound(sound.dataset.keySound); return; }
 
+    const logo = ev.target.closest('.logitech-logo');
+    if (logo) { toggleBreathing(); playSound(); return; }
+
     const li = ev.target.closest('.keyboard-wrapper li');
     if (!li || li.classList.contains('info-light')) return;
 
     flash(li);
+    haptic();
 
-    if (li.closest('.media-keys')) { playSound(); return; }
+    if (li.closest('.media-keys')) {
+      const idx = Array.from($$('.media-keys li', BOARD)).indexOf(li);
+      playMedia(idx === 1 ? 'play' : idx === 0 ? 'previoustrack' : idx === 2 ? 'nexttrack' : 'stop');
+      return;
+    }
+
+    if (li.closest('.g-keys')) {
+      playSound();
+      if (li.dataset.preset !== undefined) setColor(Number(li.dataset.preset));
+      return;
+    }
 
     if (li.classList.contains('round-key')) {
       playSound();
@@ -274,16 +370,32 @@ window.SPARK_BOARD = (() => {
 
   indexKeys();
   initVolumeWheel();
+  applyGKeyPresets();
 
-  // restaura el color elegido con M1-M3 entre recargas
   try {
+    // restaura el color elegido con M1-M3 entre recargas
     const c = localStorage.getItem('spark-key-color');
     if (c && /^#[0-9a-f]{6}$/i.test(c)) {
       state.savedColor = c;
       state.colorIndex = Math.max(0, COLOR_VARIANTS.indexOf(c));
       document.documentElement.style.setProperty('--key-text-highlight', c);
     }
+    // restaura el sonido elegido
+    const s = localStorage.getItem('spark-key-sound');
+    if (s && KEY_SOUNDS.includes(s)) setKeySound(s, true);
+    // restaura el brillo
+    const b = parseInt(localStorage.getItem('spark-brightness'), 10);
+    if (!isNaN(b)) setBrightness(b);
+    // restaura el modo blanco
+    if (localStorage.getItem('spark-white-mode') === '1') toggleWhiteMode();
+    // restaura el modo breathing
+    if (localStorage.getItem('spark-breathing') === '1') toggleBreathing();
+    // restaura el modo juego
+    if (localStorage.getItem('spark-game-mode') === '1') toggleGameMode();
+    // restaura el volumen
+    const v = parseFloat(localStorage.getItem('spark-volume'));
+    if (!isNaN(v)) setVolume(v);
   } catch (e) { /* sin almacenamiento */ }
 
-  return { build, light, press, setKeyHandler };
+  return { build, light, press, setKeyHandler, isGameMode };
 })();

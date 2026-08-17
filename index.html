@@ -64,7 +64,7 @@
       </div>
       <nav class="cats page-body" id="cats" aria-label="Herramientas"></nav>
       <footer class="sidebar-credit">
-        Hecho con <span style="opacity:.8">⌘</span> · <a href="pages/cambios.html">Cambios</a> <span class="sep">·</span> <a href="#" target="_blank" rel="noopener">Contacto</a>
+        Hecho con <span style="opacity:.8">⌘</span> · <a href="pages/cambios.html">Cambios</a> <span class="sep">·</span> <a href="https://github.com/Apaza-Victor/SPARK-R-pido-como-un-rayo/issues" target="_blank" rel="noopener">Contacto</a>
       </footer>
     </section>
 
@@ -85,6 +85,11 @@
           </svg>
           <input type="search" id="sc-search" placeholder="Buscar atajos" autocomplete="off" aria-label="Buscar atajos">
         </div>
+        <div class="practice-bar" id="practice-bar" hidden>
+          <span class="practice-label">Aciertos</span>
+          <span class="practice-score" id="practice-score">0</span>
+          <button type="button" id="practice-reset" class="practice-reset">Reiniciar</button>
+        </div>
       </div>
       <div class="page-body sc-body" id="sc-body"></div>
     </section>
@@ -100,7 +105,7 @@
         <div class="kb-display-keys" id="kb-display-keys"></div>
       </div>
       <div class="kb-results" id="kb-results" hidden></div>
-      <div class="kb-board" id="kb-board">
+      <div class="kb-board" id="kb-board" role="application" aria-label="Teclado interactivo">
         <div class="kb-g815">
           <div class="kb-g815-bar">
             <div class="key-sound-switch">
@@ -113,31 +118,31 @@
             <div class="header-keys">
               <div class="logitech-logo"><svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" viewBox="0 0 64 64"><g fill="currentColor"><path d="M48 7 C46.7 11.6 43.6 14.7 39 16 C43.6 17.3 46.7 20.4 48 25 C49.3 20.4 52.4 17.3 57 16 C52.4 14.7 49.3 11.6 48 7 Z"/><circle cx="50" cy="34" r="1.75"/></g><text x="32" y="44" text-anchor="middle" font-family="Outfit, Arial Black, Arial, sans-serif" font-size="36" font-weight="900" fill="currentColor" letter-spacing="-1">S</text></svg></div>
               <ul class="memory-keys">
-                <li class="round-key active">M1</li>
-                <li class="round-key">M2</li>
-                <li class="round-key">M3</li>
-                <li class="round-key memory">MR</li>
+                <li class="round-key active" aria-label="Preset de color 1">M1</li>
+                <li class="round-key" aria-label="Preset de color 2">M2</li>
+                <li class="round-key" aria-label="Preset de color 3">M3</li>
+                <li class="round-key memory" aria-label="Modo blanco">MR</li>
               </ul>
               <ul class="utility-keys">
-                <li class="round-key game"><span class="material-symbols-outlined">edit_square</span></li>
-                <li class="round-key brightness active"><span class="material-symbols-outlined">light_mode</span></li>
+                <li class="round-key game" aria-label="Modo juego"><span class="material-symbols-outlined">edit_square</span></li>
+                <li class="round-key brightness active" aria-label="Brillo"><span class="material-symbols-outlined">light_mode</span></li>
               </ul>
               <ul class="info-lights">
-                <li class="info-light capslock-light"><span>CAPS LOCK</span></li>
-                <li class="info-light numlock-light active"><span>NUM LOCK</span></li>
+                <li class="info-light capslock-light" aria-label="Bloq Mayús"><span>CAPS LOCK</span></li>
+                <li class="info-light numlock-light active" aria-label="Bloq Num"><span>NUM LOCK</span></li>
               </ul>
               <div class="volume-wheel">
-                <div class="volume-wheel_box">
+                <div class="volume-wheel_box" role="slider" aria-label="Volumen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
                   <span class="volume-label">Vol</span>
                   <div class="volume-wheel_scroll"></div>
                 </div>
               </div>
             </div>
             <ul class="media-keys">
-              <li class="round-key">|◀◀</li>
-              <li class="round-key">▶||</li>
-              <li class="round-key">▶▶|</li>
-              <li class="round-key">◀✖</li>
+              <li class="round-key" aria-label="Anterior">|◀◀</li>
+              <li class="round-key" aria-label="Reproducir / Pausar">▶||</li>
+              <li class="round-key" aria-label="Siguiente">▶▶|</li>
+              <li class="round-key" aria-label="Detener">◀✖</li>
             </ul>
             <ul class="f-keys">
               <li data-key="Escape" data-tok="esc">ESC</li>
@@ -155,11 +160,11 @@
               <li data-key="F12" data-tok="f12">F12</li>
             </ul>
             <ul class="g-keys">
-              <li>G1</li>
-              <li>G2</li>
-              <li>G3</li>
-              <li>G4</li>
-              <li>G5</li>
+              <li aria-label="Color preset 1">G1</li>
+              <li aria-label="Color preset 2">G2</li>
+              <li aria-label="Color preset 3">G3</li>
+              <li aria-label="Color preset 4">G4</li>
+              <li aria-label="Color preset 5">G5</li>
             </ul>
             <div class="center-keys">
               <ul class="center-keys_row-1">
@@ -269,22 +274,22 @@
             </ul>
             <ul class="numpad-keys">
               <li class="numlock" data-key="NumLock"><span>Bloq</span><span>Num</span></li>
-              <li data-key="NumpadDivide">/</li>
-              <li data-key="NumpadMultiply">*</li>
-              <li class="numpad-minus" data-key="NumpadSubtract">_</li>
-              <li data-key="Numpad7">7</li>
-              <li data-key="Numpad8">8</li>
-              <li data-key="Numpad9">9</li>
-              <li class="numpad-plus" data-key="NumpadAdd">+</li>
-              <li data-key="Numpad4">4</li>
-              <li data-key="Numpad5">5</li>
-              <li data-key="Numpad6">6</li>
-              <li data-key="Numpad1">1</li>
-              <li data-key="Numpad2">2</li>
-              <li data-key="Numpad3">3</li>
-              <li class="long-word-key numpad-enter" data-key="NumpadEnter">Intro</li>
-              <li class="numpad-zero" data-key="Numpad0">0</li>
-              <li class="numpad-dot" data-key="NumpadDecimal">.</li>
+              <li data-key="NumpadDivide" data-tok="/">/</li>
+              <li data-key="NumpadMultiply" data-tok="*">*</li>
+              <li class="numpad-minus" data-key="NumpadSubtract" data-tok="-">_</li>
+              <li data-key="Numpad7" data-tok="7">7</li>
+              <li data-key="Numpad8" data-tok="8">8</li>
+              <li data-key="Numpad9" data-tok="9">9</li>
+              <li class="numpad-plus" data-key="NumpadAdd" data-tok="+">+</li>
+              <li data-key="Numpad4" data-tok="4">4</li>
+              <li data-key="Numpad5" data-tok="5">5</li>
+              <li data-key="Numpad6" data-tok="6">6</li>
+              <li data-key="Numpad1" data-tok="1">1</li>
+              <li data-key="Numpad2" data-tok="2">2</li>
+              <li data-key="Numpad3" data-tok="3">3</li>
+              <li class="long-word-key numpad-enter" data-key="NumpadEnter" data-tok="enter">Intro</li>
+              <li class="numpad-zero" data-key="Numpad0" data-tok="0">0</li>
+              <li class="numpad-dot" data-key="NumpadDecimal" data-tok=".">.</li>
             </ul>
           </div>
         </div>

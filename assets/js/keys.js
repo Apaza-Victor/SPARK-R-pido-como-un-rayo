@@ -73,7 +73,7 @@ window.SPARK_KEYS = (() => {
     capslock: 'capslock', up: 'up', down: 'down', left: 'left', right: 'right',
     home: ['fn', 'left'], end: ['fn', 'right'],
     '`': '`', '-': '-', '=': '=', '[': '[', ']': ']', '\\': '\\', ';': ';',
-    "'": "'", ',': ',', '.': '.', '/': '/', '<': ',', '+': '=',
+    "'": "'", ',': ',', '.': '.', '/': '/', '<': ',', '+': ['=', '+'], '*': '*',
     mm: 'm', ee: 'e', uu: 'u', ll: 'l',
     arrowkeys: ['up', 'down', 'left', 'right'],
     'up/downarrow': ['up', 'down'],

@@ -110,6 +110,7 @@
     gmail:       { c: '#EA4335', l: 'Gm' },
     gdocs:       { c: '#4285F4', l: 'Gd' },
     gsheets:     { c: '#34A853', l: 'Gs' },
+    github:      { c: '#181717', l: 'Gh' },
     adobeaudition:{ c: '#6C6CF5', l: 'Au' },
     audacity:    { c: '#F5C40E', l: 'Ad' },
     flstudio:    { c: '#7C4CEE', l: 'Fs' },
@@ -525,6 +526,13 @@
     if (c === 'ArrowRight') return 'right';
     if (c === 'Home') return 'home';
     if (c === 'End') return 'end';
+    m = /^Numpad(\d)$/.exec(c); if (m) return m[1];
+    if (c === 'NumpadDecimal') return '.';
+    if (c === 'NumpadAdd') return '+';
+    if (c === 'NumpadSubtract') return '-';
+    if (c === 'NumpadMultiply') return '*';
+    if (c === 'NumpadDivide') return '/';
+    if (c === 'NumpadEnter') return 'enter';
     m = /^F(\d{1,2})$/.exec(c); if (m) return 'F' + m[1];
     return null;
   }
@@ -539,6 +547,26 @@
     return null;
   }
 
+  function updatePractice() {
+    const bar = $('#practice-bar');
+    if (!bar) return;
+    bar.hidden = sidebar.dataset.view !== 'shortcuts' || done.size === 0;
+    const score = $('#practice-score');
+    if (score) score.textContent = String(done.size);
+  }
+
+  $('#practice-reset').addEventListener('click', () => {
+    done.clear();
+    for (const d of toolCache.values()) {
+      for (const row of $$('.sc', d)) row.classList.remove('done');
+    }
+    updatePractice();
+  });
+
+  function gameMode() {
+    return window.SPARK_BOARD ? window.SPARK_BOARD.isGameMode() : false;
+  }
+
   function updateTyping() {
     const tokens = [...typingTokens];
     lightTokens(tokens.length ? tokens : null);
@@ -548,7 +576,8 @@
       if (hit && !hit.classList.contains('done')) {
         hit.classList.add('done');
         done.add(rowKey(hit));
-        confettiFrom(hit);
+        if (!gameMode()) confettiFrom(hit);
+        updatePractice();
       }
     } else {
       applyFilters();
@@ -570,6 +599,7 @@
     const tok = codeToToken(e.code);
     if (!tok) return;
     if (e.repeat) return;
+    if (gameMode() && (tok === 'cmd' || tok === 'win')) return;
     typingTokens.add(tok);
     if (window.SPARK_BOARD) window.SPARK_BOARD.press([tok]);
     updateTyping();
@@ -581,6 +611,7 @@
     if (!tok) return;
     typingTokens.delete(tok);
     if (tok === 'cmd') typingTokens.clear();
+    if (gameMode() && (tok === 'cmd' || tok === 'win')) { typingTokens.clear(); return; }
     updateTyping();
   });
 

@@ -471,6 +471,7 @@ body.bg3d #bg-3d { display: block; }
 .kb-g815 .keyboard-wrapper.white-mode li span { color: #fff !important; }
 .kb-g815 .keyboard-wrapper.white-mode li .windows-key_box span,
 .kb-g815 .keyboard-wrapper.white-mode li .context-key_box span { background-color: #fff !important; }
+.kb-g815 .keyboard-wrapper.white-mode .volume-label { color: #fff !important; }
 
 .kb-g815 .keyboard-wrapper {
   user-select: none;
@@ -505,8 +506,6 @@ body.bg3d #bg-3d { display: block; }
   border-left: 0.25rem solid #202024;
   transition: top .05s ease, background .12s ease, color .12s ease, box-shadow .12s ease;
 }
-.kb-g815 .keyboard-wrapper li.caps-key.click,
-.kb-g815 .keyboard-wrapper li.caps-key:hover { border-right: 0.8125rem solid #282832; }
 .kb-g815 .keyboard-wrapper li.click,
 .kb-g815 .keyboard-wrapper li:active { top: 0.0625rem; }
 .kb-g815 .keyboard-wrapper li.click,
@@ -517,6 +516,8 @@ body.bg3d #bg-3d { display: block; }
   border-bottom: 0.375rem solid #323236;
   border-left: 0.25rem solid #282832;
 }
+.kb-g815 .keyboard-wrapper li.caps-key.click,
+.kb-g815 .keyboard-wrapper li.caps-key:hover { border-right: 0.8125rem solid #282832; }
 .kb-g815 .keyboard-wrapper li.click::after,
 .kb-g815 .keyboard-wrapper li:hover::after {
   border-top: 0.125rem solid #282832 !important;
@@ -532,10 +533,18 @@ body.bg3d #bg-3d { display: block; }
   line-height: 1;
   color: #34edff;
   margin-top: 1rem;
+  cursor: pointer;
 }
 .kb-g815 .logitech-logo.active {
   animation: kb-g815-rainbow 5s linear;
   animation-iteration-count: infinite;
+}
+.kb-g815 .logitech-logo.breathe {
+  animation: kb-g815-breathe 3.2s ease-in-out infinite;
+}
+@keyframes kb-g815-breathe {
+  0%, 100% { opacity: 0.35; transform: scale(0.94); }
+  50% { opacity: 1; transform: scale(1.04); }
 }
 
 .kb-g815 .utility-keys,
@@ -898,6 +907,16 @@ body.bg3d #bg-3d { display: block; }
 .kb-g815 .keyboard-wrapper li.lit.caps-key { border-right: 0.8125rem solid #57b4ff; }
 .kb-g815 .keyboard-wrapper li.lit .material-symbols-outlined { color: #fff; }
 
+/* onda/ripple al iluminar teclas */
+.kb-g815 .keyboard-wrapper li.ripple {
+  animation: key-ripple .35s ease-out;
+}
+@keyframes key-ripple {
+  0%   { box-shadow: 0 0 0 0 rgba(87, 180, 255, .7); }
+  50%  { box-shadow: 0 0 18px 6px rgba(87, 180, 255, .35); }
+  100% { box-shadow: 0 0 12px rgba(10, 108, 255, .65); }
+}
+
 @keyframes kb-g815-rainbow {
   0%, 100% { color: #34edff; }
   10% { color: #00ff98; }
@@ -1004,6 +1023,37 @@ body.bg3d #bg-3d { display: block; }
 .kr-more, .kr-more-total { opacity: .5; font-size: 12px; padding: 4px 10px; }
 .kr-more-total { padding: 8px 10px 4px; text-align: center; }
 
+/* ============ PRACTICE BAR ============ */
+
+.practice-bar {
+  display: flex; align-items: center; gap: 10px;
+  padding: 0 32px;
+  font-size: 13px; font-weight: 500;
+  color: rgba(255,255,255,.75);
+}
+.practice-bar[hidden] { display: none; }
+.practice-label { opacity: .7; }
+.practice-score {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 28px; height: 28px; padding: 0 8px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 8px;
+  font-family: var(--display); font-weight: 800; font-size: 15px;
+  color: #fff;
+}
+.practice-reset {
+  margin-left: auto;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 7px;
+  padding: 4px 12px;
+  color: #fff; font: inherit; font-size: 12px; font-weight: 500;
+  cursor: pointer;
+  transition: background .12s ease;
+}
+.practice-reset:hover { background: rgba(255,255,255,.18); }
+
 /* ============ CREDIT ============ */
 
 .credit {
@@ -1040,4 +1090,5 @@ body.bg3d #bg-3d { display: block; }
   :root { --sidebar-w: 100vw; }
   #stage, .credit { display: none; }
   .sidebar-credit { display: block; }
+  html, body { overflow-x: hidden; }
 }
