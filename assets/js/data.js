@@ -1649,6 +1649,84 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Documento y páginas"
+      },
+      {
+        "label": "More Features",
+        "labelEs": "Más Funciones",
+        "items": [
+          {
+            "action": "Clone brush",
+            "actionEs": "Pincel de clonar",
+            "keys": [
+              "s"
+            ]
+          },
+          {
+            "action": "Inpainting brush",
+            "actionEs": "Pincel de retoque",
+            "keys": [
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Live filter layer",
+            "actionEs": "Capa de filtro en vivo",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Merge visible",
+            "actionEs": "Fusionar visibles",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Rasterise",
+            "actionEs": "Rasterizar",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Channel mixer",
+            "actionEs": "Mezclador de canales",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Tone mapping",
+            "actionEs": "Mapeo de tonos",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Frequency separation",
+            "actionEs": "Separación de frecuencia",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "f"
+            ]
+          }
+        ]
       }
     ],
     "aftereffects": [
@@ -2737,6 +2815,82 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Edición de texto"
+      },
+      {
+        "label": "More Shortcuts",
+        "labelEs": "Más Atajos",
+        "items": [
+          {
+            "action": "Pre-compose",
+            "actionEs": "Precomponer",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Trim comp to work area",
+            "actionEs": "Recortar composición al área de trabajo",
+            "keys": [
+              "cmd",
+              "shift",
+              "x"
+            ]
+          },
+          {
+            "action": "Reveal in project",
+            "actionEs": "Revelar en proyecto",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Open layer source",
+            "actionEs": "Abrir fuente de capa",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Toggle transparency grid",
+            "actionEs": "Alternar cuadrícula de transparencia",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Toggle guides",
+            "actionEs": "Alternar guías",
+            "keys": [
+              "cmd",
+              ";"
+            ]
+          },
+          {
+            "action": "Toggle rulers",
+            "actionEs": "Alternar reglas",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Purge all memory",
+            "actionEs": "Purgar toda la memoria",
+            "keys": [
+              "cmd",
+              "alt",
+              "/"
+            ]
+          }
+        ]
       }
     ],
     "blender": [
@@ -3972,6 +4126,72 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Editores de sombreado y nodos"
+      },
+      {
+        "label": "Grease Pencil",
+        "labelEs": "Lápiz Grease",
+        "items": [
+          {
+            "action": "Draw mode",
+            "actionEs": "Modo de dibujo",
+            "keys": [
+              "ctrl",
+              "tab"
+            ]
+          },
+          {
+            "action": "Draw stroke",
+            "actionEs": "Trazo de dibujo",
+            "keys": [
+              "left-click"
+            ]
+          },
+          {
+            "action": "Erase stroke",
+            "actionEs": "Borrar trazo",
+            "keys": [
+              "e"
+            ]
+          },
+          {
+            "action": "Fill tool",
+            "actionEs": "Herramienta de relleno",
+            "keys": [
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Select tool",
+            "actionEs": "Herramienta de selección",
+            "keys": [
+              "ctrl",
+              "tab"
+            ]
+          },
+          {
+            "action": "Edit strokes",
+            "actionEs": "Editar trazos",
+            "keys": [
+              "ctrl",
+              "tab"
+            ]
+          },
+          {
+            "action": "Tweak stroke",
+            "actionEs": "Ajustar trazo",
+            "keys": [
+              "w"
+            ]
+          },
+          {
+            "action": "Trim stroke",
+            "actionEs": "Recortar trazo",
+            "keys": [
+              "t"
+            ]
+          }
+        ]
       }
     ],
     "capcut": [
@@ -4471,6 +4691,66 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Texto y subtítulos"
+      },
+      {
+        "label": "Effects & Transitions",
+        "labelEs": "Efectos y Transiciones",
+        "items": [
+          {
+            "action": "Speed ramp",
+            "actionEs": "Rampa de velocidad",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Stabilize",
+            "actionEs": "Estabilizar",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Chroma key",
+            "actionEs": "Clave cromática",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Auto captions",
+            "actionEs": "Subtítulos automáticos",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Overlay",
+            "actionEs": "Superposición",
+            "keys": [
+              "cmd",
+              "shift",
+              "o"
+            ]
+          },
+          {
+            "action": "Adjust layer",
+            "actionEs": "Capa de ajuste",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
+          }
+        ]
       }
     ],
     "claude": [
@@ -4871,6 +5151,82 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Navegación"
+      },
+      {
+        "label": "More Desktop",
+        "labelEs": "Más Escritorio",
+        "items": [
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Toggle artifacts",
+            "actionEs": "Alternar artefactos",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Search conversations",
+            "actionEs": "Buscar conversaciones",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "New conversation",
+            "actionEs": "Nueva conversación",
+            "keys": [
+              "cmd",
+              "n"
+            ]
+          },
+          {
+            "action": "Export conversation",
+            "actionEs": "Exportar conversación",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Toggle theme",
+            "actionEs": "Alternar tema",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Open model selector",
+            "actionEs": "Abrir selector de modelo",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Focus input",
+            "actionEs": "Enfocar entrada",
+            "keys": [
+              "cmd",
+              "/"
+            ]
+          }
+        ]
       }
     ],
     "copilot": [
@@ -5165,6 +5521,45 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Chat de GitHub.com"
+      },
+      {
+        "label": "JetBrains",
+        "labelEs": "JetBrains",
+        "items": [
+          {
+            "action": "Trigger suggestion",
+            "actionEs": "Activar sugerencia",
+            "keys": [
+              "alt",
+              "\\"
+            ]
+          },
+          {
+            "action": "Accept suggestion",
+            "actionEs": "Aceptar sugerencia",
+            "keys": [
+              "tab"
+            ]
+          },
+          {
+            "action": "Open chat",
+            "actionEs": "Abrir chat",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Explain code",
+            "actionEs": "Explicar código",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          }
+        ]
       }
     ],
     "cursor": [
@@ -6068,6 +6463,77 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Fragmentos de código y Emmet"
+      },
+      {
+        "label": "More AI",
+        "labelEs": "Más IA",
+        "items": [
+          {
+            "action": "Open AI chat",
+            "actionEs": "Abrir chat de IA",
+            "keys": [
+              "cmd",
+              "l"
+            ]
+          },
+          {
+            "action": "Inline edit with AI",
+            "actionEs": "Edición en línea con IA",
+            "keys": [
+              "cmd",
+              "k"
+            ]
+          },
+          {
+            "action": "Apply AI edit",
+            "actionEs": "Aplicar edición de IA",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "Reject AI edit",
+            "actionEs": "Rechazar edición de IA",
+            "keys": [
+              "cmd",
+              "backspace"
+            ]
+          },
+          {
+            "action": "Composer mode",
+            "actionEs": "Modo compositor",
+            "keys": [
+              "cmd",
+              "i"
+            ]
+          },
+          {
+            "action": "Toggle AI pane",
+            "actionEs": "Alternar panel de IA",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "AI autocomplete",
+            "actionEs": "Autocompletado IA",
+            "keys": [
+              "tab"
+            ]
+          },
+          {
+            "action": "Codebase chat",
+            "actionEs": "Chat de codebase",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          }
+        ]
       }
     ],
     "davinci": [
@@ -7148,6 +7614,65 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Página de fotos (v21)"
+      },
+      {
+        "label": "Fairlight Audio",
+        "labelEs": "Audio Fairlight",
+        "items": [
+          {
+            "action": "Solo track",
+            "actionEs": "Solo de pista",
+            "keys": [
+              "s"
+            ]
+          },
+          {
+            "action": "Mute track",
+            "actionEs": "Silenciar pista",
+            "keys": [
+              "m"
+            ]
+          },
+          {
+            "action": "Arm recording",
+            "actionEs": "Preparar grabación",
+            "keys": [
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle automation",
+            "actionEs": "Alternar automatización",
+            "keys": [
+              "a"
+            ]
+          },
+          {
+            "action": "Nudge audio",
+            "actionEs": "Ajustar audio",
+            "keys": [
+              "alt",
+              ","
+            ]
+          },
+          {
+            "action": "Trim audio head",
+            "actionEs": "Recortar inicio de audio",
+            "keys": [
+              "ctrl",
+              "["
+            ]
+          },
+          {
+            "action": "Trim audio tail",
+            "actionEs": "Recortar final de audio",
+            "keys": [
+              "ctrl",
+              "]"
+            ]
+          }
+        ]
       }
     ],
     "figma": [
@@ -8274,6 +8799,47 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Prototipado"
+      },
+      {
+        "label": "Dev Mode",
+        "labelEs": "Modo Dev",
+        "items": [
+          {
+            "action": "Toggle Dev Mode",
+            "actionEs": "Alternar Modo Dev",
+            "keys": [
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Inspect panel",
+            "actionEs": "Panel de inspección",
+            "keys": [
+              "cmd",
+              "shift",
+              "i"
+            ]
+          },
+          {
+            "action": "Copy as CSS",
+            "actionEs": "Copiar como CSS",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Copy as code",
+            "actionEs": "Copiar como código",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          }
+        ]
       }
     ],
     "framer": [
@@ -10640,6 +11206,102 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Paneles"
+      },
+      {
+        "label": "Effects",
+        "labelEs": "Efectos",
+        "items": [
+          {
+            "action": "Gaussian blur",
+            "actionEs": "Desenfoque gaussiano",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Drop shadow",
+            "actionEs": "Sombra paralela",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Warp",
+            "actionEs": "Deformar",
+            "keys": [
+              "cmd",
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Envelope distort",
+            "actionEs": "Distorsión de sobre",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Transform again",
+            "actionEs": "Transformar de nuevo",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Pathfinder unite",
+            "actionEs": "Unir ( Pathfinder )",
+            "keys": [
+              "cmd",
+              "shift",
+              "u"
+            ]
+          },
+          {
+            "action": "Pathfinder minus",
+            "actionEs": "Menos ( Pathfinder )",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Pathfinder intersect",
+            "actionEs": "Intersección ( Pathfinder )",
+            "keys": [
+              "cmd",
+              "shift",
+              "i"
+            ]
+          },
+          {
+            "action": "Pathfinder exclude",
+            "actionEs": "Excluir ( Pathfinder )",
+            "keys": [
+              "cmd",
+              "shift",
+              "x"
+            ]
+          },
+          {
+            "action": "Make clipping mask",
+            "actionEs": "Crear máscara de recorte",
+            "keys": [
+              "cmd",
+              "7"
+            ]
+          }
+        ]
       }
     ],
     "indesign": [
@@ -12116,6 +12778,91 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Paneles"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Place text file",
+            "actionEs": "Colocar archivo de texto",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Thread text",
+            "actionEs": "Hilvanar texto",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Show hidden characters",
+            "actionEs": "Mostrar caracteres ocultos",
+            "keys": [
+              "cmd",
+              "alt",
+              "i"
+            ]
+          },
+          {
+            "action": "Story editor",
+            "actionEs": "Editor de historias",
+            "keys": [
+              "cmd",
+              "y"
+            ]
+          },
+          {
+            "action": "Split column",
+            "actionEs": "Dividir columna",
+            "keys": [
+              "cmd",
+              "shift",
+              "enter"
+            ]
+          },
+          {
+            "action": "Apply paragraph style",
+            "actionEs": "Aplicar estilo de párrafo",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "Apply character style",
+            "actionEs": "Aplicar estilo de carácter",
+            "keys": [
+              "cmd",
+              "shift",
+              "enter"
+            ]
+          },
+          {
+            "action": "Baseline shift",
+            "actionEs": "Desplazamiento de línea base",
+            "keys": [
+              "cmd",
+              "alt",
+              "up"
+            ]
+          },
+          {
+            "action": "Optical margin alignment",
+            "actionEs": "Alineación de margen óptico",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "o"
+            ]
+          }
+        ]
       }
     ],
     "lightroom": [
@@ -13268,6 +14015,75 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Metadatos y palabras clave"
+      },
+      {
+        "label": "Presets & Export",
+        "labelEs": "Preajustes y Exportar",
+        "items": [
+          {
+            "action": "Toggle presets panel",
+            "actionEs": "Alternar panel de preajustes",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Copy develop settings",
+            "actionEs": "Copiar ajustes de revelado",
+            "keys": [
+              "cmd",
+              "alt",
+              "c"
+            ]
+          },
+          {
+            "action": "Paste develop settings",
+            "actionEs": "Pegar ajustes de revelado",
+            "keys": [
+              "cmd",
+              "alt",
+              "v"
+            ]
+          },
+          {
+            "action": "Sync settings",
+            "actionEs": "Sincronizar ajustes",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Export",
+            "actionEs": "Exportar",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Quick develop",
+            "actionEs": "Revelado rápido",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift"
+            ]
+          },
+          {
+            "action": "Toggle soft proofing",
+            "actionEs": "Alternar prueba suave",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          }
+        ]
       }
     ],
     "linear": [
@@ -13993,6 +14809,119 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Formato del editor"
+      },
+      {
+        "label": "More Actions",
+        "labelEs": "Más Acciones",
+        "items": [
+          {
+            "action": "Assign to me",
+            "actionEs": "Asignarme",
+            "keys": [
+              "i"
+            ]
+          },
+          {
+            "action": "Set priority urgent",
+            "actionEs": "Prioridad urgente",
+            "keys": [
+              "1"
+            ]
+          },
+          {
+            "action": "Set priority high",
+            "actionEs": "Prioridad alta",
+            "keys": [
+              "2"
+            ]
+          },
+          {
+            "action": "Set priority medium",
+            "actionEs": "Prioridad media",
+            "keys": [
+              "3"
+            ]
+          },
+          {
+            "action": "Set priority low",
+            "actionEs": "Prioridad baja",
+            "keys": [
+              "4"
+            ]
+          },
+          {
+            "action": "Set priority no priority",
+            "actionEs": "Sin prioridad",
+            "keys": [
+              "5"
+            ]
+          },
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "."
+            ]
+          },
+          {
+            "action": "Submit search",
+            "actionEs": "Enviar búsqueda",
+            "keys": [
+              "enter"
+            ]
+          },
+          {
+            "action": "Cancel action",
+            "actionEs": "Cancelar acción",
+            "keys": [
+              "esc"
+            ]
+          },
+          {
+            "action": "Move to backlog",
+            "actionEs": "Mover a backlog",
+            "keys": [
+              "b"
+            ]
+          },
+          {
+            "action": "Move to in progress",
+            "actionEs": "Mover a en progreso",
+            "keys": [
+              "p"
+            ]
+          },
+          {
+            "action": "Move to done",
+            "actionEs": "Mover a completado",
+            "keys": [
+              "d"
+            ]
+          },
+          {
+            "action": "Add sub-issue",
+            "actionEs": "Agregar sub-issue",
+            "keys": [
+              "shift",
+              "enter"
+            ]
+          },
+          {
+            "action": "Create issue",
+            "actionEs": "Crear issue",
+            "keys": [
+              "c"
+            ]
+          },
+          {
+            "action": "Toggle label",
+            "actionEs": "Alternar etiqueta",
+            "keys": [
+              "l"
+            ]
+          }
+        ]
       }
     ],
     "lovable": [
@@ -14171,6 +15100,69 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Entrada de chat"
+      },
+      {
+        "label": "Code Editing",
+        "labelEs": "Edición de Código",
+        "items": [
+          {
+            "action": "Toggle terminal",
+            "actionEs": "Alternar terminal",
+            "keys": [
+              "cmd",
+              "`"
+            ]
+          },
+          {
+            "action": "Go to file",
+            "actionEs": "Ir a archivo",
+            "keys": [
+              "cmd",
+              "p"
+            ]
+          },
+          {
+            "action": "Go to line",
+            "actionEs": "Ir a línea",
+            "keys": [
+              "cmd",
+              "g"
+            ]
+          },
+          {
+            "action": "Toggle word wrap",
+            "actionEs": "Alternar ajuste de línea",
+            "keys": [
+              "cmd",
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Fold / Unfold",
+            "actionEs": "Plegar / Desplegar",
+            "keys": [
+              "cmd",
+              "."
+            ]
+          },
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Open settings",
+            "actionEs": "Abrir ajustes",
+            "keys": [
+              "cmd",
+              ","
+            ]
+          }
+        ]
       }
     ],
     "notion": [
@@ -14709,6 +15701,91 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Emojis"
+      },
+      {
+        "label": "More Shortcuts",
+        "labelEs": "Más Atajos",
+        "items": [
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "\\"
+            ]
+          },
+          {
+            "action": "Search with AI",
+            "actionEs": "Buscar con IA",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Add comment",
+            "actionEs": "Agregar comentario",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Lock page",
+            "actionEs": "Bloquear página",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Move to",
+            "actionEs": "Mover a",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Duplicate block",
+            "actionEs": "Duplicar bloque",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Create database",
+            "actionEs": "Crear base de datos",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Sort database",
+            "actionEs": "Ordenar base de datos",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Filter database",
+            "actionEs": "Filtrar base de datos",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          }
+        ]
       }
     ],
     "obsidian": [
@@ -15130,6 +16207,94 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Selección de texto"
+      },
+      {
+        "label": "More Editing",
+        "labelEs": "Más Edición",
+        "items": [
+          {
+            "action": "Toggle source mode",
+            "actionEs": "Alternar modo fuente",
+            "keys": [
+              "cmd",
+              "e"
+            ]
+          },
+          {
+            "action": "Insert callout",
+            "actionEs": "Insertar callout",
+            "keys": [
+              "cmd",
+              "shift",
+              ">"
+            ]
+          },
+          {
+            "action": "Toggle checklists",
+            "actionEs": "Alternar listas de verificación",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Open command palette",
+            "actionEs": "Abrir paleta de comandos",
+            "keys": [
+              "cmd",
+              "p"
+            ]
+          },
+          {
+            "action": "Open file by name",
+            "actionEs": "Abrir archivo por nombre",
+            "keys": [
+              "cmd",
+              "o"
+            ]
+          },
+          {
+            "action": "Split vertically",
+            "actionEs": "Dividir verticalmente",
+            "keys": [
+              "cmd",
+              "|"
+            ]
+          },
+          {
+            "action": "Split horizontally",
+            "actionEs": "Dividir horizontalmente",
+            "keys": [
+              "cmd",
+              "\\"
+            ]
+          },
+          {
+            "action": "Close pane",
+            "actionEs": "Cerrar panel",
+            "keys": [
+              "cmd",
+              "w"
+            ]
+          },
+          {
+            "action": "Navigate back",
+            "actionEs": "Navegar atrás",
+            "keys": [
+              "cmd",
+              "["
+            ]
+          },
+          {
+            "action": "Navigate forward",
+            "actionEs": "Navegar adelante",
+            "keys": [
+              "cmd",
+              "]"
+            ]
+          }
+        ]
       }
     ],
     "photoshop": [
@@ -16761,6 +17926,99 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Canales y máscaras"
+      },
+      {
+        "label": "Adjustments",
+        "labelEs": "Ajustes",
+        "items": [
+          {
+            "action": "Levels",
+            "actionEs": "Niveles",
+            "keys": [
+              "cmd",
+              "l"
+            ]
+          },
+          {
+            "action": "Curves",
+            "actionEs": "Curvas",
+            "keys": [
+              "cmd",
+              "m"
+            ]
+          },
+          {
+            "action": "Hue / Saturation",
+            "actionEs": "Tono / Saturación",
+            "keys": [
+              "cmd",
+              "u"
+            ]
+          },
+          {
+            "action": "Color Balance",
+            "actionEs": "Balance de color",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Invert",
+            "actionEs": "Invertir",
+            "keys": [
+              "cmd",
+              "i"
+            ]
+          },
+          {
+            "action": "Desaturate",
+            "actionEs": "Deshacer saturación",
+            "keys": [
+              "cmd",
+              "shift",
+              "u"
+            ]
+          },
+          {
+            "action": "Auto tone",
+            "actionEs": "Tono automático",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Auto contrast",
+            "actionEs": "Contraste automático",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Auto color",
+            "actionEs": "Color automático",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Brightness / Contrast",
+            "actionEs": "Brillo / Contraste",
+            "keys": [
+              "cmd",
+              "alt",
+              "shift",
+              "b"
+            ]
+          }
+        ]
       }
     ],
     "premiere": [
@@ -17656,6 +18914,97 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Texto y títulos"
+      },
+      {
+        "label": "More Shortcuts",
+        "labelEs": "Más Atajos",
+        "items": [
+          {
+            "action": "Nest sequence",
+            "actionEs": "Anidar secuencia",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Speed / Duration",
+            "actionEs": "Velocidad / Duración",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Replace with clip",
+            "actionEs": "Reemplazar con clip",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Merge clips",
+            "actionEs": "Fusionar clips",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Apply default transition",
+            "actionEs": "Aplicar transición por defecto",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Close gap",
+            "actionEs": "Cerrar espacio",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Toggle track targeting",
+            "actionEs": "Alternar objetivo de pista",
+            "keys": [
+              "shift",
+              "1"
+            ]
+          },
+          {
+            "action": "Match frame",
+            "actionEs": "Igualar frame",
+            "keys": [
+              "f"
+            ]
+          },
+          {
+            "action": "Trim head",
+            "actionEs": "Recortar inicio",
+            "keys": [
+              "ctrl",
+              "["
+            ]
+          },
+          {
+            "action": "Trim tail",
+            "actionEs": "Recortar final",
+            "keys": [
+              "ctrl",
+              "]"
+            ]
+          }
+        ]
       }
     ],
     "slack": [
@@ -18447,6 +19796,70 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Navegación de Canvas"
+      },
+      {
+        "label": "More Shortcuts",
+        "labelEs": "Más Atajos",
+        "items": [
+          {
+            "action": "Upload file",
+            "actionEs": "Subir archivo",
+            "keys": [
+              "cmd",
+              "shift",
+              "u"
+            ]
+          },
+          {
+            "action": "Add reaction",
+            "actionEs": "Agregar reacción",
+            "keys": [
+              ":",
+              "reaction"
+            ]
+          },
+          {
+            "action": "Remind me",
+            "actionEs": "Recordarme",
+            "keys": [
+              "cmd",
+              "shift",
+              "y"
+            ]
+          },
+          {
+            "action": "Show keyboard shortcuts",
+            "actionEs": "Mostrar atajos de teclado",
+            "keys": [
+              "cmd",
+              "/"
+            ]
+          },
+          {
+            "action": "Edit message",
+            "actionEs": "Editar mensaje",
+            "keys": [
+              "up"
+            ]
+          },
+          {
+            "action": "Mark channel read from here",
+            "actionEs": "Marcar canal leído desde aquí",
+            "keys": [
+              "shift",
+              "esc"
+            ]
+          },
+          {
+            "action": "Toggle fullscreen",
+            "actionEs": "Alternar pantalla completa",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          }
+        ]
       }
     ],
     "spline": [
@@ -18734,6 +20147,72 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Navegación en la vista 3D"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Boolean operations",
+            "actionEs": "Operaciones booleanas",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Subdivide mesh",
+            "actionEs": "Subdividir malla",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Align objects",
+            "actionEs": "Alinear objetos",
+            "keys": [
+              "cmd",
+              "alt",
+              "a"
+            ]
+          },
+          {
+            "action": "Toggle wireframe",
+            "actionEs": "Alternar alambre",
+            "keys": [
+              "cmd",
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Toggle grid",
+            "actionEs": "Alternar cuadrícula",
+            "keys": [
+              "cmd",
+              "'"
+            ]
+          },
+          {
+            "action": "Toggle x-ray",
+            "actionEs": "Alternar rayos X",
+            "keys": [
+              "cmd",
+              "shift",
+              "x"
+            ]
+          },
+          {
+            "action": "Reset camera",
+            "actionEs": "Restablecer cámara",
+            "keys": [
+              "cmd",
+              "0"
+            ]
+          }
+        ]
       }
     ],
     "vscode": [
@@ -19828,6 +21307,113 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Varios"
+      },
+      {
+        "label": "More Shortcuts",
+        "labelEs": "Más Atajos",
+        "items": [
+          {
+            "action": "Toggle terminal",
+            "actionEs": "Alternar terminal",
+            "keys": [
+              "cmd",
+              "`"
+            ]
+          },
+          {
+            "action": "Toggle side bar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Toggle panel",
+            "actionEs": "Alternar panel",
+            "keys": [
+              "cmd",
+              "j"
+            ]
+          },
+          {
+            "action": "Split editor",
+            "actionEs": "Dividir editor",
+            "keys": [
+              "cmd",
+              "\\"
+            ]
+          },
+          {
+            "action": "Toggle word wrap",
+            "actionEs": "Alternar ajuste de línea",
+            "keys": [
+              "alt",
+              "z"
+            ]
+          },
+          {
+            "action": "Toggle minimap",
+            "actionEs": "Alternar minimapa",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Format document",
+            "actionEs": "Formatear documento",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Open recent",
+            "actionEs": "Abrir reciente",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle breadcrumbs",
+            "actionEs": "Alternar migas de pan",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Focus editor group",
+            "actionEs": "Enfocar grupo del editor",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "Open extensions",
+            "actionEs": "Abrir extensiones",
+            "keys": [
+              "cmd",
+              "shift",
+              "x"
+            ]
+          },
+          {
+            "action": "Zen mode",
+            "actionEs": "Modo Zen",
+            "keys": [
+              "cmd",
+              "k",
+              "z"
+            ]
+          }
+        ]
       }
     ],
     "webflow": [
@@ -20477,6 +22063,86 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Texto enriquecido"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Toggle overlay",
+            "actionEs": "Alternar superposición",
+            "keys": [
+              "o"
+            ]
+          },
+          {
+            "action": "Toggle layout grid",
+            "actionEs": "Alternar cuadrícula de diseño",
+            "keys": [
+              "g"
+            ]
+          },
+          {
+            "action": "Toggle guides",
+            "actionEs": "Alternar guías",
+            "keys": [
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Quick find",
+            "actionEs": "Búsqueda rápida",
+            "keys": [
+              "cmd",
+              "k"
+            ]
+          },
+          {
+            "action": "Open navigator",
+            "actionEs": "Abrir navegador",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Duplicate element",
+            "actionEs": "Duplicar elemento",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Preview interactions",
+            "actionEs": "Previsualizar interacciones",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Toggle code preview",
+            "actionEs": "Alternar vista de código",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Responsive breakpoints",
+            "actionEs": "Puntos de ruptura responsivos",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          }
+        ]
       }
     ],
     "xcode": [
@@ -21720,6 +23386,85 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Ventana y espacio de trabajo"
+      },
+      {
+        "label": "More Shortcuts",
+        "labelEs": "Más Atajos",
+        "items": [
+          {
+            "action": "Toggle left sidebar",
+            "actionEs": "Alternar barra lateral izquierda",
+            "keys": [
+              "cmd",
+              "0"
+            ]
+          },
+          {
+            "action": "Toggle right inspector",
+            "actionEs": "Alternar inspector derecho",
+            "keys": [
+              "cmd",
+              "option",
+              "0"
+            ]
+          },
+          {
+            "action": "Toggle debug area",
+            "actionEs": "Alternar área de depuración",
+            "keys": [
+              "cmd",
+              "shift",
+              "y"
+            ]
+          },
+          {
+            "action": "Add breakpoint",
+            "actionEs": "Agregar punto de interrupción",
+            "keys": [
+              "cmd",
+              "\\"
+            ]
+          },
+          {
+            "action": "Step over",
+            "actionEs": "Saltar",
+            "keys": [
+              "F6"
+            ]
+          },
+          {
+            "action": "Step into",
+            "actionEs": "Entrar",
+            "keys": [
+              "F7"
+            ]
+          },
+          {
+            "action": "Step out",
+            "actionEs": "Salir",
+            "keys": [
+              "F8"
+            ]
+          },
+          {
+            "action": "Continue",
+            "actionEs": "Continuar",
+            "keys": [
+              "cmd",
+              "ctrl",
+              "y"
+            ]
+          },
+          {
+            "action": "Simulate location",
+            "actionEs": "Simular ubicación",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          }
+        ]
       }
     ],
     "canva": [
@@ -21976,6 +23721,108 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Vista y zoom"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Align top",
+            "actionEs": "Alinear arriba",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Align bottom",
+            "actionEs": "Alinear abajo",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Align left",
+            "actionEs": "Alinear izquierda",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Align right",
+            "actionEs": "Alinear derecha",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Flip horizontal",
+            "actionEs": "Voltear horizontalmente",
+            "keys": [
+              "cmd",
+              "shift",
+              "h"
+            ]
+          },
+          {
+            "action": "Flip vertical",
+            "actionEs": "Voltear verticalmente",
+            "keys": [
+              "cmd",
+              "shift",
+              "v"
+            ]
+          },
+          {
+            "action": "Lock element",
+            "actionEs": "Bloquear elemento",
+            "keys": [
+              "cmd",
+              "shift",
+              "k"
+            ]
+          },
+          {
+            "action": "Group elements",
+            "actionEs": "Agrupar elementos",
+            "keys": [
+              "cmd",
+              "g"
+            ]
+          },
+          {
+            "action": "Ungroup elements",
+            "actionEs": "Desagrupar elementos",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Bring forward",
+            "actionEs": "Traer adelante",
+            "keys": [
+              "cmd",
+              "]"
+            ]
+          },
+          {
+            "action": "Send backward",
+            "actionEs": "Enviar atrás",
+            "keys": [
+              "cmd",
+              "["
+            ]
+          }
+        ]
       }
     ],
     "sketch": [
@@ -22235,6 +24082,82 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Vista y zoom"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Create symbol",
+            "actionEs": "Crear símbolo",
+            "keys": [
+              "cmd",
+              "shift",
+              "k"
+            ]
+          },
+          {
+            "action": "Toggle shared style",
+            "actionEs": "Alternar estilo compartido",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Boolean operations",
+            "actionEs": "Operaciones booleanas",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Outline stroke",
+            "actionEs": "Contorno de trazo",
+            "keys": [
+              "cmd",
+              "shift",
+              "o"
+            ]
+          },
+          {
+            "action": "Round to pixel",
+            "actionEs": "Redondear a píxel",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle rulers",
+            "actionEs": "Alternar reglas",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle grid",
+            "actionEs": "Alternar cuadrícula",
+            "keys": [
+              "cmd",
+              "'"
+            ]
+          },
+          {
+            "action": "Toggle layout",
+            "actionEs": "Alternar diseño",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          }
+        ]
       }
     ],
     "coreldraw": [
@@ -22516,6 +24439,69 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Herramientas"
+      },
+      {
+        "label": "Effects & Color",
+        "labelEs": "Efectos y Color",
+        "items": [
+          {
+            "action": "Interactive fill",
+            "actionEs": "Relleno interactivo",
+            "keys": [
+              "g"
+            ]
+          },
+          {
+            "action": "Mesh fill",
+            "actionEs": "Relleno de malla",
+            "keys": [
+              "m"
+            ]
+          },
+          {
+            "action": "Eyedropper",
+            "actionEs": "Gotero",
+            "keys": [
+              "e"
+            ]
+          },
+          {
+            "action": "Color palette open",
+            "actionEs": "Abrir paleta de colores",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Align and distribute",
+            "actionEs": "Alinear y distribuir",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Weld",
+            "actionEs": "Soldar",
+            "keys": [
+              "cmd",
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Trim",
+            "actionEs": "Recortar",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          }
+        ]
       }
     ],
     "finalcutpro": [
@@ -22791,6 +24777,105 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Herramientas"
+      },
+      {
+        "label": "Advanced Editing",
+        "labelEs": "Edición Avanzada",
+        "items": [
+          {
+            "action": "Blade tool",
+            "actionEs": "Herramienta de corte",
+            "keys": [
+              "b"
+            ]
+          },
+          {
+            "action": "Trim tool",
+            "actionEs": "Herramienta de ajuste",
+            "keys": [
+              "t"
+            ]
+          },
+          {
+            "action": "Select tool",
+            "actionEs": "Herramienta de selección",
+            "keys": [
+              "a"
+            ]
+          },
+          {
+            "action": "Position tool",
+            "actionEs": "Herramienta de posición",
+            "keys": [
+              "p"
+            ]
+          },
+          {
+            "action": "Range selection",
+            "actionEs": "Selección de rango",
+            "keys": [
+              "r"
+            ]
+          },
+          {
+            "action": "Zoom tool",
+            "actionEs": "Herramienta de zoom",
+            "keys": [
+              "z"
+            ]
+          },
+          {
+            "action": "Hand tool",
+            "actionEs": "Herramienta de mano",
+            "keys": [
+              "h"
+            ]
+          },
+          {
+            "action": "Create compound clip",
+            "actionEs": "Crear clip compuesto",
+            "keys": [
+              "option",
+              "g"
+            ]
+          },
+          {
+            "action": "Balance color",
+            "actionEs": "Balance de color",
+            "keys": [
+              "option",
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Match color",
+            "actionEs": "Igualar color",
+            "keys": [
+              "option",
+              "cmd",
+              "m"
+            ]
+          },
+          {
+            "action": "Stabilize clip",
+            "actionEs": "Estabilizar clip",
+            "keys": [
+              "option",
+              "cmd",
+              "s"
+            ]
+          },
+          {
+            "action": "Audio enhance",
+            "actionEs": "Mejorar audio",
+            "keys": [
+              "option",
+              "cmd",
+              "a"
+            ]
+          }
+        ]
       }
     ],
     "filmora": [
@@ -23072,6 +25157,81 @@ window.SPARK_DATA = {
               "enter"
             ],
             "actionEs": "Reproducir desde el inicio"
+          }
+        ]
+      },
+      {
+        "label": "Tools",
+        "labelEs": "Herramientas",
+        "items": [
+          {
+            "action": "Split at playhead",
+            "actionEs": "Dividir en cabezal",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Ripple delete",
+            "actionEs": "Eliminar en cadena",
+            "keys": [
+              "shift",
+              "delete"
+            ]
+          },
+          {
+            "action": "Speed control",
+            "actionEs": "Control de velocidad",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Color match",
+            "actionEs": "Igualar color",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Motion tracking",
+            "actionEs": "Seguimiento de movimiento",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Green screen",
+            "actionEs": "Pantalla verde",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Keyframe",
+            "actionEs": "Fotograma clave",
+            "keys": [
+              "cmd",
+              "shift",
+              "k"
+            ]
+          },
+          {
+            "action": "Adjust clip",
+            "actionEs": "Ajustar clip",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
           }
         ]
       }
@@ -23399,6 +25559,83 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Vistas y control de versiones"
+      },
+      {
+        "label": "Build & Run",
+        "labelEs": "Compilar y Ejecutar",
+        "items": [
+          {
+            "action": "Run",
+            "actionEs": "Ejecutar",
+            "keys": [
+              "ctrl",
+              "r"
+            ]
+          },
+          {
+            "action": "Debug",
+            "actionEs": "Depurar",
+            "keys": [
+              "ctrl",
+              "d"
+            ]
+          },
+          {
+            "action": "Stop",
+            "actionEs": "Detener",
+            "keys": [
+              "cmd",
+              "."
+            ]
+          },
+          {
+            "action": "Toggle breakpoint",
+            "actionEs": "Alternar punto de interrupción",
+            "keys": [
+              "cmd",
+              "F8"
+            ]
+          },
+          {
+            "action": "Step over",
+            "actionEs": "Saltar",
+            "keys": [
+              "F8"
+            ]
+          },
+          {
+            "action": "Step into",
+            "actionEs": "Entrar",
+            "keys": [
+              "F7"
+            ]
+          },
+          {
+            "action": "Step out",
+            "actionEs": "Salir",
+            "keys": [
+              "shift",
+              "F8"
+            ]
+          },
+          {
+            "action": "Evaluate expression",
+            "actionEs": "Evaluar expresión",
+            "keys": [
+              "alt",
+              "F8"
+            ]
+          },
+          {
+            "action": "Resume program",
+            "actionEs": "Reanudar programa",
+            "keys": [
+              "cmd",
+              "alt",
+              "r"
+            ]
+          }
+        ]
       }
     ],
     "androidstudio": [
@@ -23680,6 +25917,75 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Ventanas"
+      },
+      {
+        "label": "Build & Run",
+        "labelEs": "Compilar y Ejecutar",
+        "items": [
+          {
+            "action": "Run",
+            "actionEs": "Ejecutar",
+            "keys": [
+              "ctrl",
+              "r"
+            ]
+          },
+          {
+            "action": "Debug",
+            "actionEs": "Depurar",
+            "keys": [
+              "ctrl",
+              "d"
+            ]
+          },
+          {
+            "action": "Apply changes",
+            "actionEs": "Aplicar cambios",
+            "keys": [
+              "ctrl",
+              "cmd",
+              "a"
+            ]
+          },
+          {
+            "action": "Stop",
+            "actionEs": "Detener",
+            "keys": [
+              "cmd",
+              "."
+            ]
+          },
+          {
+            "action": "Toggle breakpoint",
+            "actionEs": "Alternar punto de interrupción",
+            "keys": [
+              "cmd",
+              "F8"
+            ]
+          },
+          {
+            "action": "Step over",
+            "actionEs": "Saltar",
+            "keys": [
+              "F8"
+            ]
+          },
+          {
+            "action": "Step into",
+            "actionEs": "Entrar",
+            "keys": [
+              "F7"
+            ]
+          },
+          {
+            "action": "Evaluate expression",
+            "actionEs": "Evaluar expresión",
+            "keys": [
+              "alt",
+              "F8"
+            ]
+          }
+        ]
       }
     ],
     "sublime": [
@@ -23971,6 +26277,89 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Ventana y distribución"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Multiple selections",
+            "actionEs": "Selecciones múltiples",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Column selection",
+            "actionEs": "Selección de columna",
+            "keys": [
+              "cmd",
+              "alt",
+              "up"
+            ]
+          },
+          {
+            "action": "Join lines",
+            "actionEs": "Unir líneas",
+            "keys": [
+              "cmd",
+              "j"
+            ]
+          },
+          {
+            "action": "Duplicate line",
+            "actionEs": "Duplicar línea",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Toggle comment",
+            "actionEs": "Alternar comentario",
+            "keys": [
+              "cmd",
+              "/"
+            ]
+          },
+          {
+            "action": "Sort lines",
+            "actionEs": "Ordenar líneas",
+            "keys": [
+              "cmd",
+              "f5"
+            ]
+          },
+          {
+            "action": "Wrap lines",
+            "actionEs": "Envolver líneas",
+            "keys": [
+              "cmd",
+              "alt",
+              "q"
+            ]
+          },
+          {
+            "action": "Transform to uppercase",
+            "actionEs": "Transformar a mayúsculas",
+            "keys": [
+              "cmd",
+              "k",
+              "u"
+            ]
+          },
+          {
+            "action": "Transform to lowercase",
+            "actionEs": "Transformar a minúsculas",
+            "keys": [
+              "cmd",
+              "k",
+              "l"
+            ]
+          }
+        ]
       }
     ],
     "postman": [
@@ -24153,6 +26542,56 @@ window.SPARK_DATA = {
               "C"
             ],
             "actionEs": "Abrir consola"
+          }
+        ]
+      },
+      {
+        "label": "Collections & Env",
+        "labelEs": "Colecciones y Entorno",
+        "items": [
+          {
+            "action": "New collection",
+            "actionEs": "Nueva colección",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "New environment",
+            "actionEs": "Nuevo entorno",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Quick look",
+            "actionEs": "Vista rápida",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Duplicate request",
+            "actionEs": "Duplicar solicitud",
+            "keys": [
+              "cmd",
+              "d"
+            ]
           }
         ]
       }
@@ -24368,6 +26807,94 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Datos y navegación"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Create table",
+            "actionEs": "Crear tabla",
+            "keys": [
+              "cmd",
+              "t"
+            ]
+          },
+          {
+            "action": "AutoSum",
+            "actionEs": "Autosuma",
+            "keys": [
+              "alt",
+              "="
+            ]
+          },
+          {
+            "action": "Insert function",
+            "actionEs": "Insertar función",
+            "keys": [
+              "shift",
+              "F3"
+            ]
+          },
+          {
+            "action": "Fill right",
+            "actionEs": "Rellenar a la derecha",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Fill down",
+            "actionEs": "Rellenar abajo",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Go to special",
+            "actionEs": "Ir a especial",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Toggle ribbon",
+            "actionEs": "Alternar cinta",
+            "keys": [
+              "cmd",
+              "F1"
+            ]
+          },
+          {
+            "action": "Insert comment",
+            "actionEs": "Insertar comentario",
+            "keys": [
+              "shift",
+              "F2"
+            ]
+          },
+          {
+            "action": "Format cells",
+            "actionEs": "Formato de celdas",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "Freeze panes",
+            "actionEs": "Fijar paneles",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          }
+        ]
       }
     ],
     "word": [
@@ -24634,6 +27161,82 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Estilos y párrafo"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Insert table",
+            "actionEs": "Insertar tabla",
+            "keys": [
+              "cmd",
+              "alt",
+              "t"
+            ]
+          },
+          {
+            "action": "Insert footnote",
+            "actionEs": "Insertar nota al pie",
+            "keys": [
+              "cmd",
+              "alt",
+              "f"
+            ]
+          },
+          {
+            "action": "Insert hyperlink",
+            "actionEs": "Insertar hipervínculo",
+            "keys": [
+              "cmd",
+              "k"
+            ]
+          },
+          {
+            "action": "Toggle markups",
+            "actionEs": "Alternar marcas",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Go to page",
+            "actionEs": "Ir a página",
+            "keys": [
+              "cmd",
+              "g"
+            ]
+          },
+          {
+            "action": "Track changes",
+            "actionEs": "Seguimiento de cambios",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Accept change",
+            "actionEs": "Aceptar cambio",
+            "keys": [
+              "cmd",
+              "alt",
+              "a"
+            ]
+          },
+          {
+            "action": "Reject change",
+            "actionEs": "Rechazar cambio",
+            "keys": [
+              "cmd",
+              "alt",
+              "r"
+            ]
+          }
+        ]
       }
     ],
     "powerpoint": [
@@ -24827,6 +27430,99 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Formato"
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Duplicate slide",
+            "actionEs": "Duplicar diapositiva",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Group objects",
+            "actionEs": "Agrupar objetos",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Ungroup objects",
+            "actionEs": "Desagrupar objetos",
+            "keys": [
+              "cmd",
+              "shift",
+              "h"
+            ]
+          },
+          {
+            "action": "Arrange / Bring to front",
+            "actionEs": "Ordenar / Traer al frente",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Arrange / Send to back",
+            "actionEs": "Ordenar / Enviar atrás",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Insert hyperlink",
+            "actionEs": "Insertar hipervínculo",
+            "keys": [
+              "cmd",
+              "k"
+            ]
+          },
+          {
+            "action": "Record slideshow",
+            "actionEs": "Grabar presentación",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Presenter view",
+            "actionEs": "Vista del presentador",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Zoom in",
+            "actionEs": "Acercar",
+            "keys": [
+              "cmd",
+              "="
+            ]
+          },
+          {
+            "action": "Zoom out",
+            "actionEs": "Alejar",
+            "keys": [
+              "cmd",
+              "-"
+            ]
+          }
+        ]
       }
     ],
     "gmail": [
@@ -24969,6 +27665,139 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Carpetas y etiquetas"
+      },
+      {
+        "label": "Navigation",
+        "labelEs": "Navegación",
+        "items": [
+          {
+            "action": "Go to inbox",
+            "actionEs": "Ir a bandeja de entrada",
+            "keys": [
+              "g",
+              "i"
+            ]
+          },
+          {
+            "action": "Go to sent",
+            "actionEs": "Ir a enviados",
+            "keys": [
+              "g",
+              "t"
+            ]
+          },
+          {
+            "action": "Go to drafts",
+            "actionEs": "Ir a borradores",
+            "keys": [
+              "g",
+              "d"
+            ]
+          },
+          {
+            "action": "Go to starred",
+            "actionEs": "Ir a destacados",
+            "keys": [
+              "g",
+              "s"
+            ]
+          },
+          {
+            "action": "Go to spam",
+            "actionEs": "Ir a spam",
+            "keys": [
+              "g",
+              "p"
+            ]
+          },
+          {
+            "action": "Go to labels",
+            "actionEs": "Ir a etiquetas",
+            "keys": [
+              "g",
+              "l"
+            ]
+          },
+          {
+            "action": "Next page",
+            "actionEs": "Siguiente página",
+            "keys": [
+              "."
+            ]
+          },
+          {
+            "action": "Previous page",
+            "actionEs": "Página anterior",
+            "keys": [
+              ","
+            ]
+          },
+          {
+            "action": "Go to contacts",
+            "actionEs": "Ir a contactos",
+            "keys": [
+              "g",
+              "c"
+            ]
+          },
+          {
+            "action": "Go to tasks",
+            "actionEs": "Ir a tareas",
+            "keys": [
+              "g",
+              "k"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Actions",
+        "labelEs": "Acciones",
+        "items": [
+          {
+            "action": "Report spam",
+            "actionEs": "Reportar spam",
+            "keys": [
+              "!"
+            ]
+          },
+          {
+            "action": "Delete",
+            "actionEs": "Eliminar",
+            "keys": [
+              "#"
+            ]
+          },
+          {
+            "action": "Archive",
+            "actionEs": "Archivar",
+            "keys": [
+              "e"
+            ]
+          },
+          {
+            "action": "Mark as unread",
+            "actionEs": "Marcar como no leído",
+            "keys": [
+              "shift",
+              "u"
+            ]
+          },
+          {
+            "action": "Mark as important",
+            "actionEs": "Marcar como importante",
+            "keys": [
+              "="
+            ]
+          },
+          {
+            "action": "Remove star",
+            "actionEs": "Quitar estrella",
+            "keys": [
+              "-"
+            ]
+          }
+        ]
       }
     ],
     "gdocs": [
@@ -25236,6 +28065,81 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Párrafo y listas"
+      },
+      {
+        "label": "View & Insert",
+        "labelEs": "Ver e Insertar",
+        "items": [
+          {
+            "action": "Insert link",
+            "actionEs": "Insertar enlace",
+            "keys": [
+              "cmd",
+              "k"
+            ]
+          },
+          {
+            "action": "Insert image",
+            "actionEs": "Insertar imagen",
+            "keys": [
+              "cmd",
+              "alt",
+              "m"
+            ]
+          },
+          {
+            "action": "Insert table",
+            "actionEs": "Insertar tabla",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Insert page break",
+            "actionEs": "Insertar salto de página",
+            "keys": [
+              "cmd",
+              "enter"
+            ]
+          },
+          {
+            "action": "Word count",
+            "actionEs": "Contar palabras",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          },
+          {
+            "action": "Clear formatting",
+            "actionEs": "Borrar formato",
+            "keys": [
+              "cmd",
+              "\\"
+            ]
+          },
+          {
+            "action": "Toggle ruler",
+            "actionEs": "Alternar regla",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Document outline",
+            "actionEs": "Esquema del documento",
+            "keys": [
+              "cmd",
+              "alt",
+              "h"
+            ]
+          }
+        ]
       }
     ],
     "gsheets": [
@@ -25433,6 +28337,70 @@ window.SPARK_DATA = {
           }
         ],
         "labelEs": "Datos y filas"
+      },
+      {
+        "label": "Formulas",
+        "labelEs": "Fórmulas",
+        "items": [
+          {
+            "action": "Insert function",
+            "actionEs": "Insertar función",
+            "keys": [
+              "shift",
+              "F3"
+            ]
+          },
+          {
+            "action": "Fill right",
+            "actionEs": "Rellenar a la derecha",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Fill down",
+            "actionEs": "Rellenar abajo",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Toggle formulas view",
+            "actionEs": "Alternar vista de fórmulas",
+            "keys": [
+              "cmd",
+              "`"
+            ]
+          },
+          {
+            "action": "Add note",
+            "actionEs": "Agregar nota",
+            "keys": [
+              "shift",
+              "F2"
+            ]
+          },
+          {
+            "action": "Find and replace",
+            "actionEs": "Buscar y reemplazar",
+            "keys": [
+              "cmd",
+              "shift",
+              "h"
+            ]
+          },
+          {
+            "action": "Insert chart",
+            "actionEs": "Insertar gráfico",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          }
+        ]
       }
     ],
     "adobeaudition": [
@@ -25594,6 +28562,101 @@ window.SPARK_DATA = {
               "-"
             ],
             "actionEs": "Alejar"
+          }
+        ]
+      },
+      {
+        "label": "Multitrack",
+        "labelEs": "Pista múltiple",
+        "items": [
+          {
+            "action": "Add new track",
+            "actionEs": "Agregar nueva pista",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Toggle track record",
+            "actionEs": "Alternar grabación de pista",
+            "keys": [
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle track mute",
+            "actionEs": "Alternar silencio de pista",
+            "keys": [
+              "m"
+            ]
+          },
+          {
+            "action": "Toggle track solo",
+            "actionEs": "Alternar solo de pista",
+            "keys": [
+              "s"
+            ]
+          },
+          {
+            "action": "Mix to new track",
+            "actionEs": "Mezclar a nueva pista",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Zoom vertical",
+            "actionEs": "Zoom vertical",
+            "keys": [
+              "alt",
+              "up"
+            ]
+          },
+          {
+            "action": "Zoom vertical out",
+            "actionEs": "Zoom vertical fuera",
+            "keys": [
+              "alt",
+              "down"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Effects",
+        "labelEs": "Efectos",
+        "items": [
+          {
+            "action": "Apply effect rack",
+            "actionEs": "Aplicar effect rack",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Toggle effects panel",
+            "actionEs": "Alternar panel de efectos",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Match loudness",
+            "actionEs": "Igualar volumen",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
           }
         ]
       }
@@ -25979,6 +29042,35 @@ window.SPARK_DATA = {
             "actionEs": "Eliminar"
           }
         ]
+      },
+      {
+        "label": "Sequencer",
+        "labelEs": "Secuenciador",
+        "items": [
+          {
+            "action": "Step sequencer",
+            "actionEs": "Secuenciador de pasos",
+            "keys": [
+              "F6"
+            ]
+          },
+          {
+            "action": "Snap to grid",
+            "actionEs": "Ajustar a cuadrícula",
+            "keys": [
+              "ctrl",
+              "g"
+            ]
+          },
+          {
+            "action": "Toggle metronome",
+            "actionEs": "Alternar metrónomo",
+            "keys": [
+              "ctrl",
+              "m"
+            ]
+          }
+        ]
       }
     ],
     "ableton": [
@@ -26135,6 +29227,67 @@ window.SPARK_DATA = {
             "actionEs": "Cuantizar"
           }
         ]
+      },
+      {
+        "label": "Session & Clip",
+        "labelEs": "Sesión y Clip",
+        "items": [
+          {
+            "action": "New MIDI clip",
+            "actionEs": "Nuevo clip MIDI",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Duplicate clip",
+            "actionEs": "Duplicar clip",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Consolidate",
+            "actionEs": "Consolidar",
+            "keys": [
+              "cmd",
+              "j"
+            ]
+          },
+          {
+            "action": "Show / Hide mixer",
+            "actionEs": "Mostrar / Ocultar mezclador",
+            "keys": [
+              "cmd",
+              "alt",
+              "m"
+            ]
+          },
+          {
+            "action": "Arm recording",
+            "actionEs": "Preparar grabación",
+            "keys": [
+              "arm"
+            ]
+          },
+          {
+            "action": "Toggle solo",
+            "actionEs": "Alternar solo",
+            "keys": [
+              "s"
+            ]
+          },
+          {
+            "action": "Toggle track on / off",
+            "actionEs": "Activar / Desactivar pista",
+            "keys": [
+              "0"
+            ]
+          }
+        ]
       }
     ],
     "garageband": [
@@ -26272,6 +29425,104 @@ window.SPARK_DATA = {
               "T"
             ],
             "actionEs": "Dividir región"
+          }
+        ]
+      },
+      {
+        "label": "Recording & Playback",
+        "labelEs": "Grabación y Reproducción",
+        "items": [
+          {
+            "action": "Start / Stop recording",
+            "actionEs": "Iniciar / Detener grabación",
+            "keys": [
+              "r"
+            ]
+          },
+          {
+            "action": "Play from start",
+            "actionEs": "Reproducir desde el inicio",
+            "keys": [
+              "enter"
+            ]
+          },
+          {
+            "action": "Return to zero",
+            "actionEs": "Volver al inicio",
+            "keys": [
+              "cmd",
+              "["
+            ]
+          },
+          {
+            "action": "Metronome",
+            "actionEs": "Metrónomo",
+            "keys": [
+              "cmd",
+              "U"
+            ]
+          },
+          {
+            "action": "Count-in",
+            "actionEs": "Cuenta atrás",
+            "keys": [
+              "cmd",
+              "shift",
+              "U"
+            ]
+          },
+          {
+            "action": "Loop",
+            "actionEs": "Bucle",
+            "keys": [
+              "cmd",
+              "L"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Tracks & Mix",
+        "labelEs": "Pistas y Mezcla",
+        "items": [
+          {
+            "action": "New track",
+            "actionEs": "Nueva pista",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ]
+          },
+          {
+            "action": "Mute track",
+            "actionEs": "Silenciar pista",
+            "keys": [
+              "m"
+            ]
+          },
+          {
+            "action": "Solo track",
+            "actionEs": "Solo de pista",
+            "keys": [
+              "s"
+            ]
+          },
+          {
+            "action": "Open mixer",
+            "actionEs": "Abrir mezclador",
+            "keys": [
+              "cmd",
+              "2"
+            ]
+          },
+          {
+            "action": "Show / Hide tracks",
+            "actionEs": "Mostrar / Ocultar pistas",
+            "keys": [
+              "cmd",
+              "T"
+            ]
           }
         ]
       }
@@ -26450,6 +29701,75 @@ window.SPARK_DATA = {
             "actionEs": "Alejar"
           }
         ]
+      },
+      {
+        "label": "Tracks & Mix",
+        "labelEs": "Pistas y Mezcla",
+        "items": [
+          {
+            "action": "Insert new track",
+            "actionEs": "Insertar nueva pista",
+            "keys": [
+              "cmd",
+              "t"
+            ]
+          },
+          {
+            "action": "Duplicate track",
+            "actionEs": "Duplicar pista",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          },
+          {
+            "action": "Toggle mute",
+            "actionEs": "Alternar silencio",
+            "keys": [
+              "m"
+            ]
+          },
+          {
+            "action": "Toggle solo",
+            "actionEs": "Alternar solo",
+            "keys": [
+              "s"
+            ]
+          },
+          {
+            "action": "Record arm",
+            "actionEs": "Preparar grabación",
+            "keys": [
+              "ctrl",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle FX chain",
+            "actionEs": "Alternar cadena FX",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Open mixer",
+            "actionEs": "Abrir mezclador",
+            "keys": [
+              "cmd",
+              "m"
+            ]
+          },
+          {
+            "action": "Nudge volume",
+            "actionEs": "Ajustar volumen",
+            "keys": [
+              "ctrl",
+              "up"
+            ]
+          }
+        ]
       }
     ],
     "discord": [
@@ -26594,6 +29914,154 @@ window.SPARK_DATA = {
             "actionEs": "Descartar / Cerrar"
           }
         ]
+      },
+      {
+        "label": "Server & Channels",
+        "labelEs": "Servidores y Canales",
+        "items": [
+          {
+            "action": "Create channel",
+            "actionEs": "Crear canal",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ]
+          },
+          {
+            "action": "Create DM",
+            "actionEs": "Crear MD",
+            "keys": [
+              "cmd",
+              "shift",
+              "M"
+            ]
+          },
+          {
+            "action": "Edit channel",
+            "actionEs": "Editar canal",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ]
+          },
+          {
+            "action": "Mark channel read",
+            "actionEs": "Marcar canal como leído",
+            "keys": [
+              "esc"
+            ]
+          },
+          {
+            "action": "Mute channel",
+            "actionEs": "Silenciar canal",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Voice & Call",
+        "labelEs": "Voz y Llamada",
+        "items": [
+          {
+            "action": "Deafen",
+            "actionEs": "Ensordecer",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ]
+          },
+          {
+            "action": "Toggle camera",
+            "actionEs": "Activar / Desactivar cámara",
+            "keys": [
+              "cmd",
+              "shift",
+              "V"
+            ]
+          },
+          {
+            "action": "Share screen",
+            "actionEs": "Compartir pantalla",
+            "keys": [
+              "cmd",
+              "shift",
+              "S"
+            ]
+          },
+          {
+            "action": "Disconnect",
+            "actionEs": "Desconectar",
+            "keys": [
+              "cmd",
+              "shift",
+              "W"
+            ]
+          },
+          {
+            "action": "Noise suppression",
+            "actionEs": "Supresión de ruido",
+            "keys": [
+              "cmd",
+              "shift",
+              "B"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Formatting",
+        "labelEs": "Formato",
+        "items": [
+          {
+            "action": "Bold",
+            "actionEs": "Negrita",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Italic",
+            "actionEs": "Cursiva",
+            "keys": [
+              "cmd",
+              "i"
+            ]
+          },
+          {
+            "action": "Underline",
+            "actionEs": "Subrayado",
+            "keys": [
+              "cmd",
+              "u"
+            ]
+          },
+          {
+            "action": "Strikethrough",
+            "actionEs": "Tachado",
+            "keys": [
+              "cmd",
+              "shift",
+              "x"
+            ]
+          },
+          {
+            "action": "Code block",
+            "actionEs": "Bloque de código",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          }
+        ]
       }
     ],
     "zoom": [
@@ -26685,6 +30153,110 @@ window.SPARK_DATA = {
               "M"
             ],
             "actionEs": "Silenciar a todos"
+          }
+        ]
+      },
+      {
+        "label": "Chat & Invite",
+        "labelEs": "Chat e Invitaciones",
+        "items": [
+          {
+            "action": "Open chat panel",
+            "actionEs": "Abrir panel de chat",
+            "keys": [
+              "cmd",
+              "shift",
+              "H"
+            ]
+          },
+          {
+            "action": "Send message",
+            "actionEs": "Enviar mensaje",
+            "keys": [
+              "enter"
+            ]
+          },
+          {
+            "action": "Invite people",
+            "actionEs": "Invitar personas",
+            "keys": [
+              "cmd",
+              "I"
+            ]
+          },
+          {
+            "action": "Schedule meeting",
+            "actionEs": "Programar reunión",
+            "keys": [
+              "cmd",
+              "shift",
+              "T"
+            ]
+          },
+          {
+            "action": "Join meeting",
+            "actionEs": "Unirse a reunión",
+            "keys": [
+              "cmd",
+              "J"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Meeting Controls",
+        "labelEs": "Controles de Reunión",
+        "items": [
+          {
+            "action": "Raise / Lower hand",
+            "actionEs": "Levantar / Bajar mano",
+            "keys": [
+              "cmd",
+              "Y"
+            ]
+          },
+          {
+            "action": "Share computer sound",
+            "actionEs": "Compartir sonido del ordenador",
+            "keys": [
+              "cmd",
+              "shift",
+              "U"
+            ]
+          },
+          {
+            "action": "Pause / Resume share",
+            "actionEs": "Pausar / Reanudar compartir",
+            "keys": [
+              "cmd",
+              "P"
+            ]
+          },
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Mostrar / Ocultar barra lateral",
+            "keys": [
+              "cmd",
+              "alt",
+              "I"
+            ]
+          },
+          {
+            "action": "Minimize",
+            "actionEs": "Minimizar",
+            "keys": [
+              "cmd",
+              "M"
+            ]
+          },
+          {
+            "action": "Close panel",
+            "actionEs": "Cerrar panel",
+            "keys": [
+              "cmd",
+              "shift",
+              "P"
+            ]
           }
         ]
       }
@@ -26811,6 +30383,104 @@ window.SPARK_DATA = {
             "actionEs": "Cerrar / Descartar"
           }
         ]
+      },
+      {
+        "label": "Meeting Controls",
+        "labelEs": "Controles de Reunión",
+        "items": [
+          {
+            "action": "Raise / Lower hand",
+            "actionEs": "Levantar / Bajar mano",
+            "keys": [
+              "cmd",
+              "shift",
+              "K"
+            ]
+          },
+          {
+            "action": "Share screen",
+            "actionEs": "Compartir pantalla",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ]
+          },
+          {
+            "action": "Toggle background blur",
+            "actionEs": "Desenfoque de fondo",
+            "keys": [
+              "cmd",
+              "shift",
+              "P"
+            ]
+          },
+          {
+            "action": "Start recording",
+            "actionEs": "Iniciar grabación",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ]
+          },
+          {
+            "action": "Open meeting notes",
+            "actionEs": "Abrir notas de reunión",
+            "keys": [
+              "cmd",
+              "shift",
+              "N"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Messaging",
+        "labelEs": "Mensajería",
+        "items": [
+          {
+            "action": "Format message",
+            "actionEs": "Dar formato al mensaje",
+            "keys": [
+              "cmd",
+              "."
+            ]
+          },
+          {
+            "action": "Attach file",
+            "actionEs": "Adjuntar archivo",
+            "keys": [
+              "cmd",
+              "shift",
+              "O"
+            ]
+          },
+          {
+            "action": "Expand compose box",
+            "actionEs": "Expandir caja de redacción",
+            "keys": [
+              "cmd",
+              "shift",
+              "X"
+            ]
+          },
+          {
+            "action": "Go to compose",
+            "actionEs": "Ir a redactar",
+            "keys": [
+              "c"
+            ]
+          },
+          {
+            "action": "Reply to thread",
+            "actionEs": "Responder al hilo",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          }
+        ]
       }
     ],
     "whatsapp": [
@@ -26898,6 +30568,72 @@ window.SPARK_DATA = {
               ","
             ],
             "actionEs": "Ajustes"
+          }
+        ]
+      },
+      {
+        "label": "Messages",
+        "labelEs": "Mensajes",
+        "items": [
+          {
+            "action": "New message",
+            "actionEs": "Nuevo mensaje",
+            "keys": [
+              "cmd",
+              "n"
+            ]
+          },
+          {
+            "action": "Emoji picker",
+            "actionEs": "Selector de emojis",
+            "keys": [
+              "cmd",
+              "shift",
+              "E"
+            ]
+          },
+          {
+            "action": "Attach file",
+            "actionEs": "Adjuntar archivo",
+            "keys": [
+              "cmd",
+              "shift",
+              "A"
+            ]
+          },
+          {
+            "action": "Search in chat",
+            "actionEs": "Buscar en chat",
+            "keys": [
+              "cmd",
+              "shift",
+              "F"
+            ]
+          },
+          {
+            "action": "Bold text",
+            "actionEs": "Texto en negrita",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Italic text",
+            "actionEs": "Texto en cursiva",
+            "keys": [
+              "cmd",
+              "i"
+            ]
+          },
+          {
+            "action": "Strikethrough",
+            "actionEs": "Tachado",
+            "keys": [
+              "cmd",
+              "shift",
+              "x"
+            ]
           }
         ]
       }
@@ -27123,6 +30859,99 @@ window.SPARK_DATA = {
             "actionEs": "Alejar"
           }
         ]
+      },
+      {
+        "label": "Privacy & Tools",
+        "labelEs": "Privacidad y Herramientas",
+        "items": [
+          {
+            "action": "New Incognito window",
+            "actionEs": "Nueva ventana incógnita",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Clear browsing data",
+            "actionEs": "Borrar datos de navegación",
+            "keys": [
+              "cmd",
+              "shift",
+              "delete"
+            ]
+          },
+          {
+            "action": "Open dev tools",
+            "actionEs": "Abrir herramientas de desarrollo",
+            "keys": [
+              "cmd",
+              "option",
+              "i"
+            ]
+          },
+          {
+            "action": "Toggle device toolbar",
+            "actionEs": "Alternar barra de dispositivos",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Show downloads",
+            "actionEs": "Mostrar descargas",
+            "keys": [
+              "cmd",
+              "shift",
+              "j"
+            ]
+          },
+          {
+            "action": "Task Manager",
+            "actionEs": "Administrador de tareas",
+            "keys": [
+              "shift",
+              "esc"
+            ]
+          },
+          {
+            "action": "Print page",
+            "actionEs": "Imprimir página",
+            "keys": [
+              "cmd",
+              "p"
+            ]
+          },
+          {
+            "action": "Find on page",
+            "actionEs": "Buscar en página",
+            "keys": [
+              "cmd",
+              "f"
+            ]
+          },
+          {
+            "action": "Bookmark all tabs",
+            "actionEs": "Marcar todas las pestañas",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Reload (no cache)",
+            "actionEs": "Recargar (sin caché)",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          }
+        ]
       }
     ],
     "firefox": [
@@ -27337,6 +31166,100 @@ window.SPARK_DATA = {
             "actionEs": "Alejar"
           }
         ]
+      },
+      {
+        "label": "Privacy & Tools",
+        "labelEs": "Privacidad y Herramientas",
+        "items": [
+          {
+            "action": "New Private window",
+            "actionEs": "Nueva ventana privada",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Clear recent history",
+            "actionEs": "Borrar historial reciente",
+            "keys": [
+              "cmd",
+              "shift",
+              "delete"
+            ]
+          },
+          {
+            "action": "Open dev tools",
+            "actionEs": "Abrir herramientas de desarrollo",
+            "keys": [
+              "cmd",
+              "option",
+              "i"
+            ]
+          },
+          {
+            "action": "Toggle responsive mode",
+            "actionEs": "Alternar modo responsivo",
+            "keys": [
+              "cmd",
+              "shift",
+              "m"
+            ]
+          },
+          {
+            "action": "Show downloads",
+            "actionEs": "Mostrar descargas",
+            "keys": [
+              "cmd",
+              "shift",
+              "y"
+            ]
+          },
+          {
+            "action": "Print page",
+            "actionEs": "Imprimir página",
+            "keys": [
+              "cmd",
+              "p"
+            ]
+          },
+          {
+            "action": "Find on page",
+            "actionEs": "Buscar en página",
+            "keys": [
+              "cmd",
+              "f"
+            ]
+          },
+          {
+            "action": "Toggle reader mode",
+            "actionEs": "Alternar modo lector",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Bookmark all tabs",
+            "actionEs": "Marcar todas las pestañas",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Restore previous session",
+            "actionEs": "Restaurar sesión anterior",
+            "keys": [
+              "cmd",
+              "shift",
+              "h"
+            ]
+          }
+        ]
       }
     ],
     "edge": [
@@ -27518,6 +31441,73 @@ window.SPARK_DATA = {
               "F12"
             ],
             "actionEs": "Herramientas de desarrollador"
+          }
+        ]
+      },
+      {
+        "label": "Privacy & Tools",
+        "labelEs": "Privacidad y Herramientas",
+        "items": [
+          {
+            "action": "New InPrivate window",
+            "actionEs": "Nueva ventana InPrivate",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Toggle sidebar",
+            "actionEs": "Alternar barra lateral",
+            "keys": [
+              "cmd",
+              "shift",
+              "/"
+            ]
+          },
+          {
+            "action": "Show reading view",
+            "actionEs": "Vista de lectura",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Web capture",
+            "actionEs": "Captura web",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Print",
+            "actionEs": "Imprimir",
+            "keys": [
+              "cmd",
+              "p"
+            ]
+          },
+          {
+            "action": "Find on page",
+            "actionEs": "Buscar en página",
+            "keys": [
+              "cmd",
+              "f"
+            ]
+          },
+          {
+            "action": "Open dev tools",
+            "actionEs": "Abrir herramientas de desarrollo",
+            "keys": [
+              "cmd",
+              "shift",
+              "i"
+            ]
           }
         ]
       }
@@ -27707,6 +31697,73 @@ window.SPARK_DATA = {
             "actionEs": "Herramientas de desarrollador"
           }
         ]
+      },
+      {
+        "label": "Privacy & Shields",
+        "labelEs": "Privacidad y Escudos",
+        "items": [
+          {
+            "action": "New private window",
+            "actionEs": "Nueva ventana privada",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Toggle shields",
+            "actionEs": "Alternar escudos",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Show rewards",
+            "actionEs": "Mostrar recompensas",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Web capture",
+            "actionEs": "Captura web",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Find on page",
+            "actionEs": "Buscar en página",
+            "keys": [
+              "cmd",
+              "f"
+            ]
+          },
+          {
+            "action": "Open dev tools",
+            "actionEs": "Abrir herramientas de desarrollo",
+            "keys": [
+              "cmd",
+              "shift",
+              "i"
+            ]
+          },
+          {
+            "action": "Print page",
+            "actionEs": "Imprimir página",
+            "keys": [
+              "cmd",
+              "p"
+            ]
+          }
+        ]
       }
     ],
     "safari": [
@@ -27886,6 +31943,82 @@ window.SPARK_DATA = {
             "actionEs": "Vista de lectura"
           }
         ]
+      },
+      {
+        "label": "Privacy & View",
+        "labelEs": "Privacidad y Vista",
+        "items": [
+          {
+            "action": "Toggle private browsing",
+            "actionEs": "Alternar navegación privada",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Show / Hide sidebar",
+            "actionEs": "Mostrar / Ocultar barra lateral",
+            "keys": [
+              "cmd",
+              "shift",
+              "s"
+            ]
+          },
+          {
+            "action": "Toggle reader mode",
+            "actionEs": "Alternar modo lector",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Show web inspector",
+            "actionEs": "Mostrar inspector web",
+            "keys": [
+              "cmd",
+              "alt",
+              "i"
+            ]
+          },
+          {
+            "action": "Toggle show favorites",
+            "actionEs": "Alternar favoritos",
+            "keys": [
+              "cmd",
+              "shift",
+              "b"
+            ]
+          },
+          {
+            "action": "Email page link",
+            "actionEs": "Enviar enlace por email",
+            "keys": [
+              "cmd",
+              "i"
+            ]
+          },
+          {
+            "action": "Find on page",
+            "actionEs": "Buscar en página",
+            "keys": [
+              "cmd",
+              "f"
+            ]
+          },
+          {
+            "action": "Add to reading list",
+            "actionEs": "Agregar a lista de lectura",
+            "keys": [
+              "cmd",
+              "shift",
+              "d"
+            ]
+          }
+        ]
       }
     ],
     "terminal": [
@@ -27992,6 +32125,78 @@ window.SPARK_DATA = {
               "0"
             ],
             "actionEs": "Tamaño real"
+          }
+        ]
+      },
+      {
+        "label": "Tabs & Windows",
+        "labelEs": "Pestañas y Ventanas",
+        "items": [
+          {
+            "action": "Close tab",
+            "actionEs": "Cerrar pestaña",
+            "keys": [
+              "cmd",
+              "W"
+            ]
+          },
+          {
+            "action": "Next tab",
+            "actionEs": "Siguiente pestaña",
+            "keys": [
+              "cmd",
+              "shift",
+              "]"
+            ]
+          },
+          {
+            "action": "Previous tab",
+            "actionEs": "Pestaña anterior",
+            "keys": [
+              "cmd",
+              "shift",
+              "["
+            ]
+          },
+          {
+            "action": "Split pane vertical",
+            "actionEs": "Dividir panel vertical",
+            "keys": [
+              "cmd",
+              "shift",
+              "D"
+            ]
+          },
+          {
+            "action": "Split pane horizontal",
+            "actionEs": "Dividir panel horizontal",
+            "keys": [
+              "cmd",
+              "d"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Find",
+        "labelEs": "Buscar",
+        "items": [
+          {
+            "action": "Find next",
+            "actionEs": "Buscar siguiente",
+            "keys": [
+              "cmd",
+              "G"
+            ]
+          },
+          {
+            "action": "Find previous",
+            "actionEs": "Buscar anterior",
+            "keys": [
+              "cmd",
+              "shift",
+              "G"
+            ]
           }
         ]
       }
@@ -28360,6 +32565,76 @@ window.SPARK_DATA = {
             "actionEs": "Borrar historial"
           }
         ]
+      },
+      {
+        "label": "Scientific",
+        "labelEs": "Científica",
+        "items": [
+          {
+            "action": "Sin",
+            "actionEs": "Sin",
+            "keys": [
+              "ctrl",
+              "s"
+            ]
+          },
+          {
+            "action": "Cos",
+            "actionEs": "Cos",
+            "keys": [
+              "ctrl",
+              "o"
+            ]
+          },
+          {
+            "action": "Tan",
+            "actionEs": "Tan",
+            "keys": [
+              "ctrl",
+              "t"
+            ]
+          },
+          {
+            "action": "Square root",
+            "actionEs": "Raíz cuadrada",
+            "keys": [
+              "ctrl",
+              "q"
+            ]
+          },
+          {
+            "action": "Power",
+            "actionEs": "Potencia",
+            "keys": [
+              "ctrl",
+              "p"
+            ]
+          },
+          {
+            "action": "Pi",
+            "actionEs": "Pi",
+            "keys": [
+              "ctrl",
+              "l"
+            ]
+          },
+          {
+            "action": "Log",
+            "actionEs": "Log",
+            "keys": [
+              "ctrl",
+              "g"
+            ]
+          },
+          {
+            "action": "Ln",
+            "actionEs": "Ln",
+            "keys": [
+              "ctrl",
+              "n"
+            ]
+          }
+        ]
       }
     ],
     "screenshot": [
@@ -28506,6 +32781,54 @@ window.SPARK_DATA = {
               "esc"
             ],
             "actionEs": "Cancelar"
+          }
+        ]
+      },
+      {
+        "label": "macOS Screenshot",
+        "labelEs": "Captura de macOS",
+        "items": [
+          {
+            "action": "Entire screen",
+            "actionEs": "Pantalla completa",
+            "keys": [
+              "cmd",
+              "shift",
+              "3"
+            ]
+          },
+          {
+            "action": "Window capture",
+            "actionEs": "Capturar ventana",
+            "keys": [
+              "cmd",
+              "shift",
+              "4",
+              "space"
+            ]
+          },
+          {
+            "action": "Screenshot toolbar",
+            "actionEs": "Barra de captura",
+            "keys": [
+              "cmd",
+              "shift",
+              "5"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Snipping Tool",
+        "labelEs": "Herramienta Recortes",
+        "items": [
+          {
+            "action": "Copy to clipboard",
+            "actionEs": "Copiar al portapapeles",
+            "keys": [
+              "cmd",
+              "C"
+            ]
           }
         ]
       }
@@ -28661,6 +32984,117 @@ window.SPARK_DATA = {
             "actionEs": "Establecer fotograma clave"
           }
         ]
+      },
+      {
+        "label": "Modeling",
+        "labelEs": "Modelado",
+        "items": [
+          {
+            "action": "Extrude face",
+            "actionEs": "Extruir cara",
+            "keys": [
+              "cmd",
+              "e"
+            ]
+          },
+          {
+            "action": "Bevel edge",
+            "actionEs": "Biselar borde",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Insert edge loop",
+            "actionEs": "Insertar bucle de aristas",
+            "keys": [
+              "ctrl",
+              "r"
+            ]
+          },
+          {
+            "action": "Multi-cut tool",
+            "actionEs": "Herramienta Multi-corte",
+            "keys": [
+              "ctrl",
+              "shift",
+              "x"
+            ]
+          },
+          {
+            "action": "Merge vertices",
+            "actionEs": "Fusionar vértices",
+            "keys": [
+              "cmd",
+              "m"
+            ]
+          },
+          {
+            "action": "Smooth mesh",
+            "actionEs": "Suavizar malla",
+            "keys": [
+              "shift",
+              "right-click"
+            ]
+          },
+          {
+            "action": "Triangulate",
+            "actionEs": "Triangular",
+            "keys": [
+              "mesh",
+              "triangulate"
+            ]
+          },
+          {
+            "action": "Combine",
+            "actionEs": "Combinar",
+            "keys": [
+              "mesh",
+              "combine"
+            ]
+          },
+          {
+            "action": "Separate",
+            "actionEs": "Separar",
+            "keys": [
+              "mesh",
+              "separate"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Rendering",
+        "labelEs": "Renderizado",
+        "items": [
+          {
+            "action": "Render current frame",
+            "actionEs": "Renderizar frame actual",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Render sequence",
+            "actionEs": "Renderizar secuencia",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Open render settings",
+            "actionEs": "Abrir ajustes de render",
+            "keys": [
+              "cmd",
+              "shift",
+              "o"
+            ]
+          }
+        ]
       }
     ],
     "cinema4d": [
@@ -28793,6 +33227,125 @@ window.SPARK_DATA = {
               "K"
             ],
             "actionEs": "Herramienta cuchillo"
+          }
+        ]
+      },
+      {
+        "label": "Viewport",
+        "labelEs": "Vista",
+        "items": [
+          {
+            "action": "Zoom all",
+            "actionEs": "Enfocar todo",
+            "keys": [
+              "o"
+            ]
+          },
+          {
+            "action": "View single",
+            "actionEs": "Vista única",
+            "keys": [
+              "cmd",
+              "1"
+            ]
+          },
+          {
+            "action": "View four",
+            "actionEs": "Vista de cuatro",
+            "keys": [
+              "cmd",
+              "2"
+            ]
+          },
+          {
+            "action": "View perspective",
+            "actionEs": "Vista en perspectiva",
+            "keys": [
+              "cmd",
+              "3"
+            ]
+          },
+          {
+            "action": "Toggle grid",
+            "actionEs": "Mostrar / Ocultar cuadrícula",
+            "keys": [
+              "cmd",
+              "shift",
+              "g"
+            ]
+          },
+          {
+            "action": "Render view",
+            "actionEs": "Renderizar vista",
+            "keys": [
+              "cmd",
+              "r"
+            ]
+          },
+          {
+            "action": "Render to Picture Viewer",
+            "actionEs": "Renderizar en Visor de Imágenes",
+            "keys": [
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Toggle snapping",
+            "actionEs": "Alternar ajuste",
+            "keys": [
+              "shift",
+              "s"
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Object Operations",
+        "labelEs": "Operaciones de Objetos",
+        "items": [
+          {
+            "action": "Connect objects",
+            "actionEs": "Conectar objetos",
+            "keys": [
+              "cmd",
+              "shift",
+              "o"
+            ]
+          },
+          {
+            "action": "Group objects",
+            "actionEs": "Agrupar objetos",
+            "keys": [
+              "alt",
+              "g"
+            ]
+          },
+          {
+            "action": "Axis center",
+            "actionEs": "Centro de ejes",
+            "keys": [
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Freeze transforms",
+            "actionEs": "Congelar transformaciones",
+            "keys": [
+              "cmd",
+              "shift",
+              "z"
+            ]
+          },
+          {
+            "action": "Current state to object",
+            "actionEs": "Estado actual a objeto",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
           }
         ]
       }
@@ -28979,6 +33532,68 @@ window.SPARK_DATA = {
               "H"
             ],
             "actionEs": "Ocultar máscara"
+          }
+        ]
+      },
+      {
+        "label": "Navigation",
+        "labelEs": "Navegación",
+        "items": [
+          {
+            "action": "Rotate canvas",
+            "actionEs": "Rotar lienzo",
+            "keys": [
+              "alt",
+              "drag"
+            ]
+          },
+          {
+            "action": "Zoom canvas",
+            "actionEs": "Zoom lienzo",
+            "keys": [
+              "ctrl",
+              "right-click"
+            ]
+          },
+          {
+            "action": "Pan canvas",
+            "actionEs": "Desplazar lienzo",
+            "keys": [
+              "alt",
+              "right-click"
+            ]
+          },
+          {
+            "action": "Frame all",
+            "actionEs": "Enmarcar todo",
+            "keys": [
+              "f"
+            ]
+          },
+          {
+            "action": "Toggle polyframe",
+            "actionEs": "Alternar polyframe",
+            "keys": [
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Toggle transparency",
+            "actionEs": "Alternar transparencia",
+            "keys": [
+              "alt",
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Toggle floor",
+            "actionEs": "Alternar suelo",
+            "keys": [
+              "shift",
+              "p"
+            ]
           }
         ]
       }
@@ -29652,6 +34267,61 @@ window.SPARK_DATA = {
             "actionEs": "Pantalla limpia"
           }
         ]
+      },
+      {
+        "label": "More Draw",
+        "labelEs": "Más Dibujo",
+        "items": [
+          {
+            "action": "Gradient",
+            "actionEs": "Degradado",
+            "keys": [
+              "gd"
+            ]
+          },
+          {
+            "action": "Region",
+            "actionEs": "Región",
+            "keys": [
+              "reg"
+            ]
+          },
+          {
+            "action": "Boundary",
+            "actionEs": "Límite",
+            "keys": [
+              "bo"
+            ]
+          },
+          {
+            "action": "Region combine",
+            "actionEs": "Combinar regiones",
+            "keys": [
+              "union"
+            ]
+          },
+          {
+            "action": "Quick measure",
+            "actionEs": "Medición rápida",
+            "keys": [
+              "mea"
+            ]
+          },
+          {
+            "action": "Area",
+            "actionEs": "Área",
+            "keys": [
+              "aa"
+            ]
+          },
+          {
+            "action": "Mass properties",
+            "actionEs": "Propiedades de masa",
+            "keys": [
+              "massprop"
+            ]
+          }
+        ]
       }
     ],
     "gimp": [
@@ -29958,6 +34628,80 @@ window.SPARK_DATA = {
               "F11"
             ],
             "actionEs": "Pantalla completa"
+          }
+        ]
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Color to alpha",
+            "actionEs": "Color a alfa",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Levels",
+            "actionEs": "Niveles",
+            "keys": [
+              "cmd",
+              "l"
+            ]
+          },
+          {
+            "action": "Curves",
+            "actionEs": "Curvas",
+            "keys": [
+              "cmd",
+              "m"
+            ]
+          },
+          {
+            "action": "Hue - Saturation",
+            "actionEs": "Tono - Saturación",
+            "keys": [
+              "cmd",
+              "u"
+            ]
+          },
+          {
+            "action": "Color balance",
+            "actionEs": "Balance de color",
+            "keys": [
+              "cmd",
+              "b"
+            ]
+          },
+          {
+            "action": "Threshold",
+            "actionEs": "Umbral",
+            "keys": [
+              "cmd",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Posterize",
+            "actionEs": "Posterizar",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Desaturate",
+            "actionEs": "Deshacer saturación",
+            "keys": [
+              "cmd",
+              "shift",
+              "u"
+            ]
           }
         ]
       }
@@ -30272,6 +35016,75 @@ window.SPARK_DATA = {
             "actionEs": "Ver el pull request actual en GitHub"
           }
         ]
+      },
+      {
+        "label": "Pull Requests",
+        "labelEs": "Pull Requests",
+        "items": [
+          {
+            "action": "Fetch origin",
+            "actionEs": "Obtener origen",
+            "keys": [
+              "cmd",
+              "shift",
+              "f"
+            ]
+          },
+          {
+            "action": "Push origin",
+            "actionEs": "Empujar origen",
+            "keys": [
+              "cmd",
+              "shift",
+              "p"
+            ]
+          },
+          {
+            "action": "Pull origin",
+            "actionEs": "Tirar de origen",
+            "keys": [
+              "cmd",
+              "shift",
+              "l"
+            ]
+          },
+          {
+            "action": "Create new branch",
+            "actionEs": "Crear nueva rama",
+            "keys": [
+              "cmd",
+              "shift",
+              "n"
+            ]
+          },
+          {
+            "action": "Discard all changes",
+            "actionEs": "Descartar todos los cambios",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
+          },
+          {
+            "action": "Open in editor",
+            "actionEs": "Abrir en editor",
+            "keys": [
+              "cmd",
+              "shift",
+              "a"
+            ]
+          },
+          {
+            "action": "Compare branches",
+            "actionEs": "Comparar ramas",
+            "keys": [
+              "cmd",
+              "shift",
+              "c"
+            ]
+          }
+        ]
       }
     ],
     "inkscape": [
@@ -30516,6 +35329,87 @@ window.SPARK_DATA = {
             "actionEs": "Pantalla completa"
           }
         ]
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Node tool",
+            "actionEs": "Herramienta de nodos",
+            "keys": [
+              "n"
+            ]
+          },
+          {
+            "action": "Bezier pen",
+            "actionEs": "Pluma Bezier",
+            "keys": [
+              "b"
+            ]
+          },
+          {
+            "action": "Gradient tool",
+            "actionEs": "Herramienta de degradado",
+            "keys": [
+              "g"
+            ]
+          },
+          {
+            "action": "Dropper tool",
+            "actionEs": "Herramienta de gotero",
+            "keys": [
+              "d"
+            ]
+          },
+          {
+            "action": "Tweak tool",
+            "actionEs": "Herramienta de ajuste",
+            "keys": [
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Spray tool",
+            "actionEs": "Herramienta de rociado",
+            "keys": [
+              "alt",
+              "s"
+            ]
+          },
+          {
+            "action": "Measure tool",
+            "actionEs": "Herramienta de medición",
+            "keys": [
+              "m"
+            ]
+          },
+          {
+            "action": "Boolean difference",
+            "actionEs": "Diferencia booleana",
+            "keys": [
+              "ctrl",
+              "-"
+            ]
+          },
+          {
+            "action": "Boolean union",
+            "actionEs": "Unión booleana",
+            "keys": [
+              "ctrl",
+              "+"
+            ]
+          },
+          {
+            "action": "Boolean intersection",
+            "actionEs": "Intersección booleana",
+            "keys": [
+              "ctrl",
+              "*"
+            ]
+          }
+        ]
       }
     ],
     "blufftitler": [
@@ -30662,6 +35556,64 @@ window.SPARK_DATA = {
             "actionEs": "Ir al final"
           }
         ]
+      },
+      {
+        "label": "Advanced",
+        "labelEs": "Avanzado",
+        "items": [
+          {
+            "action": "Add effect",
+            "actionEs": "Agregar efecto",
+            "keys": [
+              "F2"
+            ]
+          },
+          {
+            "action": "Change layer",
+            "actionEs": "Cambiar capa",
+            "keys": [
+              "F3"
+            ]
+          },
+          {
+            "action": "Settings dialog",
+            "actionEs": "Diálogo de ajustes",
+            "keys": [
+              "F4"
+            ]
+          },
+          {
+            "action": "Full screen",
+            "actionEs": "Pantalla completa",
+            "keys": [
+              "F11"
+            ]
+          },
+          {
+            "action": "Export video",
+            "actionEs": "Exportar vídeo",
+            "keys": [
+              "cmd",
+              "e"
+            ]
+          },
+          {
+            "action": "Export image",
+            "actionEs": "Exportar imagen",
+            "keys": [
+              "cmd",
+              "shift",
+              "e"
+            ]
+          },
+          {
+            "action": "Screenshot",
+            "actionEs": "Captura de pantalla",
+            "keys": [
+              "F12"
+            ]
+          }
+        ]
       }
     ],
     "docker": [
@@ -30756,6 +35708,53 @@ window.SPARK_DATA = {
             "action": "docker compose up",
             "keys": [],
             "actionEs": "Levantar los servicios de compose"
+          }
+        ]
+      },
+      {
+        "label": "Docker Desktop",
+        "labelEs": "Docker Escritorio",
+        "items": [
+          {
+            "action": "New container",
+            "actionEs": "Nuevo contenedor",
+            "keys": [
+              "cmd",
+              "N"
+            ]
+          },
+          {
+            "action": "Search images",
+            "actionEs": "Buscar imágenes",
+            "keys": [
+              "cmd",
+              "F"
+            ]
+          },
+          {
+            "action": "Force refresh",
+            "actionEs": "Forzar actualización",
+            "keys": [
+              "cmd",
+              "shift",
+              "R"
+            ]
+          },
+          {
+            "action": "Toggle logs",
+            "actionEs": "Mostrar / Ocultar registros",
+            "keys": [
+              "cmd",
+              "L"
+            ]
+          },
+          {
+            "action": "Open terminal",
+            "actionEs": "Abrir terminal",
+            "keys": [
+              "cmd",
+              "T"
+            ]
           }
         ]
       }
@@ -31057,6 +36056,68 @@ window.SPARK_DATA = {
             "actionEs": "Abrir la carpeta de archivos temporales"
           }
         ]
+      },
+      {
+        "label": "Navigation & Selection",
+        "labelEs": "Navegación y Selección",
+        "items": [
+          {
+            "action": "Move cursor word left",
+            "actionEs": "Mover cursor palabra izquierda",
+            "keys": [
+              "ctrl",
+              "left"
+            ]
+          },
+          {
+            "action": "Move cursor word right",
+            "actionEs": "Mover cursor palabra derecha",
+            "keys": [
+              "ctrl",
+              "right"
+            ]
+          },
+          {
+            "action": "Select to start",
+            "actionEs": "Seleccionar al inicio",
+            "keys": [
+              "ctrl",
+              "shift",
+              "home"
+            ]
+          },
+          {
+            "action": "Select to end",
+            "actionEs": "Seleccionar al final",
+            "keys": [
+              "ctrl",
+              "shift",
+              "end"
+            ]
+          },
+          {
+            "action": "Cancel command",
+            "actionEs": "Cancelar comando",
+            "keys": [
+              "ctrl",
+              "c"
+            ]
+          },
+          {
+            "action": "Tab completion",
+            "actionEs": "Autocompletar con tabulador",
+            "keys": [
+              "tab"
+            ]
+          },
+          {
+            "action": "File path completion",
+            "actionEs": "Autocompletar ruta",
+            "keys": [
+              "tab"
+            ]
+          }
+        ]
       }
     ],
     "powershell": [
@@ -31222,6 +36283,65 @@ window.SPARK_DATA = {
               "A"
             ],
             "actionEs": "Seleccionar todo"
+          }
+        ]
+      },
+      {
+        "label": "Windows Terminal",
+        "labelEs": "Windows Terminal",
+        "items": [
+          {
+            "action": "New tab",
+            "actionEs": "Nueva pestaña",
+            "keys": [
+              "ctrl",
+              "shift",
+              "t"
+            ]
+          },
+          {
+            "action": "Close tab",
+            "actionEs": "Cerrar pestaña",
+            "keys": [
+              "ctrl",
+              "shift",
+              "w"
+            ]
+          },
+          {
+            "action": "Next tab",
+            "actionEs": "Siguiente pestaña",
+            "keys": [
+              "ctrl",
+              "tab"
+            ]
+          },
+          {
+            "action": "Previous tab",
+            "actionEs": "Pestaña anterior",
+            "keys": [
+              "ctrl",
+              "shift",
+              "tab"
+            ]
+          },
+          {
+            "action": "Split pane",
+            "actionEs": "Dividir panel",
+            "keys": [
+              "ctrl",
+              "shift",
+              "d"
+            ]
+          },
+          {
+            "action": "Find",
+            "actionEs": "Buscar",
+            "keys": [
+              "ctrl",
+              "shift",
+              "f"
+            ]
           }
         ]
       }
@@ -31441,6 +36561,89 @@ window.SPARK_DATA = {
             "actionEs": "Lupa: alejar"
           }
         ]
+      },
+      {
+        "label": "More System",
+        "labelEs": "Más Sistema",
+        "items": [
+          {
+            "action": "Lock workstation",
+            "actionEs": "Bloquear estación",
+            "keys": [
+              "win",
+              "l"
+            ]
+          },
+          {
+            "action": "Project display",
+            "actionEs": "Proyectar pantalla",
+            "keys": [
+              "win",
+              "p"
+            ]
+          },
+          {
+            "action": "Emoji picker",
+            "actionEs": "Selector de emojis",
+            "keys": [
+              "win",
+              "."
+            ]
+          },
+          {
+            "action": "Dictation",
+            "actionEs": "Dictado",
+            "keys": [
+              "win",
+              "h"
+            ]
+          },
+          {
+            "action": "Virtual desktop new",
+            "actionEs": "Nueva escritorio virtual",
+            "keys": [
+              "win",
+              "ctrl",
+              "d"
+            ]
+          },
+          {
+            "action": "Virtual desktop close",
+            "actionEs": "Cerrar escritorio virtual",
+            "keys": [
+              "win",
+              "ctrl",
+              "F4"
+            ]
+          },
+          {
+            "action": "Virtual desktop switch",
+            "actionEs": "Cambiar escritorio virtual",
+            "keys": [
+              "win",
+              "ctrl",
+              "left"
+            ]
+          },
+          {
+            "action": "Screen recording",
+            "actionEs": "Grabación de pantalla",
+            "keys": [
+              "win",
+              "alt",
+              "r"
+            ]
+          },
+          {
+            "action": "Screenshot toolbar",
+            "actionEs": "Barra de captura",
+            "keys": [
+              "win",
+              "shift",
+              "s"
+            ]
+          }
+        ]
       }
     ],
     "macos": [
@@ -31625,6 +36828,62 @@ window.SPARK_DATA = {
               ","
             ],
             "actionEs": "Ajustes del sistema"
+          }
+        ]
+      },
+      {
+        "label": "More System",
+        "labelEs": "Más Sistema",
+        "items": [
+          {
+            "action": "Log out",
+            "actionEs": "Cerrar sesión",
+            "keys": [
+              "cmd",
+              "shift",
+              "q"
+            ]
+          },
+          {
+            "action": "Sleep",
+            "actionEs": "Dormir",
+            "keys": [
+              "cmd",
+              "option",
+              "power"
+            ]
+          },
+          {
+            "action": "Mission control",
+            "actionEs": "Mission Control",
+            "keys": [
+              "ctrl",
+              "up"
+            ]
+          },
+          {
+            "action": "Application windows",
+            "actionEs": "Ventanas de aplicación",
+            "keys": [
+              "ctrl",
+              "down"
+            ]
+          },
+          {
+            "action": "Quick Look",
+            "actionEs": "Vista rápida",
+            "keys": [
+              "space"
+            ]
+          },
+          {
+            "action": "AirDrop",
+            "actionEs": "AirDrop",
+            "keys": [
+              "cmd",
+              "shift",
+              "r"
+            ]
           }
         ]
       }
@@ -31879,6 +37138,73 @@ window.SPARK_DATA = {
               "W"
             ],
             "actionEs": "Caminar"
+          }
+        ]
+      },
+      {
+        "label": "Advanced Tools",
+        "labelEs": "Herramientas Avanzadas",
+        "items": [
+          {
+            "action": "Follow me",
+            "actionEs": "Seguir",
+            "keys": [
+              "f"
+            ]
+          },
+          {
+            "action": "Solid tools - union",
+            "actionEs": "Herramientas sólidas - unión",
+            "keys": [
+              "solid",
+              "union"
+            ]
+          },
+          {
+            "action": "Section plane",
+            "actionEs": "Plano de sección",
+            "keys": [
+              "alt",
+              "a"
+            ]
+          },
+          {
+            "action": "Axes tool",
+            "actionEs": "Herramienta de ejes",
+            "keys": [
+              "alt",
+              "x"
+            ]
+          },
+          {
+            "action": "Tape measure",
+            "actionEs": "Cinta métrica",
+            "keys": [
+              "t"
+            ]
+          },
+          {
+            "action": "Protractor",
+            "actionEs": "Transportador",
+            "keys": [
+              "alt",
+              "p"
+            ]
+          },
+          {
+            "action": "3D text",
+            "actionEs": "Texto 3D",
+            "keys": [
+              "3d",
+              "text"
+            ]
+          },
+          {
+            "action": "Sandbox tools",
+            "actionEs": "Herramientas Sandbox",
+            "keys": [
+              "sandbox"
+            ]
           }
         ]
       }

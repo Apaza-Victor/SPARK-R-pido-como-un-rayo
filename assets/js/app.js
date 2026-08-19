@@ -661,10 +661,9 @@
   }
 
   function updateKbButton() {
-    const target = platform === 'mac' ? 'win' : 'mac';
     const btn = $('#kb-btn');
-    btn.innerHTML = `<span class="kbd-ico">${target === 'win' ? WIN_SVG : '⌘'}</span>`;
-    const label = target === 'win' ? t('switchKbWin') : t('switchKbMac');
+    btn.innerHTML = `<span class="kbd-ico">${platform === 'win' ? WIN_SVG : '⌘'}</span>`;
+    const label = platform === 'mac' ? t('switchKbWin') : t('switchKbMac');
     btn.setAttribute('aria-label', label);
     btn.title = label;
   }
@@ -692,6 +691,9 @@
       for (const row of $$('.sc', d)) {
         const a = $('.sc-action', row);
         if (a) a.textContent = es && row.dataset.actEsRaw ? row.dataset.actEsRaw : row.dataset.actRaw;
+        const keys = JSON.parse(row.dataset.keys || '[]');
+        const keysEl = row.querySelector('.sc-keys');
+        if (keysEl) keysEl.innerHTML = keysHtml(keys);
       }
     }
   }
@@ -733,12 +735,14 @@
     for (const d of toolCache.values()) {
       for (const row of $$('.sc', d)) {
         const keys = JSON.parse(row.dataset.keys || '[]');
-        row.querySelector('.sc-keys').innerHTML = keysHtml(keys);
+        const keysEl = row.querySelector('.sc-keys');
+        if (keysEl) keysEl.innerHTML = keysHtml(keys);
       }
     }
     if (curTool) {
       applyFilters();
       if (typingTokens.size) lightTokens([...typingTokens]);
+      showDisplay('', typingTokens.size ? [...typingTokens] : null);
     }
     updateKbButton();
   }
